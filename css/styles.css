@@ -1,0 +1,147 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  background-color: #F5F5F5;
+  color: #282828;
+  font-family: 'Assistant', sans-serif;
+  letter-spacing: .02rem;
+}
+
+h1 {
+  font-family: 'Assistant', sans-serif;
+  font-size: 5rem;
+  font-weight: 400;
+  line-height: 6rem;
+  padding-bottom: 3rem;
+}
+
+h2 {
+  font-size: 2.8rem;
+  font-weight: 400;
+  line-height: 4.2rem;
+  padding-bottom: 3rem;
+}
+
+h3 {
+  font-size: 2.8rem;
+  font-weight: 700;
+  letter-spacing: .36rem;
+  line-height: 3.2rem;
+  padding-bottom: 3rem;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+h1 span {
+  color: #18A2A2;
+  /* teal color */
+  /* font-weight: 600; */
+}
+
+h2 span {
+  color: #18A2A2;
+  /* teal color */
+  font-weight: 600;
+}
+
+p {
+  font-size: 2rem;
+  line-height: 3.2rem;
+  padding-bottom: 9rem;
+}
+
+p span {
+  font-weight: 700;
+}
+
+.container {
+  background-color: blue;
+  /* height: 100vh; */
+  display: grid;
+  grid-gap: 1rem;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(6, minmax(100px, auto));
+  margin: 0 auto;
+  margin-top: 1.2rem;
+  width: 90%;
+}
+
+.container section:not(:first-child) {
+    margin-bottom: 10rem;
+}
+
+.hero {
+  background-color: white;
+  font-family: 'Assistant', sans-serif;
+}
+
+.hero img {
+  margin: 0 auto;
+  padding-bottom: 4.5rem;
+}
+
+.featured-work {
+  background-color: #F5F5F5;
+}
+
+.project-card {
+    background-color: #E7E7E7;
+}
+
+.design-process {
+  background-color: red;
+}
+
+.design-process h3 {
+  font-size: 2.8rem;
+  letter-spacing: .36rem;
+  text-align: center;
+  font-weight: 700;
+  padding-bottom: 6rem;
+}
+
+.design-process h4 {
+  font-size: 1.8rem;
+  letter-spacing: .18rem;
+  text-align: center;
+}
+
+.design-process img {
+  padding-bottom: 2rem;
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
+}
+
+.design-process p {
+  font-size: 2rem;
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
+}
+
+.review {
+background-color: #18A2A2;
+}
+
+.review p {
+  font-size: 1.8rem;
+  color: #FDFDFD;
+  padding-top: 8rem;
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
+  padding-bottom: 8rem;
+}
+
+
+.contact {
+  background-color: yellow;
+}
+
+.footer {
+  background-color: purple;
+}
