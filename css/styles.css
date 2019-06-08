@@ -1,3 +1,9 @@
+@font-face {
+font-family: "Sand Dunes";
+src: url("../assets/fonts/Sand_Dunes.otf");
+src: url("../assets/fonts/Sand_Dunes.svg") format("svg");}
+
+
 * {
   box-sizing: border-box;
 }
@@ -53,7 +59,6 @@ h2 span {
 p {
   font-size: 2rem;
   line-height: 3.2rem;
-  padding-bottom: 9rem;
 }
 
 p span {
@@ -73,7 +78,11 @@ p span {
 }
 
 .container section:not(:first-child) {
-    margin-bottom: 10rem;
+    margin-bottom: 8rem;
+}
+
+.mobile-menu {
+  float:right;
 }
 
 .hero {
@@ -81,9 +90,14 @@ p span {
   font-family: 'Assistant', sans-serif;
 }
 
-.hero img {
-  margin: 0 auto;
-  padding-bottom: 4.5rem;
+.hero p {
+  padding-bottom: 7rem;
+}
+
+.hero .down-arrow {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .featured-work {
@@ -92,6 +106,8 @@ p span {
 
 .project-card {
     background-color: #E7E7E7;
+    padding: 8px;
+    border-radius: .5rem;
 }
 
 .design-process {
@@ -112,36 +128,177 @@ p span {
   text-align: center;
 }
 
+h5 {
+  font-family: "Sand Dunes", "Gilda Display", serif;
+  font-size: 3rem;
+  padding-bottom: 1.1rem;
+  margin-left: 2.5rem;
+  margin-right: 2.5rem;
+}
+
+.design-process p {
+  font-size: 2rem;
+  margin-left: 2.5rem;
+  margin-right: 2.5rem;
+}
+
+.design-process p:not(:last-child) {
+  padding-bottom: 5.5rem;
+}
+
 .design-process img {
   padding-bottom: 2rem;
   padding-left: 2.5rem;
   padding-right: 2.5rem;
 }
 
-.design-process p {
-  font-size: 2rem;
-  padding-left: 2.5rem;
-  padding-right: 2.5rem;
-}
-
 .review {
-background-color: #18A2A2;
+  background-color: #18A2A2;
+  margin-left: -6%;
+  margin-right: -6%;
+  padding: 3rem 0 3rem 0;
 }
 
 .review p {
   font-size: 1.8rem;
   color: #FDFDFD;
-  padding-top: 8rem;
-  padding-left: 2.5rem;
-  padding-right: 2.5rem;
-  padding-bottom: 8rem;
+  padding-top: 1rem;
+  padding-left: 5rem;
+  padding-right: 5rem;
+  padding-bottom: 1rem;
 }
 
+.quotation-mark-left, .quotation-mark-right {
+  width: 2rem;
+}
+
+.quotation-mark-left {
+  margin-left: 2rem;
+  margin-top: 1rem;
+}
+
+.quotation-mark-right {
+  float: right;
+  margin-right: 2rem;
+  margin-top: -1rem;
+}
+
+.reviewer-name {
+  margin-top: 2.5rem;
+  line-height: 2.2rem;
+  text-align: right;
+  padding-bottom: 1rem;
+}
 
 .contact {
   background-color: #F5F5F5;
+  text-align: center;
+  padding-bottom: 15rem;
+}
+
+.contact h2 {
+  font-size: 3.9rem;
+  font-family: "Gilda Display", serif;
+  padding-bottom: 2rem;
+}
+
+.contact p {
+  padding: 0 2rem 5rem 2rem;
+}
+
+button {
+  border-radius: .4rem;
+  background-color: #91DAD5;
+  /* box-shadow: 2px 2px 4px 2px rgba(0, 0, 0, .1); */
+  border: 0;
+  font-family: "Assistant", sans-serif;
+  padding: 1.6rem 0 1.6rem 0;
+  text-align: center;
+  font-size: 1.6rem;
+  font-weight: 600;
+  letter-spacing: .12rem;
+  text-transform: uppercase;
+  width: 90%;
+}
+
+.contact img {
+  float: right;
+  padding: 5rem 2rem 0 2rem;
 }
 
 .footer {
+  text-align: center;
+}
+
+footer .footer-icons {
+  padding-top: 5rem;
+  padding-bottom: 4rem;
+  margin-left: -6%;
+  margin-right: -6%;
   background-color: #E7E7E7;
+}
+
+.footer ul {
+  padding-bottom: 2rem;
+}
+
+.footer li {
+  display: inline-block;
+}
+
+.footer i {
+  font-size: 3.5rem;
+  padding: 0 0.5rem 0 0.5rem;
+  /* color: rgba(145, 218, 213, 0.9); */
+  color: rgba(130, 130, 130, 0.9);
+  color: #828282;
+  transition: 0.3s linear;
+}
+
+@media (hover: hover) {
+  .footer i:hover {
+    color: #91DAD5;
+  }
+}
+
+.footer .footer-icons p {
+  color: #828282;
+  font-family: "Assistant", sans-serif;
+  font-size: 1.5rem;
+  line-height: 1.9rem;
+  padding-left: 3rem;
+  padding-right: 3rem;
+  letter-spacing: .05rem;
+}
+
+/* About starts here */
+
+.about-hero img {
+  width: 100%;
+}
+
+/* p css Not working!! */
+.quote {
+  margin-left: 1rem;
+  padding-left: 2rem;
+  border-left: 7.5px solid #18A2A2;
+}
+
+.about-image {
+  padding-top: 2rem;
+  /* padding-bottom: .5rem; */
+  width: 100%;
+}
+
+figcaption {
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+  letter-spacing: .02rem;
+  padding-top: 1rem;
+  padding-bottom: 2rem;
+}
+
+.about-section-header {
+  height: 13.9rem;
+  margin-left: -1rem;
 }
