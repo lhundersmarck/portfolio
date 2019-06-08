@@ -273,8 +273,24 @@ footer .footer-icons {
 
 /* About starts here */
 
-.about-hero img {
-  width: 100%;
+.about-hero-headshot {
+  width: 112%;
+  margin-left: -6%;
+  margin-right: -6%;
+  margin-top: -6%;
+  opacity: 0.8;
+}
+
+.about-nav {
+  position: absolute;
+  width: 88%;
+  top: 3%;
+  left: 6%;
+}
+
+.about-nav-menu {
+  float: right;
+  padding-top: 5%;
 }
 
 /* p css Not working!! */
