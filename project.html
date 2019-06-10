@@ -16,34 +16,36 @@
 <body>
   <div class="container">
     <div class="full-width-no-margin mobile-menu-container">
-      <nav>
-        <a href="index.html"><img class="mobile-logo" src="assets/img/mobile-logo.svg" alt="logo"></img></a>
-        <div class="mobile-menu" onclick="toggleMobileMenu(this)">
-          <div class="mobile-menu-bar-1"></div>
-          <div class="mobile-menu-bar-2"></div>
-          <div class="mobile-menu-bar-3"></div>
-        </div>
-        <div class="mobile-menu-list-container">
-          <ul class="mobile-menu-list">
-            <a href="index.html">
-              <li onclick="toggleMobileMenuItem()">Work</li>
-            </a>
-            <a href="about.html">
-              <li onclick="toggleMobileMenuItem()">
-                About
-              </li>
-            </a>
-            <a href="mailto:laurahundersmarck@gmail.com">
-              <li onclick="toggleMobileMenuItem()">
-                Contact
-              </li>
-            </a>
-          </ul>
-        </div>
-      </nav>
+      <header>
+        <nav>
+          <a href="index.html"><img class="mobile-logo" src="assets/img/mobile-logo.svg" alt="logo"></img></a>
+          <div class="mobile-menu" onclick="toggleMobileMenu(this)">
+            <div class="mobile-menu-bar-1"></div>
+            <div class="mobile-menu-bar-2"></div>
+            <div class="mobile-menu-bar-3"></div>
+          </div>
+          <div class="mobile-menu-list-container">
+            <ul class="mobile-menu-list">
+              <a href="index.html">
+                <li onclick="toggleMobileMenuItem()">Work</li>
+              </a>
+              <a href="about.html">
+                <li onclick="toggleMobileMenuItem()">
+                  About
+                </li>
+              </a>
+              <a href="mailto:laurahundersmarck@gmail.com">
+                <li onclick="toggleMobileMenuItem()">
+                  Contact
+                </li>
+              </a>
+            </ul>
+          </div>
+        </nav>
+      </header>
     </div>
     <!-- hero unit -->
-    <section class="project-hero">
+    <section class="project-hero" id="project-hero">
       <img class="product-logo project-image" src="assets/img-project/trove-logo-color.svg" alt="Trove Product Logo"></img>
       <h2 class="project-intro">Collect, organize & share what inspires you most. Trove is a cloud storage platform that stores all your favorite things in one place.</h2>
       <img class="product-shot project-image" src="assets/img-project/mobile-product-shot@1x.png" alt="Trove Product Shot of Dashboard"></img>
@@ -526,7 +528,9 @@
               <button>Get in Touch</button>
             </a>
           </div>
-          <img src="assets/img/back-to-top-arrow.svg" alt="back to top arrow"></img>
+          <a href="#project-hero">
+            <img src="assets/img/back-to-top-arrow.svg" alt="back to top arrow"></img>
+          </a>
         </div>
         <div class="footer-icons">
           <ul>

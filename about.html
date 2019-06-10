@@ -13,33 +13,35 @@
   </head>
   <body>
     <!-- hero unit -->
-    <section class="about-hero">
+    <section class="about-hero" id="about-hero">
       <div class="mobile-menu-container">
-        <nav>
-          <a href="index.html"><img class="mobile-logo" src="assets/img/mobile-logo.svg" alt="logo"></img></a>
-          <div class="mobile-menu" onclick="toggleMobileMenu(this)">
-            <div class="mobile-menu-bar-1"></div>
-            <div class="mobile-menu-bar-2"></div>
-            <div class="mobile-menu-bar-3"></div>
-          </div>
-          <div class="mobile-menu-list-container">
-            <ul class="mobile-menu-list">
-              <a href="index.html">
-                <li onclick="toggleMobileMenuItem()">Work</li>
-              </a>
-              <a href="about.html">
-                <li onclick="toggleMobileMenuItem()">
-                  About
-                </li>
-              </a>
-              <a href="mailto:laurahundersmarck@gmail.com">
-                <li onclick="toggleMobileMenuItem()">
-                  Contact
-                </li>
-              </a>
-            </ul>
-          </div>
-        </nav>
+        <header>
+          <nav>
+            <a href="index.html"><img class="mobile-logo" src="assets/img/mobile-logo.svg" alt="logo"></img></a>
+            <div class="mobile-menu" onclick="toggleMobileMenu(this)">
+              <div class="mobile-menu-bar-1"></div>
+              <div class="mobile-menu-bar-2"></div>
+              <div class="mobile-menu-bar-3"></div>
+            </div>
+            <div class="mobile-menu-list-container">
+              <ul class="mobile-menu-list">
+                <a href="index.html">
+                  <li onclick="toggleMobileMenuItem()">Work</li>
+                </a>
+                <a href="about.html">
+                  <li onclick="toggleMobileMenuItem()">
+                    About
+                  </li>
+                </a>
+                <a href="mailto:laurahundersmarck@gmail.com">
+                  <li onclick="toggleMobileMenuItem()">
+                    Contact
+                  </li>
+                </a>
+              </ul>
+            </div>
+          </nav>
+        </header>
       </div>
       <img class="about-hero-headshot" src="assets/img/bio-image.svg" alt="Headshot"></img>
     </section>
@@ -98,8 +100,14 @@
         <div class="contact">
           <h2>Want to learn more?</h2>
           <p>Please feel free to contact me anytime.</p>
-          <a href="mailto:laurahundersmarck@gmail.com"><button>Get in Touch</button></a>
-          <img src="assets/img/back-to-top-arrow.svg" alt="back to top arrow"></img>
+          <div class="button-container">
+            <a href="mailto:laurahundersmarck@gmail.com">
+              <button>Get in Touch</button>
+            </a>
+          </div>
+          <a href="#about-hero">
+            <img src="assets/img/back-to-top-arrow.svg" alt="back to top arrow"></img>
+          </a>
         </div>
         <div class="footer-icons">
           <ul>

@@ -80,7 +80,6 @@ p span {
   margin: 0 auto;
   margin-top: 1.2rem;
   width: 90%;
-  /* background-color: yellow; */
 }
 
 .container section:not(:first-child) {
@@ -104,7 +103,7 @@ p span {
   padding-bottom: 7rem;
 }
 
-.hero .down-arrow {
+a .down-arrow {
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -144,7 +143,7 @@ h4 {
 }
 
 h5 {
-  font-family: "Sand Dunes", "Gilda Display", serif;
+  font-family: 'Sand Dunes', 'Gilda Display', serif;
   font-size: 3rem;
   padding-bottom: 1.1rem;
   margin-left: 2.5rem;
@@ -175,7 +174,7 @@ h5 {
   padding: 3rem 0 3rem 0;
 }
 
-.review p {
+blockquote p {
   font-size: 1.8rem;
   color: #FDFDFD;
   padding-top: 1rem;
@@ -199,11 +198,15 @@ h5 {
   margin-top: -1rem;
 }
 
-.reviewer-name {
-  margin-top: 2.5rem;
-  line-height: 2.2rem;
+.reviewer {
+  color: #FDFDFD;
+  margin: 2.5rem 2.5rem 0 0;
   text-align: right;
-  padding-bottom: 1rem;
+  padding: 1rem 0 1rem 0;
+}
+
+span {
+  font-weight: 700;
 }
 
 .contact {
@@ -271,7 +274,6 @@ footer .footer-icons {
 .footer i {
   font-size: 3.5rem;
   padding: 0 0.5rem 0 0.5rem;
-  /* color: rgba(145, 218, 213, 0.9); */
   color: rgba(130, 130, 130, 0.9);
   color: #828282;
   transition: 0.3s linear;
@@ -453,6 +455,10 @@ li span {
   margin: 0 30% 0 30%;
 }
 
+.research-highlights h3 {
+  padding-top:3rem;
+}
+
 .research-highlights p {
   padding: 1rem 15% 4rem 15%;
   font-size: 2.2rem;
@@ -475,6 +481,7 @@ li span {
 
 .research-highlights .percentage-population {
   font-size: 1.6rem;
+  line-height: 2.2rem;
   text-align: center;
 }
 
@@ -485,11 +492,6 @@ li span {
 
 .project-image .research-highlights {
   margin: 0;
-}
-
-.percentage-population {
-  font-size: 1.6rem;
-  text-align: center;
 }
 
 .list-heading {
@@ -541,7 +543,6 @@ li span {
   text-align: center;
 }
 
-/* maybe full-size of viewport? */
 .branding .project-image {
   padding-bottom: 2rem;
   text-align: center;
