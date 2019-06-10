@@ -8,35 +8,62 @@
   <link href="https://fonts.googleapis.com/css?family=Assistant:400,600,700|Gilda+Display&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/mobile-menu.css">
   <script src="https://kit.fontawesome.com/d7c1e28c2f.js"></script>
+  <script src="js/mobile-menu.js"></script>
 </head>
 
 <body>
   <div class="container">
-    <nav>
-      <img src="assets/img/mobile-logo.svg" alt="Logo"></img>
-      <img src="assets/img/mobile-menu.svg" alt="Menu"></img>
-      <a href="index.html">home</a>
-      <a href="project.html">project</a>
-    </nav>
+    <div class="full-width-no-margin mobile-menu-container">
+      <nav>
+        <a href="index.html"><img class="mobile-logo" src="assets/img/mobile-logo.svg" alt="logo"></img></a>
+        <div class="mobile-menu" onclick="toggleMobileMenu(this)">
+          <div class="mobile-menu-bar-1"></div>
+          <div class="mobile-menu-bar-2"></div>
+          <div class="mobile-menu-bar-3"></div>
+        </div>
+        <div class="mobile-menu-list-container">
+          <ul class="mobile-menu-list">
+            <a href="index.html">
+              <li onclick="toggleMobileMenuItem()">Work</li>
+            </a>
+            <a href="about.html">
+              <li onclick="toggleMobileMenuItem()">
+                About
+              </li>
+            </a>
+            <a href="mailto:laurahundersmarck@gmail.com">
+              <li onclick="toggleMobileMenuItem()">
+                Contact
+              </li>
+            </a>
+          </ul>
+        </div>
+      </nav>
+    </div>
     <!-- hero unit -->
     <section class="project-hero">
-      <img src="assets/img-project/trove-logo-color.svg" alt="Trove Product Logo"></img>
-      <h2>Collect, organize & share what inspires you most. Trove is a cloud storage platform that stores all your favorite things in one place.</h2>
-      <img src="assets/img-project/mobile-product-shot.svg" alt="Trove Product Shot of Dashboard"></img>
+      <img class="product-logo project-image" src="assets/img-project/trove-logo-color.svg" alt="Trove Product Logo"></img>
+      <h2 class="project-intro">Collect, organize & share what inspires you most. Trove is a cloud storage platform that stores all your favorite things in one place.</h2>
+      <img class="product-shot project-image" src="assets/img-project/mobile-product-shot@1x.png" alt="Trove Product Shot of Dashboard"></img>
     </section>
     <section class="project-summary">
-      <img src="assets/img-project/section-summary.svg" alt="Section header: Project Summary"></img>
+      <img class="section-header" src="assets/img-project/section-summary.svg" alt="Section header: Project Summary"></img>
       <p class="summary-hero">Trove is a responsive web application that lets users store notes, images and links all in one place. Trove improves discoverability and organization through automatic content tagging. It also makes saving links across devices easier through a browser
         bookmark extension.</p>
-      <button><a href="https://www.figma.com/proto/Aa7ce804QgYFxzQT7wpeqw/Trove-Cloud-Storage?node-id=0%3A1&viewport=283%2C68%2C0.036343906074762344&scaling=min-zoom">VIEW PROTOTYPE</a></button>
-      <h3>Roles</h3>
+      <div class="button-container">
+        <a href="https://www.figma.com/proto/Aa7ce804QgYFxzQT7wpeqw/Trove-Cloud-Storage?node-id=0%3A1&viewport=283%2C68%2C0.036343906074762344&scaling=min-zoom">
+          <button>view prototype</button>
+        </a>
+      </div>
+      <h3 class="header-spec-list center-headers">Roles</h3>
       <ul class="summary-list">
         <li>UX Research and Design</li>
         <li>Visual Design</li>
         <li>Branding</li>
       </ul>
-      <h3>Deliverables</h3>
+      <h3 class="header-spec-list center-headers">Deliverables</h3>
       <ul class="summary-list">
         <li>User Survey</li>
         <li>Competitive Analysis</li>
@@ -48,94 +75,114 @@
         <li>Branding</li>
         <li>Prototypes</li>
       </ul>
-      <h3>Specs</h3>
+      <h3 class="header-spec-list center-headers">Specs</h3>
       <ul class="summary-list">
         <li><span>Duration</span></li>
         <li>10 weeks</li>
-        <ul class="summary-list">
-          <li><span>Tools</span></li>
-          <li>Figma</li>
-          <li>Draw.io</li>
-          <li>UsabilityHub</li>
-          <li>Google Forms</li>
-        </ul>
-        <h3>The Problem</h3>
-        <p>With so many cloud storage platforms on the market, is there room to throw another hat in the ring? The cloud storage industry has evolved dramatically and users needs have evolved with it. I set out to uncover the problems users face today and
-          build a product that met those needs.
-          <br/>
-          <br/>The main problems users experience:</p>
-        <ul>
-          <li>Finding files is difficult</li>
-          <li>Organizing files is cumbersome and requires constant upkeep</li>
-          <li>Saving links across devices isn’t convenient</li>
-        </ul>
-        <h3>The Solution</h3>
-        <p>A flexible storage space that lets users store notes, images and links all in one place and smart organization tools to keep users on top of file management.
-          <br/>
-          <br/> Key design features:</p>
-        <ul>
-          <li>Introduce automated tagging to help users manage their files </li>
-          <li>Make saving easier with a browser extension added to any device making it easier to save to one place</li>
-        </ul>
-        <img src="assets/img-project/product-landingpage.svg" alt="Trove Product Landing Page"></img>
+        <br/>
+        <br/>
+        <li><span>Tools</span></li>
+        <li>Figma</li>
+        <li>Draw.io</li>
+        <li>UsabilityHub</li>
+        <li>Google Forms</li>
+      </ul>
+      <h3 class="header-summary">The Problem</h3>
+      <p>With so many cloud storage platforms on the market, is there room to throw another hat in the ring? The cloud storage industry has evolved dramatically and users needs have evolved with it. I set out to uncover the problems users face today and
+        build a product that met those needs.
+        <br/>
+        <br/><span>The main problems users experience:</span></p>
+      <ul class="indent-list">
+        <li>Finding files is difficult</li>
+        <li>Organizing files is cumbersome and requires constant upkeep</li>
+        <li>Saving links across devices isn’t convenient</li>
+      </ul>
+      <h3 class="header-summary">The Solution</h3>
+      <p>A flexible storage space that lets users store notes, images and links all in one place and smart organization tools to keep users on top of file management.
+        <br/>
+        <br/> <span>Key design features:</span></p>
+      <ul class="indent-list">
+        <li>Introduce automated tagging to help users manage their files </li>
+        <li>Make saving easier with a browser extension added to any device making it easier to save to one place</li>
+      </ul>
+      <img class="project-image" src="assets/img-project/product-homepage.svg" alt="Trove Product Landing Page"></img>
     </section>
     <section class="research">
-      <img src="assets/img-project/section-research.svg" alt="Section header: User Research"></img>
-      <section class="user-survey" <h4>USER SURVEY</h4>
+      <img class="section-header" src="assets/img-project/section-research.svg" alt="Section header: User Research"></img>
+      <section class="user-survey">
+        <h4>USER SURVEY</h4>
         <h3>ASKING THE RIGHT QUESTIONS</h3>
         <p>I started my research with a survey to discover what people were looking for in a cloud storage application, and what frustrations they currently experienced managing personal files, images, notes and bookmarks. </p>
-        <button> <a href="https://docs.google.com/forms/d/1Bmn64AFi2_xQdhujK1NSg3VVy8gn9VZjNV-0CQbAWzM/edit#responses">VIEW SURVEY</a></button>
+        <div class="button-container">
+          <a href="https://docs.google.com/forms/d/1Bmn64AFi2_xQdhujK1NSg3VVy8gn9VZjNV-0CQbAWzM/edit#responses">
+            <button>view survey</button>
+          </a>
+        </div>
       </section>
       <section class="research-highlights">
-        <h3>USER RESEARCH HIGHLIGHTS</h3>
-        <img src="assets/img-project/100-stat.svg" alt="Pie Graph showing 100%"></img>
-        <p>of respondents use cloud storage apps like Google Drive, Dropbox, Pinterest and Evernote</p>
-        <img src="assets/img-project/84-stat.svg" alt="Pie Graph showing 84%"></img>
-        <p>of respondents save content through their browser bookmark tool</p>
-        <img src="assets/img-project/68-stat.svg" alt="Pie Graph showing 68%"></img>
-        <p>of respondents said organization was important</p>
-        <img src="assets/img-project/60-stat.svg" alt="Pie Graph showing 60%"></img>
-        <p>of respondents said sharing content with others was important</p>
-        <h3>KEY INSIGHTS</h3>
-        <ul>
-          <li>People use cloud storage for everything</li>
-          <li>Organization & discoverability are pain points</li>
-          <li>Access & convenience are crucial to continued use</li>
-        </ul>
+        <div class="teal-background">
+          <h3 class="center-headers">USER RESEARCH HIGHLIGHTS</h3>
+          <div class="research-highlight-container">
+            <img class="project-image research-highlights" src="assets/img-project/100-stat.svg" alt="Pie Graph showing 100%"></img>
+            <p>of respondents use cloud storage apps like Google Drive, Dropbox, Pinterest and Evernote</p>
+          </div>
+          <div class="research-highlight-container">
+            <img class="project-image research-highlights" src="assets/img-project/84-stat.svg" alt="Pie Graph showing 84%"></img>
+            <p>of respondents save content through their browser bookmark tool</p>
+          </div>
+          <div class="research-highlight-container">
+            <img class="project-image research-highlights" src="assets/img-project/68-stat.svg" alt="Pie Graph showing 68%"></img>
+            <p>of respondents said organization was important</p>
+          </div>
+          <div class="research-highlight-container">
+            <img class="project-image research-highlights" src="assets/img-project/60-stat.svg" alt="Pie Graph showing 60%"></img>
+            <p>of respondents said sharing content with others was important</p>
+          </div>
+          <div class="research-insights">
+            <h3>KEY INSIGHTS</h3>
+            <ul class="indent-list">
+              <li>People use cloud storage for everything</li>
+              <li>Organization & discoverability are pain points</li>
+              <li>Access & convenience are crucial to continued use</li>
+            </ul>
+          </div>
+        </div>
+        <p class="percentage-population">*Percentages based on 25 participants</p>
       </section>
-      <ul>
-        <li>*Percentages based on 25 participants</li>
-      </ul>
       <section class="competitive-analysis">
         <h4>COMPETITIVE ANALYSIS</h4>
         <h3>UNDERSTANDING THE MARKET</h3>
         <p>To see where Trove fell in the market, I looked at other cloud storage products and content organization apps, such as Google Drive, Google Keep, Pocket and Pinterest. I analyzed each to find out what made them unique and where they could potentially
           improve. </p>
-        <figure>
+        <figure class="fig-row">
           <img src="assets/img-project/google-drive-logo.svg" alt="Google Drive Logo" </img>
           <img src="assets/img-project/google-keep-logo.svg" alt="Google Keep Logo" </img>
           <img src="assets/img-project/pocket-logo.svg" alt="Pocket Logo" </img>
           <img src="assets/img-project/pinterest-logo.svg" alt="Pinterest Logo" </img>
         </figure>
-        <p><span>Key insights:</span></p>
-        <ul>
+        <p class="list-heading"><span>Key insights:</span></p>
+        <ul class="indent-list">
           <li>Finding files is difficult</li>
           <li>Organizing files is cumbersome and requires constant upkeep</li>
           <li>Saving links across devices isn’t convenient</li>
         </ul>
-        <button><a href="https://docs.google.com/document/d/1jceD6vRJA6T8clbdLdKLkcsr-kC5Vl8TXjZcc5amjuk/edit?usp=sharing">VIEW SWOT ANALYSIS</a></button>
+        <div class="button-container">
+          <a href="https://docs.google.com/document/d/1jceD6vRJA6T8clbdLdKLkcsr-kC5Vl8TXjZcc5amjuk/edit?usp=sharing">
+            <button>view swot analysis</button>
+          </a>
+        </div>
       </section>
       <section class="target-audience">
         <h4>TARGET AUDIENCE</h4>
         <h3>WHO ARE THE USERS?</h3>
         <p>Based on the survey responses, I realized that Trove’s primary audience were:</p>
-        <ul>
+        <ul class="indent-list">
           <li><span>Curious individuals</span> interested in expanding their skill set and amassing knowledge </li>
           <li><span>Multi-taskers</span> who easily transition between different areas of their life—personal, professional, and/or academic</li>
           <li>Interested in <span>keeping up with industry trends</span> and/or news</li>
-          <li><span>Digitally savvy</span> individuals who <span>want access</span> to their content while <span>on the go</span></li>
+          <li><span>Digitally savvy individuals</span> who want access to their content while on the go</li>
         </ul>
-        <figure>
+        <figure class="fig-row variation">
           <img src="assets/img-project/user1.svg" alt="User Persona Icon"></img>
           <img src="assets/img-project/user2.svg" alt="User Persona Icon"></img>
           <img src="assets/img-project/user3.svg" alt="User Persona Icon"></img>
@@ -145,46 +192,77 @@
         <h4>USER PERSONAS</h4>
         <h3>BRINGING THE USERS TO LIFE</h3>
         <p>Now that I had a clear idea of my users and their goals, I used the insights from two survey respondents to develop two different personas. </p>
-        <img src="assets/img-project/persona-planner@2x.png" alt="User Persona 1 - woman sitting in a coffee shop"></img>
-        <h3>Mira Koval</h3>
-        <p>Policy Advisor, 30</p>
-        <p class="persona-text"><span>Goals</span>
+        <img class="project-image" src="assets/img-project/persona-planner@2x.png" alt="User Persona 1 - woman sitting in a coffee shop"></img>
+        <div class="persona-text">
+          <h3>Mira Koval</h3>
+          <p>Policy Advisor, 30</p>
+          <p class="list-heading"><span>Goals</span>
+            <br/>“I like writing notes and saving things as I see them. I like to keep them organized in a meaningful way, so I can find them later on.”
+            <br/>
+          </p>
+          <p class="list-heading"><span>Frustration</span>
+            <br/>“I spend the majority of my day attending meetings, writing emails, organizing files for different projects. Searching for things I’ve seen in passing and digging through emails are inevitable parts of my day.”
+            <br/>
+          </p>
+        </div>
+        <img class="project-image" src="assets/img-project/persona-creative@2x.png" alt="User Persona 2 - man laughing in front of trees"></img>
+        <div class="persona-text">
+          <h3>Lucas Silva</h3>
+          <p>College Students, 21</p>
+          <p class="list-heading"><span>Goals</span>
+            <br/>“I spend most of my time creating and sharing projects, sketching and writing notes during lectures. I like to save articles to Pocket and browses project ideas on Pinterest. I want to be able to organize my work without thinking too hard
+            and be able to send links or videos to friends and classmates.”
+            <br/>
+          </p>
           <br/>
-          <br/>“I like writing notes and saving things as I see them. I like to keep them organized in a meaningful way, so I can find them later on.”
-          <br/>
-          <br/><span>Frustration</span>
-          <br/>
-          <br/>“I spend the majority of my day attending meetings, writing emails, organizing files for different projects. Searching for things I’ve seen in passing and digging through emails are inevitable parts of my day.”</p>
-        <img src="assets/img-project/persona-creative@2x.png" alt="User Persona 2 - man laughing in front of trees"></img>
-        <h3>Lucas Silva</h3>
-        <p>College Students, 21</p>
-        <p class="persona-text"><span>Goals</span>
-          <br/>
-          <br/>“I spend most of my time creating and sharing projects, sketching and writing notes during lectures. I like to save articles to Pocket and browses project ideas on Pinterest. I want to be able to organize my work without thinking too hard and
-          be able to send links or videos to friends and classmates.”
-          <br/>
-          <br/><span>Frustration</span>
-          <br/>
-          <br/>“I use a lot of apps to bookmark things on my computer and phone--sometimes it’s hard to remember where I put them. I don’t spend a lot of time organizing my files. It’s an absolute nightmare finding things I need.”</p>
-        <button><a href="https://drive.google.com/open?id=1bz8uxpD7y3Lf7UyGVHqsbGwXkmEeHseY">VIEW PERSONAS</a></button>
+          <p class="list-heading"><span>Frustration</span>
+            <br/>“I use a lot of apps to bookmark things on my computer and phone--sometimes it’s hard to remember where I put them. I don’t spend a lot of time organizing my files. It’s an absolute nightmare finding things I need.”
+            <br/>
+          </p>
+        </div>
+        <div class="button-container">
+          <a href="https://drive.google.com/open?id=1bz8uxpD7y3Lf7UyGVHqsbGwXkmEeHseY">
+            <button>view personas</button>
+          </a>
+        </div>
       </section>
     </section>
     <section class="information-architecture">
-      <img src="assets/img-project/section-architecture.svg" alt="Section header: Information Architecture"></img>
-      <section class="user-stories" <h4>USER STORIES</h4>
+      <img class="section-header" src="assets/img-project/section-architecture.svg" alt="Section header: Information Architecture"></img>
+      <section class="user-stories">
+        <h4>USER STORIES</h4>
         <h3>FOCUSING ON THE MVP</h3>
         <p>With the personas and user research in mind, I put together a list of user stories to prioritize a handful of tasks users might accomplish. I divided them by new and returning users, and determined which stories were highlighted in the project
           brief and which emerged out of the user research.
           <br/>
           <br/>The high priority user tasks resulted in the <span>MVP</span>.</p>
-        <figure>
-          <img src="assets/img-project/user-story1.svg" alt="user persona 1 - I want to create an account"><img>
-          <img src="assets/img-project/user-story2.svg" alt="user persona 2 - I want to add a new note"><img>
-          <img src="assets/img-project/user-story3.svg" alt="user persona 3 - I to save content from the web"><img>
-          <img src="assets/img-project/user-story4.svg" alt="user persona 4 - I want to search for an item"><img>
-          <img src="assets/img-project/user-story5.svg" alt="user persona 5 - I want to move items to a new location"><img>
+        <figure class="fig-row">
+          <div class="user-story">
+            <img src="assets/img-project/user-story1.svg" alt="user persona 1"></img>
+            <figcaption>I want to create an account</figcaption>
+          </div>
+          <div class="user-story">
+            <img src="assets/img-project/user-story2.svg" alt="user persona 2"></img>
+            <figcaption>I want to add a new note</figcaption>
+          </div>
+          <div class="user-story">
+            <img src="assets/img-project/user-story3.svg" alt="user persona 3"></img>
+            <figcaption> I want to save content from the web</figcaption>
+          </div>
+          <div class="user-story">
+            <img src="assets/img-project/user-story4.svg" alt="user persona 4"></img>
+            <figcaption> I want to search for an item</figcaption>
+          </div>
+          <div class="user-story">
+            <img src="assets/img-project/user-story5.svg" alt="user persona 5"></img>
+            <figcaption>I want to move items to a new location</figcaption>
+          </div>
         </figure>
-        <button> <a href="https://docs.google.com/spreadsheets/d/15gvdoQRDyPlC4c4NhYPhdsZxgBsEjZs-L0mo3ixvIKE/edit#gid=0">VIEW STORIES</a></button>
+        <div class="button-container">
+          <a href="https://docs.google.com/spreadsheets/d/15gvdoQRDyPlC4c4NhYPhdsZxgBsEjZs-L0mo3ixvIKE/edit#gid=0">
+            <button>view stories</button>
+          </a>
+        </div>
       </section>
       <section class="user-flow">
         <h4>USER FLOWS & SITE MAP</h4>
@@ -192,48 +270,58 @@
         <p>From there, I began sketching user flows to visualize how users would interact with the product to achieve their goals.
           <br/>
           <br/>After establishing how users would interact with Trove, I needed to organize the structure of the site. I did this by identifying all the destinations in the user flows and structuring them into a logical framework. </p>
-        <button><a href="https://drive.google.com/open?id=1xtrWikkViRXn2RHeWRSIDUxRopQDviDe">VIEW USER FLOWS</a></button>
-        <button><a href="https://drive.google.com/open?id=1iE1awgFORGEnK8iIujFUDvfQjqaRw6sd">VIEW SITE MAP</a></button>
         <figure>
-          <img src="assets/img-project/user-flow.svg" alt="User flow showing how a user adds content"><img>
-          <figcaption>User flow to add content</figcaption>
+          <img class="project-image" src="assets/img-project/user-flow.svg" alt="User flow showing how a user adds content"><img>
+          <figcaption>Above: User flow to add content</figcaption>
         </figure>
+        <div class="button-container">
+          <a href="https://drive.google.com/open?id=1xtrWikkViRXn2RHeWRSIDUxRopQDviDe">
+            <button>view user flows</button>
+          </a>
+        </div>
+        <div class="button-container">
+          <a href="https://drive.google.com/open?id=1iE1awgFORGEnK8iIujFUDvfQjqaRw6sd">
+            <button>view site map</button>
+          </a>
+        </div>
       </section>
       <section class="wireframe">
         <h4>WIREFRAMES</h4>
         <h3>SKETCHING & LOW-FI WIREFRAMES</h3>
-        <p>With Trove’s hierarchy defined, I began sketching early mockups to visualize information on the page looking to the user stories, user flows and site map for guidance. I did continuous rounds of sketches <span>focusing on simple navigation</span>          and <span>intuitive ways to organize</span>.
-          <br/>
-          <br/><span>Strategic design decisions:</span></p>
-        <ul>
+        <p>With Trove’s hierarchy defined, I began sketching early mockups to visualize information on the page looking to the user stories, user flows and site map for guidance. I did continuous rounds of sketches focusing on <span>simple navigation</span>          and <span>intuitive ways to organize</span></p>.
+        <p class="list-heading"><span>Strategic design decisions:</span></p>
+        <ul class="indent-list">
           <li>Side navigation bar </li>
           <li>Clear create/add button </li>
           <li>Frequent modal windows to simplify the site architecture</li>
         </ul>
         <figure>
-          <img src="assets/img-project/sketches.svg" alt="Early prototype sketches"></img>
+          <img class="project-image" src="assets/img-project/sketches.svg" alt="Early prototype sketches"></img>
           <figcaption>Early prototype sketches</figcaption>
         </figure>
-        <section class="wireframe-group">
+        <div class="teal-background">
           <figure>
-            <img src="assets/img-project/wireframe1-dashboard.svg" alt="Low-fi Wireframe of the main dashboard"></img>
-            <img src="assets/img-project/wireframe2-add.svg" alt="Low-fi Wireframe of how to add a note"></img>
-            <img src="assets/img-project/wireframe3-view-tags.svg" alt="Low-fi Wireframe of the tags page"></img>
-            <img src="assets/img-project/wireframe4-bookmark-added.svg" alt="Low-fi Wireframe of confirmation screen when user adds a bookmark"></img>
-            <img src="assets/img-project/wireframe5-tag.svg" alt="Low-fi Wireframes of saving a link"></img>
-            <img src="assets/img-project/wireframe6-shared.svg" alt="Low-fi Wireframe showing shared items"></img>
+            <img class="project-image" src="assets/img-project/wireframe1-dashboard.svg" alt="Low-fi Wireframe of the main dashboard"></img>
+            <img class="project-image" src="assets/img-project/wireframe2-add.svg" alt="Low-fi Wireframe of how to add a note"></img>
+            <img class="project-image" src="assets/img-project/wireframe3-view-tags.svg" alt="Low-fi Wireframe of the tags page"></img>
+            <img class="project-image" src="assets/img-project/wireframe4-bookmark-added.svg" alt="Low-fi Wireframe of confirmation screen when user adds a bookmark"></img>
+            <img class="project-image" src="assets/img-project/wireframe5-tag.svg" alt="Low-fi Wireframes of saving a link"></img>
+            <img class="project-image" src="assets/img-project/wireframe6-shared.svg" alt="Low-fi Wireframe showing shared items"></img>
           </figure>
-        </section>
-        <button><a href="https://drive.google.com/open?id=1ugTJhTjkt9zJfHJvZkVIqm_CNKNLBWcR">VIEW WIREFRAMES</a></button>
+        </div>
+        <div class="button-container">
+          <a href="https://drive.google.com/open?id=1ugTJhTjkt9zJfHJvZkVIqm_CNKNLBWcR">
+            <button>view wireframes</button>
+          </a>
+        </div>
       </section>
       <section class="early-testing">
         <h4>USER TESTING</h4>
         <h3>EARLY FEEDBACK FROM USERS</h3>
         <p>I worked through several iterations of clickable prototypes before conducting four usability tests to collect some early feedback. Users successfully navigated crucial flows, such as signing up for a new account, adding note, uploading a file
-          and sorting content by tags.
-          <br/>
-          <br/> <span>Based on the user feedback, I made the following changes:</span></p>
-        <ul>
+          and sorting content by tags.</p>
+        <p class="list-heading"><span>Based on the user feedback, I made the following changes:</span></p>
+        <ul class="indent-list">
           <li>Adding categories as another way to organize content</li>
           <li>Refining language</li>
           <li>Removing icons</li>
@@ -241,18 +329,18 @@
           <li>Adding more visual feedback and descriptors</li>
         </ul>
         <figure>
-          <figcaption>Before - Dashboard <span>without Categories</span></figcaption>
-          <img src="assets/img-project/testing-categories-before.svg" alt="Low-fi wireframe of dashboard without categories"></img>
-          <img src="assets/img-project/straight-arrow.svg" alt="down arrow"></img>
-          <img src="assets/img-project/testing-categories-after.svg" alt="Low-fi wireframe of dashboard with categories added"></img>
-          <figcaption>After - Dashboard <span>with Categories</span></figcaption>
+          <figcaption>Below: Dashboard <span>without Categories</span></figcaption>
+          <img class="project-image" src="assets/img-project/testing-categories-before.svg" alt="Low-fi wireframe of dashboard without categories"></img>
+          <img class="arrow" src="assets/img-project/straight-arrow.svg" alt="down arrow"></img>
+          <img class="project-image" src="assets/img-project/testing-categories-after.svg" alt="Low-fi wireframe of dashboard with categories added"></img>
+          <figcaption>Above: Dashboard <span>with Categories</span></figcaption>
         </figure>
       </section>
     </section>
-    <section>
-      <img src="assets/img-project/section-branding.svg" alt="Section header: Branding"></img>
+    <section class="branding">
+      <img class="section-header" src="assets/img-project/section-branding.svg" alt="Section header: Branding"></img>
       <section class="moodboard">
-        <img src="assets/img-project/moodboard.svg" alt="Moodboard showing a collage of images"></img>
+        <img class="project-image" src="assets/img-project/moodboard@1x.png" alt="Moodboard showing a collage of images"></img>
         <h4>BUILDING A BRAND</h4>
         <h3>STRIKING THE RIGHT TONE</h3>
         <p>Trove serves a digitally savvy user population with an insatiable curiosity to learn and share with their communities. They are smart, engaged individuals seeking a product that fits their lifestyle. I landed on the brand name Trove, which is
@@ -264,125 +352,151 @@
         <p>I choose a color palette that was <span>calming and relaxing to reduce stress.</span> The blue exudes dependability and inspires trust, while teal is rejuvenating and associated with <span>clarity of mind and creativity</span>.
           <br/>
           <br/>For the typography, I paired the <span>modern serif</span> Lustria with the clean lines of Hind to <span>promote readability</span> and style.</p>
-        <img src="assets/img-project/color-typography@1.5.png" alt="Image of color palette and typography choices"></img>
-        <button><a href="https://drive.google.com/open?id=1tXd7Q2L9r1Vcsqbu6kcddIPRO7soKyj9">VIEW STYLE GUIDE</a></button>
+        <img class="project-image" src="assets/img-project/color-typography.svg" alt="Image of color palette and typography choices"></img>
+        <div class="button-container">
+          <a href="https://drive.google.com/open?id=1tXd7Q2L9r1Vcsqbu6kcddIPRO7soKyj9">
+            <button>view style guide</button>
+          </a>
+        </div>
       </section>
       <section class="logo">
-        <figure>
-          <img src="assets/img-project/logo.svg" alt="Image of early sketches and final logo"></img>
-          <figcaption>Above: Early sketches. Middle: Early logo directions. Below: The final logo</figcaption>
-        </figure>
         <h4>LOGO DESIGN</h4>
         <h3>CREATING A BRAND IDENTITY</h3>
         <p>I went through several sketches and iterations before landing on the final logo with input from senior designers. I ended up with three directions for the logo:</p>
-        <ul>
+        <ul class="indent-list">
           <li>A box encased in the “V” to represent treasured items a user stores in Trove</li>
           <li>A modern hand-drawn typeface drawing parallels to Trove’s smart and modern user base</li>
           <li>A treasure chest or compass to play off the brand name</li>
         </ul>
         <p>I landed on a simple wordmark in Julius Sans One with an accompanying icon. The typography has a sophisticated touch that makes it feel balanced and reliable. While the curvature of the ‘R’ adds a bit of personal flare. The diamond icon is versatile
           and stands out as a memorable icon. </p>
+        <figure>
+          <img class="project-image" src="assets/img-project/logo.svg" alt="Image of early sketches and final logo"></img>
+          <figcaption>Top: Early sketches. Middle: Early logo directions. Bottom: The final logo</figcaption>
+        </figure>
       </section>
     </section>
     <section class="user-testing">
-      <img src="assets/img-project/section-visual-testing.svg" alt="Section header: Visual Design and Testing"></img>
-      <p>After gathering some early feedback from user testing and developing the brand identity, I transformed my wireframes into high fidelity mockups breathing life and color into the final prototype. </p>
+      <img class="section-header" src="assets/img-project/section-visual-testing.svg" alt="Section header: Visual Design and Testing"></img>
+      <p class="section-summary">After gathering some early feedback from user testing and developing the brand identity, I transformed my wireframes into high fidelity mockups breathing life and color into the final prototype. </p>
       <section class="a-b-testing">
         <h4>USER TESTING</h4>
         <h3>A/B TESTING</h3>
         <p>To test some of my design decisions, I conducted several preference tests using UsabilityHub and consulted senior designers. </p>
-        <section class="a-b-testing-group">
-          <p class="a-b-header">Screen A</p>
-          <figure>
-            <figcaption>Hero image [above] and sign up screen [below]</figcaption>
-            <img src="assets/img-project/testing-hero-image.svg" alt="Product hero image"></img>
-            <img src="assets/img-project/a-b-testing-screen1.svg" alt="Product sign up screen A"></img>
-            <p class="a-b-header">Screen B</p>
-            <figcaption>Hero image [above] and sign up screen [below]</figcaption>
-            <img src="assets/img-project/testing-hero-image.svg" alt="Product hero image"></img>
-            <img src="assets/img-project/a-b-testing-screen2.svg" alt="Product sign up screen B"></img>
-          </figure>
-          <p><span>Content Preference Test</span>: Sign up background images
-            <br/>
-            <br/> I asked users which sign up background image best reflected the brand identity. I included the hero image for context since it provides the clearest insight into the branding direction.
-            <br/>
-            <br/> Although the data wasn’t statistically significant, users felt that both images conveyed a similar calming and positive vibe. Users felt that the Screen A followed the brand identity slightly more than the second.</p>
-          <ul>
-            <li>*Based on 26 participants</li>
-          </ul>
+          <section class="a-b-testing-group">
+            <div class="teal-background">
+              <p class="a-b-header"><span>Screen A</span></p>
+              <figure>
+                <img class="project-image" src="assets/img-project/testing-hero-image.svg" alt="Product hero image"></img>
+                <img class="project-image" src="assets/img-project/a-b-testing-screen1.svg" alt="Product sign up screen A"></img>
+                <figcaption>Hero image [above] and sign up screen [below]</figcaption>
+                <br/>
+                <br/>
+                <p class="a-b-header"><span>Screen B<span></p>
+                <img class="project-image" src="assets/img-project/testing-hero-image.svg" alt="Product hero image"></img>
+                <img class="project-image" src="assets/img-project/a-b-testing-screen2.svg" alt="Product sign up screen B"></img>
+                <figcaption>Hero image [above] and sign up screen [below]</figcaption>
+              </figure>
+              <br/>
+              <p><span>Content Preference Test</span>: Sign up background images
+                  <br/>
+                  <br/> I asked users which sign up background image best reflected the brand identity. I included the hero image for context since it provides the clearest insight into the branding direction.
+                  <br/>
+                  <br/> Although the data wasn’t statistically significant, users felt that both images conveyed a similar calming and positive vibe. Users felt that the Screen A followed the brand identity slightly more than the second.</p>
+            </div>
+            <p class="percentage-population">*Based on 26 participants</p>
+            <div class="button-container">
+              <a href="https://docs.google.com/document/d/1omdo9-qCXfEJkhejyL0SWeB3I2frVuPcQBg69_POblM/edit?usp=sharing">
+                <button>view analysis</button>
+              </a>
+            </div>
+          </section>
         </section>
-        <button><a href="https://docs.google.com/document/d/1omdo9-qCXfEJkhejyL0SWeB3I2frVuPcQBg69_POblM/edit?usp=sharing">VIEW ANALYSIS</a></button>
       </section>
       <section class="hi-fi-testing">
         <h4>USER TESTING</h4>
         <h3>TESTING PROTOTYPE USABILITY</h3>
-        <p>Using my high fidelity prototype, I conducted another four usability tests to assess how users handled crucial user flows and how they responded to visual elements.
-          <br/>
-          <br/><span>Tasks tested:</span></p>
-        <ul>
+        <p>Using my high fidelity prototype, I conducted another four usability tests to assess how users handled crucial user flows and how they responded to visual elements.</p>
+        <p class="list-heading"><span>Tasks tested:</span></p>
+        <ul class="indent-list">
           <li>Signing up for a new account</li>
           <li>Adding a note to the dashboard</li>
           <li>Sharing a file, searching for a file</li>
           <li>Navigating to a specific category</li>
           <li>Adding a tag to a file </li>
         </ul>
-        <button><a href="https://docs.google.com/document/d/1jZ_SnHuO0DGDF1Kc-3Ssa4_oY7tgpvxTLEMgSDb5agc/edit?usp=sharing">VIEW USABILITY SCRIPT</a></button>
-        <p>Armed with fresh insights from my users, <span>a few things were clear:</span>
-          <br/>
-          <br/><span>1) The categories weren’t working.</span> Several users didn’t understand the functional difference between categories and tags and I realized they were absolutely right. I wanted to make it easier for users to organize, but I soon realized
-          it was at the expense of other organization features that had been validated by user testing, so I nixed the categories!</p>
-        <figure>
-          <figcaption>Before - Categories page</figcaption>
-          <img src="assets/img-project/hifi-testing-category-before.svg" alt="Product dashboard showing category design before change"></img>
-          <img src="assets/img-project/straight-arrow.svg" alt="Down arrow"></img>
-          <img src="assets/img-project/hifi-testing-tags-page-after.svg" alt="Product dashboard showing tag design after removing categories"></img>
-          <figcaption>After - Tags page</figcaption>
-        </figure>
-        <p><span>2) Viewing tags was less important than I anticipated.</span>This was something that I tested through preference testing, but the results were not statistically significant, so I followed up with my users during testing. On the whole, users
-          liked the clickable icon to view all the tags in a separate dropdown, so I made the change. Users also noted that it made the interface feel less cluttered when the tags were accessible via an icon. </p>
-        <figure>
-          <figcaption>Before - Tags shown on content cards</figcaption>
-          <img src="assets/img-project/hifi-testing-tags-before.svg" alt="content card showing tags"></img>
-          <img src="assets/img-project/straight-arrow.svg" alt="Down arrow"></img>
-          <img src="assets/img-project/hifi-testing-tags-after.svg" alt="content card showing tag icon"></img>
-          <figcaption>After - Tags collapsed to an icon and dropdown menu</figcaption>
-        <figure>
-        <p><span>3) Clarifying the product’s tagline wasn’t a bad idea.</span>Although most users agreed the hero image was inspiring and reflected the creativity brand, I modified the sub-tagline to include the term “cloud storage tool” to reinforce that
-          this was, in fact, a cloud storage application. </p>
-        <figure>
-          <figcaption>Before - Branding tagline</figcaption>
-          <img src="assets/img-project/hifi-testing-tagline-before.svg" alt="Hero image with tagline reading: Trove stores all your favorite things in one place."></img>
-          <img src="assets/img-project/straight-arrow.svg" alt="down arrow"></img>
-          <img src="assets/img-project/hifi-testing-tagline-after.svg" alt="Hero image with tagline reading: Trove is a cloud storage platform that stores all your favorite things in one place."></img>
-          <figcaption>After - Branding tagline</figcaption>
-        </figure>
+        <div class="button-container">
+          <a href="https://docs.google.com/document/d/1jZ_SnHuO0DGDF1Kc-3Ssa4_oY7tgpvxTLEMgSDb5agc/edit?usp=sharing">
+            <button>view usability script</button>
+          </a>
+        </div>
+        <div class="testing-changes">
+          <p>Armed with fresh insights from my users, <span>a few things were clear:</span>
+            <br/>
+            <br/><span>1) The categories weren’t working.</span> Several users didn’t understand the functional difference between categories and tags and I realized they were absolutely right. I wanted to make it easier for users to organize, but I soon realized
+            it was at the expense of other organization features that had been validated by user testing, so I nixed the categories!</p>
+          <figure>
+            <figcaption>Before - Categories page</figcaption>
+            <!-- these images aren't showing project-image properties -->
+            <img class="project-image" src="assets/img-project/hifi-testing-category-before@1.5x.png" alt="Product dashboard showing category design before change"></img>
+            <img class="arrow" src="assets/img-project/straight-arrow.svg" alt="Down arrow"></img>
+            <img class="project-image" src="assets/img-project/hifi-testing-tags-page-after@1.5x.png" alt="Product dashboard showing tag design after removing categories"></img>
+            <figcaption>After - Tags page</figcaption>
+          </figure>
+          <p><span>2) Viewing tags was less important than I anticipated. </span>This was something that I tested through preference testing, but the results were not statistically significant, so I followed up with my users during testing. On the whole,
+            users liked the clickable icon to view all the tags in a separate dropdown, so I made the change. Users also noted that it made the interface feel less cluttered when the tags were accessible via an icon. </p>
+          <figure>
+            <figcaption>Before - Tags shown on content cards</figcaption>
+            <img class="project-image" src="assets/img-project/hifi-testing-tags-before.svg" alt="content card showing tags"></img>
+            <img class="arrow" src="assets/img-project/straight-arrow.svg" alt="Down arrow"></img>
+            <img class="project-image" src="assets/img-project/hifi-testing-tags-after.svg" alt="content card showing tag icon"></img>
+            <figcaption>After - Tags collapsed to an icon and dropdown menu</figcaption>
+          </figure>
+          <p><span>3) Clarifying the product’s tagline wasn’t a bad idea. </span>Although most users agreed the hero image was inspiring and reflected the creativity brand, I modified the sub-tagline to include the term “cloud storage tool” to reinforce
+            that this was, in fact, a cloud storage application. </p>
+          <figure>
+            <figcaption>Before - Branding tagline</figcaption>
+            <img class="project-image" src="assets/img-project/hifi-testing-tagline-before.svg" alt="Hero image with tagline reading: Trove stores all your favorite things in one place."></img>
+            <img class="arrow" src="assets/img-project/straight-arrow.svg" alt="down arrow"></img>
+            <img class="project-image" src="assets/img-project/hifi-testing-tagline-after.svg" alt="Hero image with tagline reading: Trove is a cloud storage platform that stores all your favorite things in one place."></img>
+            <figcaption>After - Branding tagline</figcaption>
+          </figure>
+        </div>
       </section>
       <section class="final-prototype">
-        <img src="assets/img-project/section-prototype.svg" alt="Section header: the final prototype"></img>
-        <p>After spending several days linking over 70 screens and modal windows, <span>I finally had my MVP.</span></p>
-        <section class="final-prototype-group">
+        <img class="section-header" src="assets/img-project/section-prototype.svg" alt="Section header: the final prototype"></img>
+        <p class="section-summary">After spending several days linking over 70 screens and modal windows, <span>I finally had my MVP.</span></p>
+        <div class="teal-background">
           <figure>
-            <img src="assets/img-project/prototype-screen1.svg" alt="Trove Product: Sign up screen"></img>
-            <img src="assets/img-project/prototype-screen2.svg" alt="Trove Product: Password Reset screen"></img>
-            <img src="assets/img-project/prototype-screen3.svg" alt="Trove Product: Blank state dashboard"></img>
-            <img src="assets/img-project/prototype-screen4.svg" alt="Trove Product: Main dashboard"></img>
-            <img src="assets/img-project/prototype-screen5.svg" alt="Trove Product: upload files"></img>
-            <img src="assets/img-project/prototype-screen6.svg" alt="Trove Product: Add files to a folder"></img>
-            <img src="assets/img-project/prototype-screen7.svg" alt="Trove Product: Move files modal window"></img>
-            <img src="assets/img-project/prototype-screen8.svg" alt="Trove Product: view search results"></img>
-            <img src="assets/img-project/prototype-screen9.svg" alt="Trove Product: Add content dropdown menu"></img>
-            <img src="assets/img-project/prototype-screen10.svg" alt="Trove Product: Add a new note"></img>
-            <img src="assets/img-project/prototype-screen11.svg" alt="Trove Product: image opened from dashboard"></img>
-            <img src="assets/img-project/prototype-screen12.svg" alt="Trove Product: List of file folder"></img>
-            <img src="assets/img-project/prototype-screen13.svg" alt="Trove Product: New bookmark modal window"></img>
-            <img src="assets/img-project/prototype-screen14.svg" alt="Trove Product: Items tagged as personal"></img>
+            <img class="project-image" src="assets/img-project/prototype-screen1.svg" alt="Trove Product: Sign up screen"></img>
+            <img class="project-image" src="assets/img-project/prototype-screen2.svg" alt="Trove Product: Password Reset screen"></img>
+            <img class="project-image" src="assets/img-project/prototype-screen3.svg" alt="Trove Product: Blank state dashboard"></img>
+            <img class="project-image" src="assets/img-project/prototype-screen4.svg" alt="Trove Product: Main dashboard"></img>
+            <img class="project-image" src="assets/img-project/prototype-screen5.svg" alt="Trove Product: upload files"></img>
+            <img class="project-image" src="assets/img-project/prototype-screen6.svg" alt="Trove Product: Add files to a folder"></img>
+            <img class="project-image" src="assets/img-project/prototype-screen7.svg" alt="Trove Product: Move files modal window"></img>
+            <img class="project-image" src="assets/img-project/prototype-screen8.svg" alt="Trove Product: view search results"></img>
+            <img class="project-image" src="assets/img-project/prototype-screen9.svg" alt="Trove Product: Add content dropdown menu"></img>
+            <img class="project-image" src="assets/img-project/prototype-screen10.svg" alt="Trove Product: Add a new note"></img>
+            <img class="project-image" src="assets/img-project/prototype-screen11.svg" alt="Trove Product: image opened from dashboard"></img>
+            <img class="project-image" src="assets/img-project/prototype-screen12.svg" alt="Trove Product: List of file folder"></img>
+            <img class="project-image" src="assets/img-project/prototype-screen13.svg" alt="Trove Product: New bookmark modal window"></img>
+            <img class="project-image" src="assets/img-project/prototype-screen14.svg" alt="Trove Product: Items tagged as personal"></img>
           </figure>
-        </section>
-        <button><a href="https://www.figma.com/proto/Aa7ce804QgYFxzQT7wpeqw/Trove-Cloud-Storage?node-id=0%3A1&viewport=283%2C68%2C0.036343906074762344&scaling=min-zoom">VIEW PROTOTYPE</a></button>
-        <button><a href="https://drive.google.com/open?id=1LuT76ZMJi2OYRoDYwteHuIVq03jf0UsN">VIEW ALL SCREENS</a></button>
+        </div>
+        <div class="button-container">
+          <a href="https://www.figma.com/proto/Aa7ce804QgYFxzQT7wpeqw/Trove-Cloud-Storage?node-id=0%3A1&viewport=283%2C68%2C0.036343906074762344&scaling=min-zoom">
+            <button>view prototype</button>
+          </a>
+        </div>
+        <div class="button-container">
+          <a href="https://drive.google.com/open?id=1LuT76ZMJi2OYRoDYwteHuIVq03jf0UsN">
+            <button>view all screens</button>
+          </a>
+        </div>
       </section>
       <section class="conclusion">
-        <img src="assets/img-project/section-conclusion.svg" alt="Section header: Conclusion"></img>
+        <img class="section-header" src="assets/img-project/section-conclusion.svg" alt="Section header: Conclusion"></img>
         <h4>CONCLUSION</h4>
         <h3>BRINGING IT ALL TOGETHER</h3>
         <p>I sought to create a flexible storage space that allowed users to upload, add and save content easily, and the user testing proves that these tasks were highly intuitive. One thing I did not expect was how the product started to align with a personal
@@ -391,33 +505,39 @@
         <h3>LESSONS LEARNED</h3>
         <ul>
           <li><span>Stick to the challenges at hand and avoid tackling everything </span>
-            <br/>
             <br/> Going into this project, I found it difficult to settle on a direction. Not only was I skeptical about how to create a better product than some of the competitors on the market, I wanted to tackle all the problems that existed. In doing so,
             there were times when I lost sight of the original problems present in my research. </li>
+          <br/>
           <li><span>Consistency is everything</span>
-            <br/>
             <br/>The biggest challenge was maintaining consistency across UI elements and establishing patterns for user interaction and animations early on. Making a list of how elements would interact with one another was a good way to keep me in check.</li>
+          <br/>
           <li><span>Empathy</span>
-            <br/>
             <br/>Throughout the project, I repeatedly asked myself how users would respond to different scenarios and tried to make strategic decisions based on the data, which worked out most of the time (the categories being the only pitfall!). Overwhelmingly,
             users commented on the product’s intuitive feel and soothing colors, accurately describing the feeling I hoped to convey through the design.</li>
+          <br/>
         </ul>
-      </section>
-      <section class="contact">
-        <h2>Want to learn more?</h2>
-        <p>Please feel free to contact me anytime.</p>
-        <button>Get in Touch</button>
-        <img src="assets/img/back-to-top-arrow.svg" alt="Back to top arrow"></img>
       </section>
       <footer class="footer">
-        <ul>
-          <li> <a href="https://linkedin.com/in/laurahundersmarck/"><i class="fab fa-linkedin"></i></a> </li>
-          <li> <a href="https://github.com/lhundersmarck"><i class="fab fa-github-square"></i></a> </li>
-          <li> <a href="mailto:laurahundersmarck@gmail.com"><i class="fas fa-envelope"></i></a> </li>
-          <li> <a href="https://lhundersmarck.wixsite.com/photo"><i class="fas fa-camera"></i></a> </li>
-        </ul>
-        <i class="far fa-copyright"></i>
-        <p>Laura Hundersmarck</p>
+        <div class="contact">
+          <h2>Want to learn more?</h2>
+          <p>Please feel free to contact me anytime.</p>
+          <div class="button-container">
+            <a href="mailto:laurahundersmarck@gmail.com">
+              <button>Get in Touch</button>
+            </a>
+          </div>
+          <img src="assets/img/back-to-top-arrow.svg" alt="back to top arrow"></img>
+        </div>
+        <div class="footer-icons">
+          <ul>
+            <li> <a href="https://linkedin.com/in/laurahundersmarck/"><i class="fab fa-linkedin"></i></a> </li>
+            <li> <a href="https://github.com/lhundersmarck"><i class="fab fa-github-square"></i></a> </li>
+            <li> <a href="mailto:laurahundersmarck@gmail.com"><i class="fas fa-envelope"></i></a> </li>
+            <li> <a href="https://lhundersmarck.wixsite.com/photo"><i class="fas fa-camera"></i></a> </li>
+          </ul>
+          <p>Laura Hundersmarck 2019.
+            <br/> All Rights Reserved.</p>
+        </div>
       </footer>
   </div>
 </body>

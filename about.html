@@ -7,29 +7,54 @@
     <link href="https://fonts.googleapis.com/css?family=Assistant:400,600,700|Gilda+Display&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/mobile-menu.css">
     <script src="https://kit.fontawesome.com/d7c1e28c2f.js"></script>
+    <script src="js/mobile-menu.js"></script>
   </head>
   <body>
-    <div class="container">
-      <!-- hero unit -->
-      <section class="about-hero">
-        <img class="about-hero-headshot" src="assets/img/bio-image.svg" alt="Headshot"></img>
-        <nav class="about-nav">
-          <img class="about-nav-logo" src="assets/img/mobile-logo.svg" alt="logo"></img>
-          <img class="about-nav-menu" src="assets/img/mobile-menu.svg" alt="menu"></img>
-           <a href="index.html">home</a>
-           <a href="project.html">project</a>
+    <!-- hero unit -->
+    <section class="about-hero">
+      <div class="mobile-menu-container">
+        <nav>
+          <a href="index.html"><img class="mobile-logo" src="assets/img/mobile-logo.svg" alt="logo"></img></a>
+          <div class="mobile-menu" onclick="toggleMobileMenu(this)">
+            <div class="mobile-menu-bar-1"></div>
+            <div class="mobile-menu-bar-2"></div>
+            <div class="mobile-menu-bar-3"></div>
+          </div>
+          <div class="mobile-menu-list-container">
+            <ul class="mobile-menu-list">
+              <a href="index.html">
+                <li onclick="toggleMobileMenuItem()">Work</li>
+              </a>
+              <a href="about.html">
+                <li onclick="toggleMobileMenuItem()">
+                  About
+                </li>
+              </a>
+              <a href="mailto:laurahundersmarck@gmail.com">
+                <li onclick="toggleMobileMenuItem()">
+                  Contact
+                </li>
+              </a>
+            </ul>
+          </div>
         </nav>
+      </div>
+      <img class="about-hero-headshot" src="assets/img/bio-image.svg" alt="Headshot"></img>
+    </section>
+    <div class="container">
+      <div>
         <h1>Hi, my name is Laura.</h1>
         <p>I’m a UX/UI designer based in Philadelphia. My background is in photography and 3D design in the cultural heritage field. I’m committed to using my industry knowledge and experiences abroad to create meaningful digital products that translate across a range of mediums and bring people together. <br/><br/>I am currently available for a full-time position or freelance opportunities. Also happy to relocate!</p>
-      </section>
+      </div>
       <section class="about-background">
-        <img class="about-section-header" src="assets/img/section-background.svg" alt="Section header: Background"></img>
-        <p>At 17 years old, I spent a year as an exchange student in a rural town in Brazil. The chance to learn the rules of a different culture was both thrilling and transformative.
+        <img class="section-header" src="assets/img/section-background.svg" alt="Section header: Background"></img>
+        <p class= "about-paragraph">At 17 years old, I spent a year as an exchange student in a rural town in Brazil. The chance to learn the rules of a different culture was both thrilling and transformative.
         <br/><br/>Over the next decade, I traveled as much as I could, eager to step into someone else’s shoes. I like to observe, to listen to people and find out how things work.
         <br/><br/>The ability to step into someone’s shoes is what user experience design is all about.</p>
         <br/><br/><p class="quote">What has made me a curious traveler is the same thing that makes me a successful UX designer - the ability to adapt to changing situations and listen to people’s needs in order to better serve them.</p>
-        <p><br/>My encounters abroad drive me to create experiences that translate across a range of mediums and connect people from different cultural backgrounds.</p>
+        <p class= "about-paragraph"><br/>My encounters abroad drive me to create experiences that translate across a range of mediums and connect people from different cultural backgrounds.</p>
         <figure>
           <img class="about-image" src="assets/img/img-brazil@1x.png" alt="Image of Ouro Preto landscape in Brazil"></img>
           <img class="about-image" src="assets/img/img-iceland@1x.png" alt="Image of Icelandic landscape"></img>
@@ -37,8 +62,8 @@
         </figure>
       </section>
       <section class="about-profession about-section">
-        <img class="about-section-header" src="assets/img/section-profession.svg" alt="Section header: Profession"></img>
-        <p>I’ve held all sorts of jobs and titles in the design industry before finding UX design. I started my professional career as a photography assistant nine years ago, where I discovered I had an eye for symmetry, color and composition.
+        <img class="section-header" src="assets/img/section-profession.svg" alt="Section header: Profession"></img>
+        <p class= "about-paragraph">I’ve held all sorts of jobs and titles in the design industry before finding UX design. I started my professional career as a photography assistant nine years ago, where I discovered I had an eye for symmetry, color and composition.
           <br/><br/>Soon after I worked my way into the cultural heritage field, eager to combine my love of history and visual design. I earned a master’s degree in international heritage visualization--a dynamic and growing field of digital heritage and 3D documentation.
           <br/><br/>Upon graduation, I had the opportunity to learn from some of the pioneers in the industry at the Digital Design Studio (DDS) at the Glasgow School of Art and their partner, Historic Environment Scotland. Alongside a talented team, I laser scanned historic structures, developed 3D models from real-world data and stitched together panoramic photographs of World Heritage sites for VR applications.</p>
           <br/><br/><p class="quote">My work at the DDS trained me to assess a technical problem and solve it using a range of technologies and context-specific methods, essential skills that I routinely employ as a UX designer.</p>
@@ -46,24 +71,24 @@
           <img class="about-image" src="assets/img/hynish-rendered@1x.png" alt="3D model of Hynish Harbor"></img>
           <figcaption>A rendered 3D interpretation of Hynish Harbor in Scotland modeled over laser scan data (courtesy of the Digital Design Studio at the Glasgow School of Art).</figcaption>
         </figure>
-        <p>In 2017, I worked as a graphics specialist at a cultural resource management firm that conducts archaeological studies and historic architecture assessments. I spent my days photographing historic structures, mapping boundary lines in ArcGIS, and designing interpretive and wayfinding signs for clients. </p>
+        <p class= "about-paragraph">In 2017, I worked as a graphics specialist at a cultural resource management firm that conducts archaeological studies and historic architecture assessments. I spent my days photographing historic structures, mapping boundary lines in ArcGIS, and designing interpretive and wayfinding signs for clients. </p>
         <figure>
           <img class="about-image" src="assets/img/img-rga1@1x.png" alt="Railroad building in County Yard in New Jersey"></img>
           <img class="about-image" src="assets/img/img-rga2@1x.png" alt="Historic Founders Grove Estate in New Jersey"></img>
           <figcaption>Photographs taken while employed at RGA to document historic buildings and engineering structures in New Jersey. </figcaption>
         </figure>
-        <p>It was during this period of my professional life that I realized that something was missing. Although it is immensely important to document cultural heritage to preserve our history, I no longer felt connected to people and their experiences.</p>
+        <p class= "about-paragraph">It was during this period of my professional life that I realized that something was missing. Although it is immensely important to document cultural heritage to preserve our history, I no longer felt connected to people and their experiences.</p>
       </section>
       <section class="about-design-approach about-section">
-        <img class="about-section-header" src="assets/img/section-design-approach.svg" alt="Section header: Design Approach"></img>
-        <p>And there it was. UX Design. I found myself back where I knew I belonged - surrounded by people and their stories. Only this time I have the tools to be more than just an active listener and more than just an observant traveler.</p>
+        <img class="section-header" src="assets/img/section-design-approach.svg" alt="Section header: Design Approach"></img>
+        <p class= "about-paragraph">And there it was. UX Design. I found myself back where I knew I belonged - surrounded by people and their stories. Only this time I have the tools to be more than just an active listener and more than just an observant traveler.</p>
           <br/><br/><p class="quote">Now, by designing experiences that reflect the needs of my users, I can make a difference in how they view the world. That’s what I love most about UX design - its impact.</p>
-          <br/><br/><p>And yes, I know - it can go either way. Bad design can leave you feeling powerless and frustrated. It’s a huge responsibility. But if you get it right, the reward is unmatched - someone finding love, reconnecting with an old friend, getting home on time.
+          <br/><br/><p class= "about-paragraph">And yes, I know - it can go either way. Bad design can leave you feeling powerless and frustrated. It’s a huge responsibility. But if you get it right, the reward is unmatched - someone finding love, reconnecting with an old friend, getting home on time.
           <br/><br/>Small decisions make good design, and good design leads to big impacts. That’s what I’m committed to - intentional design that brings people together.</p>
       </section>
       <section class="about-interests about-section">
-        <img class="about-section-header" src="assets/img/section-interests.svg" alt="Section header: When I'm not designing"></img>
-        <p>I’m usually hanging from a trapeze at my circus gym. I love podcasts (ask me which ones) and trying new recipes. I speak fluent Portuguese and am currently learning Polish. </p>
+        <img class="section-header" src="assets/img/section-interests.svg" alt="Section header: When I'm not designing"></img>
+        <p class= "about-paragraph">I’m usually hanging from a trapeze at my circus gym. I love podcasts (ask me which ones) and trying new recipes. I speak fluent Portuguese and am currently learning Polish. </p>
         <figure>
           <img class="about-image" src="assets/img/img-aerial@1x.png" alt="Promotional circus image"></img>
           <figcaption class="aerial">Shot during an aerial circus showcase in 2016 (courtesy of Asier Goikoetxea).</figcaption>
@@ -83,7 +108,6 @@
             <li> <a href="mailto:laurahundersmarck@gmail.com"><i class="fas fa-envelope"></i></a> </li>
             <li> <a href="https://lhundersmarck.wixsite.com/photo"><i class="fas fa-camera"></i></a> </li>
           </ul>
-          <!-- <i class="far fa-copyright copyright"></i> -->
           <p>Laura Hundersmarck 2019.
             <br/>
             All Rights Reserved.</p>

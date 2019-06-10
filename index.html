@@ -8,17 +8,40 @@
   <link href="https://fonts.googleapis.com/css?family=Assistant:400,600,700|Gilda+Display&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/stylereset.css">
   <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/mobile-menu.css">
   <script src="https://kit.fontawesome.com/d7c1e28c2f.js"></script>
+  <script src="js/mobile-menu.js"></script>
 </head>
 
 <body>
   <div class="container">
-    <nav>
-      <img src="assets/img/mobile-logo.svg" alt="logo"></img>
-      <img class="mobile-menu" src="assets/img/mobile-menu.svg" alt="menu"></img>
-      <a href="about.html">about</a>
-      <a href="project.html">project</a>
-    </nav>
+    <div class="full-width-no-margin mobile-menu-container">
+      <nav>
+        <img class="mobile-logo" src="assets/img/mobile-logo.svg" alt="logo"></img>
+        <div class="mobile-menu" onclick="toggleMobileMenu(this)">
+          <div class="mobile-menu-bar-1"></div>
+          <div class="mobile-menu-bar-2"></div>
+          <div class="mobile-menu-bar-3"></div>
+        </div>
+        <div class="mobile-menu-list-container">
+          <ul class="mobile-menu-list">
+            <a href="project.html">
+              <li onclick="toggleMobileMenuItem()">Work</li>
+            </a>
+            <a href="about.html">
+              <li onclick="toggleMobileMenuItem()">
+                About
+              </li>
+            </a>
+            <a href="mailto:laurahundersmarck@gmail.com">
+              <li onclick="toggleMobileMenuItem()">
+                Contact
+              </li>
+            </a>
+          </ul>
+        </div>
+      </nav>
+    </div>
     <!-- hero unit -->
     <section class="hero">
       <h1>Hi, my name is <span>Laura</span>.</h1>
@@ -28,7 +51,7 @@
     </section>
     <!-- other sections below -->
     <section class="featured-work">
-      <h3>FEATURED WORK</h3>
+      <h3 class="center-headers">FEATURED WORK</h3>
       <a href="project.html">
         <div class="project-card">
           <img src="assets/img/project-card2.svg" alt="project case study"></img>
@@ -37,7 +60,7 @@
     </section>
     <section class="design-process">
       <h4>MY DESIGN PROCESS</h4>
-      <h3>FROM IDEAS TO ACTION</h3>
+      <h3 class="center-headers">FROM IDEAS TO ACTION</h3>
       <h5>Understand</h5>
       <p>I start by defining the problem and scope of work. Then gather user research and analyze the competition.</p>
       <h5>Ideate</h5>
@@ -49,9 +72,9 @@
     </section>
     <section class="review">
       <img class="quotation-mark-left" src="assets/img/left-quote-mark.svg" alt="left quotation mark"></img>
-      <p>Working with Laura is an engaging, truly collaborative experience. She brings fresh, innovative ideas throughout the design process and seeks input from the team to promote a communal effort. Either as part of a team or working on her own,
-        Laura is deft at ensuring projects are completed on schedule, as well as within the constraints and resources allotted without sacrificing quality. Laura is also a talented photographer and is able to skillfully incorporate her work
-        into a design. She is always up for a challenge!</p>
+      <p>Working with Laura is an engaging, truly collaborative experience. She brings fresh, innovative ideas throughout the design process and seeks input from the team to promote a communal effort. Either as part of a team or working on her own, Laura
+        is deft at ensuring projects are completed on schedule, as well as within the constraints and resources allotted without sacrificing quality. Laura is also a talented photographer and is able to skillfully incorporate her work into a design. She
+        is always up for a challenge!</p>
       <img class="quotation-mark-right" src="assets/img/right-quote-mark.svg" alt="right quotation mark"></img>
       <p class="reviewer-name"><span>Allee Davis</span>
         <br/>Senior Architectural Historian at RGA, Inc.</p>
@@ -60,7 +83,9 @@
       <div class="contact">
         <h2>Want to learn more?</h2>
         <p>Please feel free to contact me anytime.</p>
-        <button>Get in Touch</button>
+        <a href="mailto:laurahundersmarck@gmail.com">
+          <button>Get in Touch</button>
+        </a>
         <img src="assets/img/back-to-top-arrow.svg" alt="back to top arrow"></img>
       </div>
       <div class="footer-icons">
@@ -72,8 +97,7 @@
         </ul>
         <!-- <i class="far fa-copyright copyright"></i> -->
         <p>Laura Hundersmarck 2019.
-          <br/>
-          All Rights Reserved.</p>
+          <br/> All Rights Reserved.</p>
       </div>
     </footer>
   </div>

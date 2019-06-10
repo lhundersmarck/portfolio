@@ -1,0 +1,89 @@
+.mobile-logo {
+  width: 6em;
+  transition: 0.2s ease-in-out;
+}
+
+.mobile-menu {
+  float: right;
+  padding-top: 3.5em;
+  cursor: pointer;
+}
+
+.mobile-menu-bar-1,
+.mobile-menu-bar-2,
+.mobile-menu-bar-3 {
+  width: 3em;
+  height: 0.35em;
+  background-color: #282828;
+  margin: 0.8em 0;
+  transition: 0.4s;
+}
+
+.active-mobile-menu-bar .mobile-menu-bar-1 {
+  -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+  transform: rotate(-45deg) translate(-9px, 6px);
+  background-color: #fdfdfd;
+}
+
+.active-mobile-menu-bar .mobile-menu-bar-2 {
+  opacity: 0;
+}
+
+.active-mobile-menu-bar .mobile-menu-bar-3 {
+  -webkit-transform: rotate(45deg) translate(-9px, -8px);
+  transform: rotate(45deg) translate(-9px, -8px);
+  background-color: #fdfdfd;
+}
+
+.full-width-no-margin {
+  margin-top: -2em;
+  margin: -2em -6% 0 -6%;
+  padding: 2em 6% 0 6%;
+}
+
+.mobile-menu-list {
+  height: 0;
+  opacity: 0;
+  color: #fdfdfd;
+  text-align: center;
+}
+
+.open-mobile-menu-list {
+  list-style: none;
+  height: 100%;
+  letter-spacing: 0.1em;
+  opacity: 1;
+}
+
+.open-mobile-menu-list li {
+  cursor: pointer;
+  font-size: 4em;
+  letter-spacing: 0.05em;
+  line-height: 2em;
+}
+
+.hidden {
+  opacity: 0;
+}
+
+.mobile-menu-container {
+  transition: background-color 0.6s linear;
+}
+
+.open-mobile-menu {
+  background-color: #18a2a2;
+  color: #fdfdfd;
+  transition: background-color 0.6s linear;
+  height: 100vh;
+}
+
+.mobile-menu-list a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* About mobile menu */
+
+.about-hero .mobile-menu-container {
+  padding: 2em 6% 0 6%;
+}
