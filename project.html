@@ -14,9 +14,8 @@
 </head>
 
 <body>
-  <div class="container">
-    <div class="full-width-no-margin mobile-menu-container">
-      <header>
+  <div class="site-container">
+    <header class="mobile-menu-container">
         <nav>
           <a href="index.html"><img class="mobile-logo" src="assets/img/mobile-logo.svg" alt="logo"></img></a>
           <div class="mobile-menu" onclick="toggleMobileMenu(this)">
@@ -42,8 +41,10 @@
             </ul>
           </div>
         </nav>
-      </header>
+    </header>
+    <div class="spacer">
     </div>
+  <div class="container">
     <!-- hero unit -->
     <section class="project-hero" id="project-hero">
       <img class="product-logo project-image" src="assets/img-project/trove-logo-color.svg" alt="Trove Product Logo"></img>
@@ -52,7 +53,7 @@
     </section>
     <section class="project-summary">
       <img class="section-header" src="assets/img-project/section-summary.svg" alt="Section header: Project Summary"></img>
-      <p class="summary-hero">Trove is a responsive web application that lets users store notes, images and links all in one place. Trove improves discoverability and organization through automatic content tagging. It also makes saving links across devices easier through a browser
+      <p class="summary-hero">Trove is a responsive web application that lets users store notes, images and links all in one place. Trove improves file discoverability and organization through automatic content tagging. It also makes saving links across devices easier through a browser
         bookmark extension.</p>
       <div class="button-container">
         <a href="https://www.figma.com/proto/Aa7ce804QgYFxzQT7wpeqw/Trove-Cloud-Storage?node-id=0%3A1&viewport=283%2C68%2C0.036343906074762344&scaling=min-zoom">
@@ -351,7 +352,7 @@
       <section class="color-typography">
         <h4>COLOR PALETTE & TYPOGRAPHY</h4>
         <h3>EVOKING THE RIGHT EMOTIONS</h3>
-        <p>I choose a color palette that was <span>calming and relaxing to reduce stress.</span> The blue exudes dependability and inspires trust, while teal is rejuvenating and associated with <span>clarity of mind and creativity</span>.
+        <p>I choose a color palette that was <span>calming</span> and <span>relaxing</span> to reduce stress. The blue exudes dependability and inspires trust, while teal is rejuvenating and associated with <span>clarity of mind and creativity</span>.
           <br/>
           <br/>For the typography, I paired the <span>modern serif</span> Lustria with the clean lines of Hind to <span>promote readability</span> and style.</p>
         <img class="project-image" src="assets/img-project/color-typography.svg" alt="Image of color palette and typography choices"></img>
@@ -544,6 +545,7 @@
         </div>
       </footer>
   </div>
+</div>
 </body>
 
 </html>

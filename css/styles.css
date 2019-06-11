@@ -76,9 +76,8 @@ p span {
   display: grid;
   grid-gap: 1rem;
   grid-template-columns: 1fr;
-  grid-template-rows: repeat(6, minmax(100px, auto));
   margin: 0 auto;
-  margin-top: 1.2rem;
+  margin-top: 0;
   width: 90%;
 }
 
@@ -107,6 +106,7 @@ a .down-arrow {
   display: block;
   margin-left: auto;
   margin-right: auto;
+  padding-bottom: 3rem;
 }
 
 .featured-work {
@@ -202,11 +202,7 @@ blockquote p {
   color: #FDFDFD;
   margin: 2.5rem 2.5rem 0 0;
   text-align: right;
-  padding: 1rem 0 1rem 0;
-}
-
-span {
-  font-weight: 700;
+  padding: 1rem 0 1rem 4rem;
 }
 
 .contact {
@@ -369,24 +365,20 @@ figcaption {
   display: flex;
 }
 
-.mobile-logo {
-  /* flex: 1; */
-  height: 11em;
-}
-
 .mobile-menu {
   height: 5em;
 }
 
 .product-logo {
   height: 17rem;
-  padding-bottom: 4rem;
-  padding-top: 2rem;
+  margin-top: -4rem;
+  padding: 2rem 1.2rem 4rem 0;
 }
 
 .project-intro {
-  font-size: 2.4rem;
-  line-height: 3.9rem;
+  font-size: 2.2rem;
+  line-height: 3.5rem;
+  padding: 0 1rem 0 1rem;
 }
 
 .summary-hero {

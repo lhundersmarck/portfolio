@@ -11,104 +11,113 @@
   <link rel="stylesheet" href="css/mobile-menu.css">
   <script src="https://kit.fontawesome.com/d7c1e28c2f.js"></script>
   <script src="js/mobile-menu.js"></script>
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 
-<body>
-  <div class="container">
-    <div class="full-width-no-margin mobile-menu-container">
-      <header>
-        <nav>
-          <img class="mobile-logo" src="assets/img/mobile-logo.svg" alt="logo"></img>
-          <div class="mobile-menu" onclick="toggleMobileMenu(this)">
-            <div class="mobile-menu-bar-1"></div>
-            <div class="mobile-menu-bar-2"></div>
-            <div class="mobile-menu-bar-3"></div>
-          </div>
-          <div class="mobile-menu-list-container">
-            <ul class="mobile-menu-list">
-              <a href="index.html">
-                <li onclick="toggleMobileMenuItem()">Work</li>
-              </a>
-              <a href="about.html">
-                <li onclick="toggleMobileMenuItem()">
-                  About
-                </li>
-              </a>
-              <a href="mailto:laurahundersmarck@gmail.com">
-                <li onclick="toggleMobileMenuItem()">
-                  Contact
-                </li>
-              </a>
-            </ul>
-          </div>
-        </nav>
-      </header>
-    </div>
-    <!-- hero unit -->
-    <section class="hero" id="hero">
-      <h1>Hi, my name is <span>Laura</span>.</h1>
-      <h2> I’m a <span>UX/UI Designer</span> based in <span>Philadelphia</span>. </h2>
-      <p> I love finding <span>elegant solutions</span> to <span>complex problems</span> and creating <span>meaningful products</span> that reflect the people they serve. </p>
-      <a href="#featured-work">
-        <img class="down-arrow" src="assets/img/down-arrow.svg" alt="down arrow"></img>
-      </a>
-    </section>
-    <!-- other sections below -->
-    <section class="featured-work" id="featured-work">
-      <h3 class="center-headers">FEATURED WORK</h3>
-      <a href="project.html">
-        <div class="project-card">
-          <img src="assets/img/project-card2.svg" alt="project case study"></img>
+<body data-aos-easing="ease" data-aos-duration="400" data-aos-delay="0">
+  <div class="site-container">
+    <header class="mobile-menu-container">
+      <nav>
+        <img class="mobile-logo" src="assets/img/mobile-logo.svg" alt="logo"></img>
+        <div class="mobile-menu" onclick="toggleMobileMenu(this)">
+          <div class="mobile-menu-bar-1"></div>
+          <div class="mobile-menu-bar-2"></div>
+          <div class="mobile-menu-bar-3"></div>
         </div>
-      </a>
-    </section>
-    <section class="design-process">
-      <h4>MY DESIGN PROCESS</h4>
-      <h3 class="center-headers">FROM IDEAS TO ACTION</h3>
-      <h5>Understand</h5>
-      <p>I start by defining the problem and scope of work. Then gather user research and analyze the competition.</p>
-      <h5>Ideate</h5>
-      <p>I develop user stories and user flows, begin sketching wireframes, and conducting early testing.</p>
-      <h5>Adjust</h5>
-      <p>Next, I refine wireframes based on testing data and develop high-fidelity mockups for further testing.</p>
-      <h5>Develop</h5>
-      <p>Lastly, I develop functional prototypes and deliver finished products through frontend development.</p>
-    </section>
-    <section class="review">
-      <img class="quotation-mark-left" src="assets/img/left-quote-mark.svg" alt="left quotation mark"></img>
-      <blockquote><p>Working with Laura is an engaging, truly collaborative experience. She brings fresh, innovative ideas throughout the design process and seeks input from the team to promote a communal effort. Either as part of a team or working on her own, Laura
-        is deft at ensuring projects are completed on schedule, as well as within the constraints and resources allotted without sacrificing quality. Laura is also a talented photographer and is able to skillfully incorporate her work into a design. She is always up for a challenge!</p>
-      </blockquote>
-      <img class="quotation-mark-right" src="assets/img/right-quote-mark.svg" alt="right quotation mark"></img>
-      <p class="reviewer"><span>- Allee Davis</span>
-        <br/>Senior Architectural Historian at RGA, Inc.</p>
-    </section>
-    <footer class="footer">
-      <div class="contact">
-        <h2>Want to learn more?</h2>
-        <p>Please feel free to contact me anytime.</p>
-        <div class="button-container">
-          <a href="mailto:laurahundersmarck@gmail.com">
-            <button>Get in Touch</button>
+        <div class="mobile-menu-list-container">
+          <ul class="mobile-menu-list">
+            <a href="index.html">
+              <li onclick="toggleMobileMenuItem()">Work</li>
+            </a>
+            <a href="about.html">
+              <li onclick="toggleMobileMenuItem()">
+                About
+              </li>
+            </a>
+            <a href="mailto:laurahundersmarck@gmail.com">
+              <li onclick="toggleMobileMenuItem()">
+                Contact
+              </li>
+            </a>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <div class="spacer">
+    </div>
+    <div class="container">
+      <!-- hero unit -->
+      <section data-aos="fade-in" class="hero" id="hero">
+        <h1>Hi, my name is <span>Laura</span>.</h1>
+        <h2> I’m a <span>UX/UI Designer</span> based in <span>Philadelphia</span>. </h2>
+        <p> I love finding <span>elegant solutions</span> to <span>complex problems</span> and creating <span>meaningful products</span> that reflect the people they serve. </p>
+        <a href="#featured-work">
+          <img class="down-arrow" src="assets/img/down-arrow.svg" alt="down arrow"></img>
+        </a>
+      </section>
+      <!-- other sections below -->
+      <section data-aos="fade-in" class="featured-work" id="featured-work">
+        <h3 class="center-headers">FEATURED WORK</h3>
+        <a href="project.html">
+          <div class="project-card">
+            <img src="assets/img/project-card2.svg" alt="project case study"></img>
+          </div>
+        </a>
+      </section>
+      <section class="design-process">
+        <h4>MY DESIGN PROCESS</h4>
+        <h3 class="center-headers">FROM IDEAS TO ACTION</h3>
+        <h5>Understand</h5>
+        <p>I start by defining the problem and scope of work. Then gather user research and analyze the competition.</p>
+        <h5>Ideate</h5>
+        <p>I develop user stories and user flows, begin sketching wireframes, and conducting early testing.</p>
+        <h5>Adjust</h5>
+        <p>Next, I refine wireframes based on testing data and develop high-fidelity mockups for further testing.</p>
+        <h5>Develop</h5>
+        <p>Lastly, I develop functional prototypes and deliver finished products through frontend development.</p>
+      </section>
+      <section class="review">
+        <img class="quotation-mark-left" src="assets/img/left-quote-mark.svg" alt="left quotation mark"></img>
+        <blockquote>
+          <p>Working with Laura is an engaging, truly collaborative experience. She brings fresh, innovative ideas throughout the design process and seeks input from the team to promote a communal effort. Either as part of a team or working on her own, Laura
+            is deft at ensuring projects are completed on schedule, as well as within the constraints and resources allotted without sacrificing quality. Laura is also a talented photographer and is able to skillfully incorporate her work into a design.
+            She is always up for a challenge!</p>
+        </blockquote>
+        <img class="quotation-mark-right" src="assets/img/right-quote-mark.svg" alt="right quotation mark"></img>
+        <p class="reviewer"><span>- Allee Davis</span>
+          <br/>Senior Architectural Historian at RGA, Inc.</p>
+      </section>
+      <footer class="footer">
+        <div class="contact">
+          <h2>Want to learn more?</h2>
+          <p>Please feel free to contact me anytime.</p>
+          <div class="button-container">
+            <a href="mailto:laurahundersmarck@gmail.com">
+              <button>Get in Touch</button>
+            </a>
+          </div>
+          <a href="#hero">
+            <img src="assets/img/back-to-top-arrow.svg" alt="back to top arrow"></img>
           </a>
         </div>
-        <a href="#hero">
-          <img src="assets/img/back-to-top-arrow.svg" alt="back to top arrow"></img>
-        </a>
-      </div>
-      <div class="footer-icons">
-        <ul>
-          <li> <a href="https://linkedin.com/in/laurahundersmarck/"><i class="fab fa-linkedin"></i></a> </li>
-          <li> <a href="https://github.com/lhundersmarck"><i class="fab fa-github-square"></i></a> </li>
-          <li> <a href="mailto:laurahundersmarck@gmail.com"><i class="fas fa-envelope"></i></a> </li>
-          <li> <a href="https://lhundersmarck.wixsite.com/photo"><i class="fas fa-camera"></i></a> </li>
-        </ul>
-        <!-- <i class="far fa-copyright copyright"></i> -->
-        <p>Laura Hundersmarck 2019.
-          <br/> All Rights Reserved.</p>
-      </div>
-    </footer>
+        <div class="footer-icons">
+          <ul>
+            <li> <a href="https://linkedin.com/in/laurahundersmarck/"><i class="fab fa-linkedin"></i></a> </li>
+            <li> <a href="https://github.com/lhundersmarck"><i class="fab fa-github-square"></i></a> </li>
+            <li> <a href="mailto:laurahundersmarck@gmail.com"><i class="fas fa-envelope"></i></a> </li>
+            <li> <a href="https://lhundersmarck.wixsite.com/photo"><i class="fas fa-camera"></i></a> </li>
+          </ul>
+          <!-- <i class="far fa-copyright copyright"></i> -->
+          <p>Laura Hundersmarck 2019.
+            <br/> All Rights Reserved.</p>
+        </div>
+      </footer>
+    </div>
   </div>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
 </body>
 
 </html>
