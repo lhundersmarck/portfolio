@@ -1,13 +1,27 @@
 @media screen and (min-width: 575px) {
 
-  .container {
+  .site-container {
+    width: 100%;
+  }
 
+  section {
+    width: 80%;
+    margin: auto;
+  }
+
+  .featured-work {
+    width: 98%;
+    margin: auto;
+  }
+
+  .review {
+    width: 100%;
+    margin: auto;
   }
 
   .hero {
     display: flex;
     flex-direction: column;
-    width: 100%;
     padding-top: 8rem;
   }
 
@@ -31,8 +45,13 @@
 
   .design-steps {
     display: flex;
+    flex-direction: column;
+  }
+
+  .step-1-2, .step-3-4 {
+    display: flex;
     flex-direction: row;
-    /* flex-wrap: wrap; */
+    margin-bottom: 2rem;
   }
 
   .design-steps {
@@ -42,9 +61,16 @@
     background-repeat: no-repeat;
   }
 
+/* Reviews start here */
+
+    .review-container {
+      width: 100%;
+    }
+
     blockquote {
-      width: 80%;
+      width: 70%;
       margin: auto;
+      padding-top: 3rem;
     }
 
     .reviewer {
@@ -57,41 +83,56 @@
     }
 
     .quotation-mark-left {
-      margin-left: 5rem;
+      float: left;
+      margin-left: 9rem;
       margin-top: 3rem;
     }
 
     .quotation-mark-right {
       float: right;
-      /* margin-right: 5rem;
-      margin-top: -3rem; */
     }
 
     button {
       width: 30%;
     }
 
+    .footer ul {
+      padding-top: 2rem;
+    }
+
 }
 
 
 @media screen and (min-width: 991px) {
-  .container {
-    width: 80%;
-    padding: 0 2.5% 0 2.5%;
-    margin: auto;
-  }
-
   html {
     font-size: 11px;
+  }
+
+/* Section & container sizes */
+  .site-container {
+    width: 100%;
+  }
+
+  section {
+    max-width: 1170px;
   }
 
   .hero {
     display: flex;
     flex-direction: row;
-    width: 100%;
-    background-color: yellow;
+    width: 75%;
+    background-color: green;
   }
 
+  .design-process {
+    width: 75%;
+  }
+
+  .footer  {
+    width: 100%;
+  }
+
+/* hero content starts here */
 .flex-hero {
     flex-grow: 0;
     background-color: purple;
@@ -99,15 +140,28 @@
     width: 100%;
   }
 
-
   .teal-circle {
     flex-grow: 0;
-    display: inline-block;
-    min-width: 0;
-    width: 100%;
-    height: 50%;
+    display: flex;
+    /* min-width: 0; */
+    width: 80%;
+    background-color: orange;
   }
 
+  .scroll-down-arrow {
+    background-color: teal;
+  }
+
+/* Design process content starts here */
+  .step-1-2, .step-3-4 {
+    margin-bottom: 3rem;
+  }
+
+  .step-1, .step-2, .step-3, .step-4 {
+    padding: 0 4rem 4rem 0;
+  }
+
+/* review content starts here */
   .review {
     width: 100%;
     display: inline-block;
@@ -128,10 +182,10 @@
 
 }
 
-@media screen and (min-width: 1199px) {
+/* @media screen and (min-width: 1199px) {
   .container {
     width: 80%;
     padding: 0 5% 0 5%;
     margin: auto;
     background-color: red;
-  }
+  } */

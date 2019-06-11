@@ -62,7 +62,7 @@ h2 span {
 
 p {
   font-size: 1.9rem;
-  line-height: 3.2rem;
+  line-height: 3.1rem;
   padding-bottom: 3rem;
 }
 
@@ -70,7 +70,11 @@ p span {
   font-weight: 700;
 }
 
-.container {
+.site-container {
+  width: 100%;
+}
+
+section {
   background-color: #F5F5F5;
   /* height: 100vh; */
   display: grid;
@@ -87,6 +91,12 @@ p span {
 
 .container section section:last-child {
   margin-bottom: 0;
+}
+
+.review {
+  width: 100%;
+  margin: auto;
+  background-color: #18A2A2;
 }
 
 .mobile-menu {
@@ -140,13 +150,8 @@ a .down-arrow {
 h4 {
   font-size: 1.8rem;
   letter-spacing: .18rem;
-  padding-bottom: 1rem;
-
 }
 
-.design-process h4 {
-  text-align: center;
-}
 
 h5 {
   font-family: 'Sand Dunes', 'Gilda Display', serif;
@@ -158,21 +163,12 @@ h5 {
 
 
 .design-process p {
+  font-size: 1.8rem;
   padding-bottom: 5.5rem;
   margin-left: 2.5rem;
   margin-right: 2.5rem;
 }
 
-/* .design-process p:not(:last-child) {
-  padding-bottom: 5.5rem;
-} */
-
-.review {
-  background-color: #18A2A2;
-  margin-left: -6%;
-  margin-right: -6%;
-  padding: 3rem 0 3rem 0;
-}
 
 blockquote p {
   font-size: 1.8rem;
@@ -192,6 +188,7 @@ blockquote p {
 }
 
 .review-container {
+  padding: 4rem 0 4rem 0;
   margin-left: auto;
   margin-right: auto;
 }
@@ -207,14 +204,18 @@ blockquote p {
 
 .quotation-mark-right {
   float: right;
-  margin-left: 8rem;
+  /* margin-left: 8rem; */
   margin-right: 2rem;
 }
 
-.contact {
+.contact-group {
   background-color: #F5F5F5;
   text-align: center;
   padding-bottom: 15rem;
+}
+
+.contact {
+  padding: 0 3rem 0 3rem;
 }
 
 .contact h2 {
@@ -255,18 +256,17 @@ button {
 
 .footer {
   text-align: center;
+  width: 100%;
 }
 
 footer .footer-icons {
-  padding-top: 5rem;
-  padding-bottom: 4rem;
-  margin-left: -6%;
-  margin-right: -6%;
+  padding-top: 4rem;
+  padding-bottom: 3rem;
   background-color: #E7E7E7;
 }
 
 .footer ul {
-  padding-bottom: 2rem;
+  padding-bottom: 1.5rem;
 }
 
 .footer li {
@@ -289,11 +289,8 @@ footer .footer-icons {
 
 .footer .footer-icons p {
   color: #828282;
-  font-family: "Assistant", sans-serif;
   font-size: 1.5rem;
   line-height: 1.9rem;
-  padding-left: 3rem;
-  padding-right: 3rem;
   letter-spacing: .05rem;
 }
 
