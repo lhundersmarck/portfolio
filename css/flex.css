@@ -1,0 +1,137 @@
+@media screen and (min-width: 575px) {
+
+  .container {
+
+  }
+
+  .hero {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding-top: 8rem;
+  }
+
+  .hero p {
+    padding-right: 35%;
+    padding-bottom: 10rem;
+  }
+
+  .container section {
+    margin-bottom: 10rem;
+  }
+
+  .container section section:last-child {
+    margin-bottom: 0;
+  }
+
+  .project-card {
+    width: 100%;
+    display: flex;
+  }
+
+  .design-steps {
+    display: flex;
+    flex-direction: row;
+    /* flex-wrap: wrap; */
+  }
+
+  .design-steps {
+    background-image: url(teal-circle-no-shadow.svg);
+    background-size: 30rem;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+    blockquote {
+      width: 80%;
+      margin: auto;
+    }
+
+    .reviewer {
+      width: 80%;
+      margin-top: 1.5rem;
+    }
+
+    .quotation-mark-left, .quotation-mark-right {
+      width: 2.4rem;
+    }
+
+    .quotation-mark-left {
+      margin-left: 5rem;
+      margin-top: 3rem;
+    }
+
+    .quotation-mark-right {
+      float: right;
+      /* margin-right: 5rem;
+      margin-top: -3rem; */
+    }
+
+    button {
+      width: 30%;
+    }
+
+}
+
+
+@media screen and (min-width: 991px) {
+  .container {
+    width: 80%;
+    padding: 0 2.5% 0 2.5%;
+    margin: auto;
+  }
+
+  html {
+    font-size: 11px;
+  }
+
+  .hero {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    background-color: yellow;
+  }
+
+.flex-hero {
+    flex-grow: 0;
+    background-color: purple;
+    min-width: 0;
+    width: 100%;
+  }
+
+
+  .teal-circle {
+    flex-grow: 0;
+    display: inline-block;
+    min-width: 0;
+    width: 100%;
+    height: 50%;
+  }
+
+  .review {
+    width: 100%;
+    display: inline-block;
+    margin: 0;
+  }
+
+  .review-container {
+    position: relative;
+    display: block;
+    overflow: hidden;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .review-1 {
+    max-width: 120rem;
+  }
+
+}
+
+@media screen and (min-width: 1199px) {
+  .container {
+    width: 80%;
+    padding: 0 5% 0 5%;
+    margin: auto;
+    background-color: red;
+  }

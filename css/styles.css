@@ -102,6 +102,10 @@ p span {
   padding-bottom: 7rem;
 }
 
+.teal-circle {
+  display: none;
+}
+
 a .down-arrow {
   display: block;
   margin-left: auto;
@@ -113,10 +117,12 @@ a .down-arrow {
   background-color: #F5F5F5;
 }
 
-.project-card {
+.project1, .project2{
     background-color: #E7E7E7;
-    padding: 8px;
+    padding: .08rem;
+    margin: .5rem;
     border-radius: .5rem;
+    width: 100%;
 }
 
 .design-process {
@@ -144,7 +150,7 @@ h4 {
 
 h5 {
   font-family: 'Sand Dunes', 'Gilda Display', serif;
-  font-size: 3rem;
+  font-size: 2.5rem;
   padding-bottom: 1.1rem;
   margin-left: 2.5rem;
   margin-right: 2.5rem;
@@ -152,20 +158,14 @@ h5 {
 
 
 .design-process p {
-  font-size: 2rem;
+  padding-bottom: 5.5rem;
   margin-left: 2.5rem;
   margin-right: 2.5rem;
 }
 
-.design-process p:not(:last-child) {
+/* .design-process p:not(:last-child) {
   padding-bottom: 5.5rem;
-}
-
-.design-process img {
-  padding-bottom: 2rem;
-  padding-left: 2.5rem;
-  padding-right: 2.5rem;
-}
+} */
 
 .review {
   background-color: #18A2A2;
@@ -180,7 +180,20 @@ blockquote p {
   padding-top: 1rem;
   padding-left: 5rem;
   padding-right: 5rem;
-  padding-bottom: 1rem;
+  padding-bottom: .5rem;
+}
+
+.reviewer {
+  font-size: 1.6rem;
+  line-height: 2.2rem;
+  padding-top: 2rem;
+  float: right;
+  text-align: right;
+}
+
+.review-container {
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .quotation-mark-left, .quotation-mark-right {
@@ -194,15 +207,8 @@ blockquote p {
 
 .quotation-mark-right {
   float: right;
+  margin-left: 8rem;
   margin-right: 2rem;
-  margin-top: -1rem;
-}
-
-.reviewer {
-  color: #FDFDFD;
-  margin: 2.5rem 2.5rem 0 0;
-  text-align: right;
-  padding: 1rem 0 1rem 4rem;
 }
 
 .contact {
