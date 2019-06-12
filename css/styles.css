@@ -103,7 +103,9 @@ section {
   float:right;
 }
 
+
 .hero {
+  padding-top: 7rem;
   background-color: #F5F5F5;
   font-family: 'Assistant', sans-serif;
 }
@@ -298,14 +300,20 @@ footer .footer-icons {
 /* About starts here */
 
 .about-hero {
+    width: 100%;
     margin: 0 auto;
     padding: 0;
 }
 
 .about-hero-headshot {
   width: 100%;
-  opacity: 0.8;
 }
+
+.about-hero-content {
+  width: 90%;
+  margin: auto;
+}
+
 
 .about-nav {
   width: 90%;
@@ -318,6 +326,36 @@ footer .footer-icons {
   float: right;
   padding-top: 5%;
 }
+
+.headshot-lg {
+  display: none;
+}
+
+.brazil-lg {
+  display: none;
+}
+
+.iceland-lg {
+  display: none;
+}
+
+.hynish-lg {
+  display: none;
+}
+
+.rga1-lg {
+  display: none;
+}
+
+.rga2-lg {
+  display: none;
+}
+
+.aerial-lg {
+  display: none;
+}
+
+
 
 .about-paragraph {
   padding-bottom: 0;

@@ -5,11 +5,11 @@
   }
 
   .spacer {
-    height: 12rem;
+    height: 10rem;
   }
 
   section {
-    width: 80%;
+    width: 70%;
     margin: auto;
   }
 
@@ -108,6 +108,64 @@
       padding-top: 2rem;
     }
 
+    /* About page starts here */
+
+    /* Image optimization */
+      .headshot-sm {
+        display: none;
+      }
+
+      .headshot-lg {
+        display: block !important;
+        opacity: 0.5;
+      }
+
+      /* brazil is in next breakpoint */
+
+
+      .iceland-sm {
+        display: none;
+      }
+
+      .iceland-lg {
+        display: block !important;
+      }
+
+      .hynish-sm {
+        display: none;
+      }
+
+      .hynish-lg {
+        display: block !important;
+      }
+
+      .rga1-sm {
+        display: none;
+      }
+
+      .rga1-lg {
+        display: block !important;
+      }
+
+      .rga2-sm {
+        display: none;
+      }
+
+      .rga2-lg {
+        display: block !important;
+      }
+
+      .aerial-sm {
+        display: none;
+      }
+
+      .aerial-lg {
+        display: block !important;
+      }
+
+
+
+
 }
 
 
@@ -159,7 +217,7 @@
   .hero-image {
     flex-grow: 1;
     display: flex;
-    /* background-color: red; */
+    background-color: red;
   }
 
   .hero-image img {
@@ -215,8 +273,19 @@
   /* footer content starts here */
   .back-to-top-arrow  {
     visibility: hidden;
-    background-color: blue;
   }
+
+  /* About content starts here */
+
+  .brazil-sm {
+    display: none;
+  }
+
+  .brazil-lg {
+    display: block !important;
+  }
+
+
 
 }
 
