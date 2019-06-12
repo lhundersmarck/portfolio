@@ -13,6 +13,10 @@
     margin: auto;
   }
 
+  .teal-circle {
+    visibility: hidden;
+  }
+
   .featured-work {
     width: 98%;
     margin: auto;
@@ -109,7 +113,7 @@
 
 @media screen and (min-width: 991px) {
   html {
-    font-size: 12px;
+    font-size: 11px;
   }
 
 /* Section & container sizes */
@@ -125,11 +129,16 @@
     margin-bottom: 0;
   }
 
-  .hero {
+  .flex-hero {
     display: flex;
     flex-direction: row;
-    width: 75%;
+    height: 50rem;
     background-color: green;
+  }
+
+  .hero p {
+    padding-right: 0;
+    padding-bottom: 10rem;
   }
 
   .design-process {
@@ -141,22 +150,24 @@
   }
 
 /* hero content starts here */
-.flex-hero {
-    flex-grow: 0;
+.hero-content {
+    width: 50%;
+    flex-grow: 1;
     background-color: purple;
-    min-width: 0;
-    width: 100%;
   }
 
-  .teal-circle {
-    flex-grow: 0;
+  .hero-image {
+    flex-grow: 1;
     display: flex;
-    /* min-width: 0; */
-    width: 80%;
-    background-color: orange;
+    /* background-color: red; */
+  }
+
+  .hero-image img {
+    visibility: visible;
   }
 
   .scroll-down-arrow {
+    width: 100%;
     background-color: teal;
   }
 
@@ -240,10 +251,6 @@
     padding: 0 5rem 5rem 0;
     margin-left: 10rem;
   }
-
-  /* .step-2, .step-4 {
-
-  } */
 
   .review-container {
     max-width: 1400px;
