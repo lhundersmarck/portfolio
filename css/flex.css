@@ -4,6 +4,10 @@
     width: 100%;
   }
 
+  .spacer {
+    height: 12rem;
+  }
+
   section {
     width: 80%;
     margin: auto;
@@ -187,7 +191,7 @@
   .review-container {
     position: relative;
     display: block;
-    padding: 6rem 12rem 6rem 12rem;
+    padding: 6rem 9rem 6rem 9rem;
     overflow: hidden;
     margin-left: auto;
     margin-right: auto;
@@ -198,8 +202,8 @@
   }
 
   /* footer content starts here */
-  .back-to-top-arrow img {
-    display: hidden;
+  .back-to-top-arrow  {
+    visibility: hidden;
     background-color: blue;
   }
 
