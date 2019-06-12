@@ -61,14 +61,13 @@
     background-repeat: no-repeat;
   }
 
-/* Reviews start here */
-
     .review-container {
-      width: 100%;
-    }
+      padding: 4rem 6rem 4rem 6rem;
+      margin: auto;
+      }
 
     blockquote {
-      width: 70%;
+      width: 80%;
       margin: auto;
       padding-top: 3rem;
     }
@@ -78,13 +77,14 @@
       margin-top: 1.5rem;
     }
 
+
     .quotation-mark-left, .quotation-mark-right {
       width: 2.4rem;
     }
 
     .quotation-mark-left {
       float: left;
-      margin-left: 9rem;
+      margin-left: 6rem;
       margin-top: 3rem;
     }
 
@@ -105,7 +105,7 @@
 
 @media screen and (min-width: 991px) {
   html {
-    font-size: 11px;
+    font-size: 12px;
   }
 
 /* Section & container sizes */
@@ -113,8 +113,12 @@
     width: 100%;
   }
 
-  section {
-    max-width: 1170px;
+  .container section:not(:first-child) {
+      margin-bottom: 15rem;
+  }
+
+  .container section section:last-child {
+    margin-bottom: 0;
   }
 
   .hero {
@@ -153,12 +157,24 @@
   }
 
 /* Design process content starts here */
+  .design-steps {
+    background-image: url(teal-circle-no-shadow.svg);
+    background-size: 40rem;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
   .step-1-2, .step-3-4 {
     margin-bottom: 3rem;
   }
 
   .step-1, .step-2, .step-3, .step-4 {
     padding: 0 4rem 4rem 0;
+    margin-left: 5rem;
+  }
+
+  .step-2, .step-4 {
+    margin-left: 5rem;
   }
 
 /* review content starts here */
@@ -171,6 +187,7 @@
   .review-container {
     position: relative;
     display: block;
+    padding: 6rem 12rem 6rem 12rem;
     overflow: hidden;
     margin-left: auto;
     margin-right: auto;
@@ -180,12 +197,53 @@
     max-width: 120rem;
   }
 
+  /* footer content starts here */
+  .back-to-top-arrow img {
+    display: hidden;
+    background-color: blue;
+  }
+
 }
 
-/* @media screen and (min-width: 1199px) {
-  .container {
-    width: 80%;
-    padding: 0 5% 0 5%;
+@media screen and (min-width: 1199px) {
+  html {
+    font-size: 12px;
+  }
+
+/* Section & container sizes */
+  .site-container {
+    width: 100%;
+  }
+
+  .container section:not(:first-child) {
+      margin-bottom: 15rem;
+  }
+
+  .container section section:last-child {
+    margin-bottom: 0;
+  }
+
+  .design-steps {
+    max-width: 110rem;
     margin: auto;
-    background-color: red;
+  }
+
+  .step-1-2, .step-3-4 {
+    margin-bottom: 0;
+  }
+
+  .step-1, .step-2, .step-3, .step-4 {
+    padding: 0 5rem 5rem 0;
+    margin-left: 10rem;
+  }
+
+  /* .step-2, .step-4 {
+
   } */
+
+  .review-container {
+    max-width: 1400px;
+    margin: auto;
+    }
+
+  }
