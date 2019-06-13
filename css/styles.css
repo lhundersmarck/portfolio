@@ -115,7 +115,7 @@ section {
 }
 
 .teal-circle {
-  display: none;
+  visibility: hidden;
 }
 
 a .down-arrow {

@@ -172,7 +172,7 @@
 
 @media screen and (min-width: 991px) {
   html {
-    font-size: 11px;
+    font-size: 10px;
   }
 
 /* Section & container sizes */
@@ -189,7 +189,12 @@
   }
 
   section {
-    width: 60%;
+    width: 70%;
+  }
+
+
+  .teal-circle {
+    visibility: visible;
   }
 
   .flex-hero {
@@ -199,8 +204,6 @@
     -webkit-flex-direction: row;
     flex-wrap: nowrap;
     -webkit-flex-wrap: nowrap;
-    height: 50rem;
-    background-color: green;
   }
 
   .hero p {
@@ -218,24 +221,27 @@
 
 /* hero content starts here */
 .hero-content {
-    width: 50%;
+  padding-top: 7rem;
     flex-grow: 1;
-    background-color: purple;
   }
 
   .hero-image {
-    flex-grow: 1;
-    display: flex;
-    background-color: red;
+    padding-right: 5rem;
+    width: 30%;
   }
 
-  .hero-image img {
-    visibility: visible;
+  .hero-image {
+    display: flex;
+    display: -webkit-flex;
+    flex-direction: row;
+    -webkit-flex-direction: row;
+    flex-wrap: nowrap;
+    -webkit-flex-wrap: nowrap;
   }
 
   .scroll-down-arrow {
+    padding-top: 3rem;
     width: 100%;
-    background-color: teal;
   }
 
 /* Design process content starts here */
@@ -286,13 +292,6 @@
 
   /* About content starts here */
 
-  .brazil-sm {
-    display: none;
-  }
-
-  .brazil-lg {
-    display: block !important;
-  }
 
 
 
