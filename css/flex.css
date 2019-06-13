@@ -221,22 +221,18 @@
 
 /* hero content starts here */
 .hero-content {
-  padding-top: 7rem;
-    flex-grow: 1;
+  padding-top: 9rem;
+    flex-grow: 2;
   }
 
   .hero-image {
     padding-right: 5rem;
-    width: 30%;
+    width: 50%;
   }
+
 
   .hero-image {
     display: flex;
-    display: -webkit-flex;
-    flex-direction: row;
-    -webkit-flex-direction: row;
-    flex-wrap: nowrap;
-    -webkit-flex-wrap: nowrap;
   }
 
   .scroll-down-arrow {

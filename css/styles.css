@@ -74,12 +74,11 @@ p span {
   width: 100%;
 }
 
+
 section {
   background-color: #F5F5F5;
   /* height: 100vh; */
-  display: grid;
-  grid-gap: 1rem;
-  grid-template-columns: 1fr;
+  display: block;
   margin: 0 auto;
   margin-top: 0;
   width: 90%;
@@ -103,7 +102,6 @@ section {
   float:right;
 }
 
-
 .hero {
   padding-top: 7rem;
   background-color: #F5F5F5;
@@ -112,6 +110,10 @@ section {
 
 .hero p {
   padding-bottom: 7rem;
+}
+
+.hero-image {
+  visibility: hidden;
 }
 
 .teal-circle {
