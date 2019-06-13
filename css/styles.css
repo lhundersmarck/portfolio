@@ -117,6 +117,8 @@ section {
 }
 
 .teal-circle {
+  height: 0px;
+  width: 0px;
   visibility: hidden;
 }
 
@@ -131,12 +133,19 @@ a .down-arrow {
   background-color: #F5F5F5;
 }
 
+
 .project1, .project2{
     background-color: #E7E7E7;
     padding: .08rem;
     margin: .5rem;
     border-radius: .5rem;
     width: 100%;
+}
+
+.project2 {
+  text-align: center;
+  padding: 12rem 0 12rem 0;
+  opacity: .3;
 }
 
 .design-process {

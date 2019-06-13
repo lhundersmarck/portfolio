@@ -1,73 +1,73 @@
 @media screen and (min-width: 575px) {
 
-  .site-container {
-    width: 100%;
-  }
+    .site-container {
+      width: 100%;
+    }
 
-  .spacer {
-    height: 10rem;
-  }
+    .spacer {
+      height: 10rem;
+    }
 
-  section {
-    width: 70%;
-    margin: auto;
-  }
+    section {
+      width: 70%;
+      margin: auto;
+    }
 
-  .teal-circle {
-    visibility: hidden;
-  }
+    .teal-circle {
+      visibility: hidden;
+    }
 
-  .featured-work {
-    width: 98%;
-    margin: auto;
-  }
+    .featured-work {
+      width: 98%;
+      margin: auto;
+    }
 
-  .review {
-    width: 100%;
-    margin: auto;
-  }
+    .review {
+      width: 100%;
+      margin: auto;
+    }
 
-  .hero {
-    display: flex;
-    flex-direction: column;
-    padding-top: 8rem;
-  }
+    .hero {
+      display: flex;
+      flex-direction: column;
+      padding-top: 8rem;
+    }
 
-  .hero p {
-    padding-right: 35%;
-    padding-bottom: 10rem;
-  }
+    .hero p {
+      padding-right: 35%;
+      padding-bottom: 10rem;
+    }
 
-  .container section {
-    margin-bottom: 10rem;
-  }
+    .container section {
+      margin-bottom: 10rem;
+    }
 
-  .container section section:last-child {
-    margin-bottom: 0;
-  }
+    .container section section:last-child {
+      margin-bottom: 0;
+    }
 
-  .project-card {
-    width: 100%;
-    display: flex;
-  }
+    .project-card {
+      width: 100%;
+      display: flex;
+    }
 
-  .design-steps {
-    display: flex;
-    flex-direction: column;
-  }
+    .design-steps {
+      display: flex;
+      flex-direction: column;
+    }
 
-  .step-1-2, .step-3-4 {
-    display: flex;
-    flex-direction: row;
-    margin-bottom: 2rem;
-  }
+    .step-1-2, .step-3-4 {
+      display: flex;
+      flex-direction: row;
+      margin-bottom: 2rem;
+    }
 
-  .design-steps {
-    background-image: url(teal-circle-no-shadow.svg);
-    background-size: 30rem;
-    background-position: center;
-    background-repeat: no-repeat;
-  }
+    .design-steps {
+      background-image: url(teal-circle-no-shadow.svg);
+      background-size: 30rem;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
 
     .review-container {
       padding: 4rem 6rem 4rem 6rem;
@@ -118,127 +118,111 @@
       display: flex;
     }
 
-/*
-      .travel-flex-container {
-        display: flex;
-        display: -webkit-flex;
-        flex-direction: row;
-        -webkit-flex-direction: row;
-        flex-wrap: nowrap;
-        -webkit-flex-wrap: nowrap;
-        background-color: blue;
-      }
+    .rga1, .rga2 {
+      height: 5%;
+      padding-right: 1rem;
+    }
 
-      .brazil {
-        padding-right: 1rem;
-      }
+    .rga-flex-container {
+      display: flex;
+      display: -webkit-flex;
+      flex-direction: row;
+      -webkit-flex-direction: row;
+      flex-wrap: nowrap;
+      -webkit-flex-wrap: nowrap;
+      background-color: blue;
+    }
 
-      .iceland {
-        flex-grow: 2;
-        -webkit-flex-grow: 2;
-        height: 40%;
-        background-color: yellow;
-      } */
+    .aerial {
+      padding-left: 1rem;
+      padding-top: 0;
+    }
 
-      .rga1, .rga2 {
-        height: 5%;
-        padding-right: 1rem;
-      }
-
-      .rga-flex-container {
-        display: flex;
-        display: -webkit-flex;
-        flex-direction: row;
-        -webkit-flex-direction: row;
-        flex-wrap: nowrap;
-        -webkit-flex-wrap: nowrap;
-        background-color: blue;
-      }
-
-      .aerial {
-        padding-left: 1rem;
-        padding-top: 0;
-      }
-
-      .aerial-flex-container {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: nowrap;
-      }
+    .aerial-flex-container {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: nowrap;
+    }
 
 
 }
 
 
 @media screen and (min-width: 991px) {
-  html {
-    font-size: 10px;
-  }
+    html {
+      font-size: 10px;
+    }
 
-/* Section & container sizes */
-  .site-container {
-    width: 100%;
-  }
+  /* Section & container sizes */
+    .site-container {
+      width: 100%;
+    }
 
-  .container section:not(:first-child) {
-      margin-bottom: 15rem;
-  }
+    .container section:not(:first-child) {
+        margin-bottom: 15rem;
+    }
 
-  .container section section:last-child {
-    margin-bottom: 0;
-  }
+    .container section section:last-child {
+      margin-bottom: 0;
+    }
 
-  section {
-    width: 70%;
-  }
+    section {
+      width: 70%;
+    }
 
+    .teal-circle {
+      visibility: visible;
+      width: 100%;
+      height: 100%;
+      margin: 0 2rem 0 3rem;
+    }
 
-  .teal-circle {
-    visibility: visible;
-  }
+    .flex-hero {
+      display: flex;
+      display: -webkit-flex;
+      flex-direction: row;
+      -webkit-flex-direction: row;
+      flex-wrap: nowrap;
+      -webkit-flex-wrap: nowrap;
+    }
 
-  .flex-hero {
-    display: flex;
-    display: -webkit-flex;
-    flex-direction: row;
-    -webkit-flex-direction: row;
-    flex-wrap: nowrap;
-    -webkit-flex-wrap: nowrap;
-  }
+    .hero p {
+      padding-right: 0;
+      padding-bottom: 10rem;
+    }
 
-  .hero p {
-    padding-right: 0;
-    padding-bottom: 10rem;
-  }
+    .featured-work h3 {
+      padding-bottom: 6rem;
+    }
 
-  .design-process {
-    width: 75%;
-  }
+    .design-process {
+      width: 75%;
+    }
 
-  .footer  {
-    width: 100%;
-  }
+    .footer  {
+      width: 100%;
+    }
 
 /* hero content starts here */
-.hero-content {
-  padding-top: 9rem;
-    flex-grow: 2;
-  }
+  .hero-content {
+    padding-top: 9rem;
+      flex-grow: 1;
+    }
 
-  .hero-image {
-    padding-right: 5rem;
-    width: 50%;
-  }
+    .hero-image {
+      padding-right: 5rem;
+      width: 70%;
+    }
 
 
-  .hero-image {
-    display: flex;
-  }
+    .hero-image {
+      display: flex;
+    }
 
-  .scroll-down-arrow {
-    padding-top: 3rem;
-    width: 100%;
-  }
+    .scroll-down-arrow {
+      padding-top: 3rem;
+      width: 100%;
+    }
 
 /* Design process content starts here */
   .design-steps {
@@ -290,7 +274,6 @@
 
 
 
-
 }
 
 @media screen and (min-width: 1199px) {
@@ -309,6 +292,11 @@
 
   .container section section:last-child {
     margin-bottom: 0;
+  }
+
+  .project-card {
+    width: 75%;
+    margin: auto;
   }
 
   .design-steps {
@@ -330,4 +318,5 @@
     margin: auto;
     }
 
-  }
+
+}
