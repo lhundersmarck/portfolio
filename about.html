@@ -52,8 +52,17 @@
       <div class="container">
         <section class="about-hero" id="about-hero">
           <div class="about-hero-image">
-            <img class="about-hero-headshot headshot-sm" src="assets/img/headshot-sm.jpg" alt="Headshot"></img>
-            <img class="about-hero-headshot headshot-lg" src="assets/img/headshot-lg.jpg" alt="Headshot"></img>
+            <img class="about-hero-headshot headshot"
+              srcset=
+              "assets/img/headshot-575w.jpg 575w,
+              assets/img/headshot-800w.jpg 800w,
+              assets/img/headshot-2000w.jpg 1200w"
+              sizes:
+              "(max-width: 575px) 575px,
+              (max-width: 800px) 800px,
+              (max-width: 1200px) 1200px, 2000px"
+              src="assets/img/headshot-2000w.jpg" alt="Headshot">
+            </img>
           </div>
           <div class="about-hero-content">
             <h1>Hi, my name is Laura.</h1>
@@ -68,12 +77,48 @@
           <br/><br/><p class="quote">What has made me a curious traveler is the same thing that makes me a successful UX designer - the ability to adapt to changing situations and listen to people’s needs in order to better serve them.</p>
           <p class= "about-paragraph"><br/>My encounters abroad drive me to create experiences that translate across a range of mediums and connect people from different cultural backgrounds.</p>
           <figure>
-            <img class="about-image brazil-sm" src="assets/img/brazil-sm.jpg" alt="Image of Ouro Preto landscape in Brazil"></img>
-            <img class="about-image brazil-lg" src="assets/img/brazil-lg.jpg" alt="Image of Ouro Preto landscape in Brazil"></img>
-            <img class="about-image iceland-sm" src="assets/img/iceland-sm.jpg" alt="Image of Icelandic landscape"></img>
-            <img class="about-image iceland-lg" src="assets/img/iceland-lg.jpg" alt="Image of Icelandic landscape"></img>
+            <div class="travel-flex-container">
+              <img class="about-image travel-img"
+               srcset=
+               "assets/img/travel-800w.png 800w
+               assets/img/travel-1200w.png 1200w,
+               assets/img/travel-2880w.png 2880w"
+               sizes:
+               "(max-width: 800px) 800px,
+               (max-width: 1200px) 1200px,
+               (max-width: 1440px) 2880px"
+               src="assets/img/travel-2880w.png" alt="Ouro Preto in Brazil and Iceland waterfall">
+             </img>
+              <img class="about-image brazil"
+               srcset=
+               "assets/img/brazil-575w.jpg 575w,
+               assets/img/brazil-800w.jpg 800w,
+               assets/img/brazil-1200w.jpg 1200w,
+               assets/img/brazil-2400w.jpg 2000w"
+               sizes:
+               "(max-width: 575px) 575px,
+               (max-width: 800px) 800px,
+               (max-width: 1200px) 1200px,
+               (max-width: 1440px) 2000px"
+               src="assets/img/brazil-2400w.jpg" alt="Ouro Preto in Brazil">
+             </img>
+              <img class="about-image iceland"
+                srcset=
+                "assets/img/iceland-575w.jpg 575w,
+                assets/img/iceland-800w.jpg 800w,
+                assets/img/iceland-1200w.jpg 1200w,
+                assets/img/iceland-2880w.jpg 2000w"
+                sizes:
+                "(max-width: 575px) 575px,
+                (max-width: 800px) 800px,
+                (max-width: 1200px) 1200px,
+                (max-width: 1440px) 2000px"
+                src="assets/img/iceland-2880w.jpg"
+                alt="Icelandic waterfall">
+              </img>
+            </div>
             <figcaption>Above: The historic town of Ouro Preto in Brazil taken during my exchange year in 2008. Below: Goðafoss waterfall in Iceland taken while volunteering in 2012.</figcaption>
-          </figure>
+            </figure>
         </section>
         <section class="about-profession about-section">
           <img class="section-header" src="assets/img/section-profession.svg" alt="Section header: Profession"></img>
@@ -82,16 +127,52 @@
             <br/><br/>Upon graduation, I had the opportunity to learn from some of the pioneers in the industry at the Digital Design Studio (DDS) at the Glasgow School of Art and their partner, Historic Environment Scotland. Alongside a talented team, I laser scanned historic structures, developed 3D models from real-world data and stitched together panoramic photographs of World Heritage sites for VR applications.</p>
             <br/><br/><p class="quote">My work at the DDS trained me to assess a technical problem and solve it using a range of technologies and context-specific methods, essential skills that I routinely employ as a UX designer.</p>
           <figure>
-            <img class="about-image hynish-sm" src="assets/img/hynish-sm.jpg" alt="3D model of Hynish Harbor"></img>
-            <img class="about-image hynish-lg" src="assets/img/hynish-lg.jpg" alt="3D model of Hynish Harbor"></img>
+            <img class="about-image hynish"
+              srcset=
+              "assets/img/hynish-575w.jpg 575w,
+              assets/img/hynish-800w.jpg 800w,
+              assets/img/hynish-1100w.jpg 1100w"
+              sizes:
+              "(max-width: 575px) 575px,
+              (max-width: 800px) 800px,
+              (max-width: 1100px) 1100px"
+              src="assets/img/hynish-1100w.jpg"
+              alt="3D model of Hynish Harbor">
+            </img>
             <figcaption>A rendered 3D interpretation of Hynish Harbor in Scotland modeled over laser scan data (courtesy of the Digital Design Studio at the Glasgow School of Art).</figcaption>
           </figure>
           <p class= "about-paragraph">In 2017, I worked as a graphics specialist at a cultural resource management firm that conducts archaeological studies and historic architecture assessments. I spent my days photographing historic structures, mapping boundary lines in ArcGIS, and designing interpretive and wayfinding signs for clients. </p>
           <figure>
-            <img class="about-image rga1-sm" src="assets/img/rga1-sm.jpg" alt="Railroad building in New Jersey"></img>
-            <img class="about-image rga1-lg" src="assets/img/rga1-lg.jpg" alt="Railroad building in New Jersey"></img>
-            <img class="about-image rga2-sm" src="assets/img/rga2-sm.jpg" alt="Historic Founders Grove Estate in New Jersey"></img>
-            <img class="about-image rga2-lg" src="assets/img/rga2-lg.jpg" alt="Historic Founders Grove Estate in New Jersey"></img>
+            <div class="rga-flex-container">
+              <img class="about-image rga1"
+                srcset=
+                "assets/img/rga1-575w.jpg 575w,
+                assets/img/rga1-800w.jpg 800w,
+                assets/img/rga1-1200w.jpg 1200w,
+                assets/img/rga1-2700w.jpg 1440w"
+                sizes:
+                "(max-width: 575px) 575px,
+                (max-width: 800px) 800px,
+                (max-width: 1200px) 1100px,
+                (max-width: 1440px) 2700px"
+                src="assets/img/rga1-2700w.jpg"
+                alt="Railroad building in New Jersey">
+              </img>
+              <img class="about-image rga2"
+                srcset=
+                "assets/img/rga2-575w.jpg 575w,
+                assets/img/rga2-800w.jpg 800w,
+                assets/img/rga2-1200w.jpg 1200w,
+                assets/img/rga2-2880w.jpg 1440w"
+                sizes:
+                "(max-width: 575px) 575px,
+                (max-width: 800px) 800px,
+                (max-width: 1200px) 1200px,
+                (max-width: 1440px) 2880px"
+                src="assets/img/rga2-2880w.jpg"
+                alt="Historic Founders Grove Estate in New Jersey">
+              </img>
+            </div>
             <figcaption>Photographs taken while employed at RGA to document historic buildings and engineering structures in New Jersey. </figcaption>
           </figure>
           <p class= "about-paragraph">It was during this period of my professional life that I realized that something was missing. Although it is immensely important to document cultural heritage to preserve our history, I no longer felt connected to people and their experiences.</p>
@@ -105,12 +186,24 @@
         </section>
         <section class="about-interests about-section">
           <img class="section-header" src="assets/img/section-interests.svg" alt="Section header: When I'm not designing"></img>
-          <p class= "about-paragraph">I’m usually hanging from a trapeze at my circus gym. I love podcasts (ask me which ones) and trying new recipes. I speak fluent Portuguese and am currently learning Polish. </p>
-          <figure>
-            <img class="about-image aerial-sm" src="assets/img/aerial-sm.jpg" alt="Promotional circus image"></img>
-            <img class="about-image aerial-lg" src="assets/img/aerial-lg.jpg" alt="Promotional circus image"></img>
-            <figcaption class="aerial">Shot during an aerial circus showcase in 2016 (courtesy of <a href="https://eate.eu/">Asier Goikoetxea</a>).</figcaption>
-          </figure>
+          <div class="aerial-flex-container">
+            <p class= "about-paragraph">I’m usually hanging from a trapeze at my circus gym. I love podcasts (ask me which ones) and trying new recipes. I speak fluent Portuguese and am currently learning Polish. </p>
+            <figure>
+              <img class="about-image aerial"
+                srcset=
+                "assets/img/aerial-600w.jpg 600w,
+                assets/img/aerial-900w.jpg 900w,
+                assets/img/aerial-1440w.jpg 1440w"
+                sizes:
+                "(max-width: 600px) 600px,
+                (max-width: 900px) 900px,
+                (max-width: 1440px) 1440px"
+                src="assets/img/aerial-1440w.jpg"
+                alt="Promotional circus image">
+              </img>
+              <figcaption class="aerial">Shot during an aerial circus showcase in 2016 (courtesy of <a href="https://eate.eu/">Asier Goikoetxea</a>).</figcaption>
+            </figure>
+          </div>
         </section>
         <footer class="footer">
           <div class="contact-group">

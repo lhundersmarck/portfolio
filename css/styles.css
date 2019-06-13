@@ -327,36 +327,6 @@ footer .footer-icons {
   padding-top: 5%;
 }
 
-.headshot-lg {
-  display: none;
-}
-
-.brazil-lg {
-  display: none;
-}
-
-.iceland-lg {
-  display: none;
-}
-
-.hynish-lg {
-  display: none;
-}
-
-.rga1-lg {
-  display: none;
-}
-
-.rga2-lg {
-  display: none;
-}
-
-.aerial-lg {
-  display: none;
-}
-
-
-
 .about-paragraph {
   padding-bottom: 0;
 }
@@ -371,6 +341,10 @@ footer .footer-icons {
 .about-image {
   padding-top: 2rem;
   width: 100%;
+}
+
+.travel-img {
+  display: none;
 }
 
 figure {

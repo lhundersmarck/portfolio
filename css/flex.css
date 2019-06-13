@@ -110,60 +110,61 @@
 
     /* About page starts here */
 
-    /* Image optimization */
-      .headshot-sm {
-        display: none;
+    .brazil, .iceland {
+      display: none;
+    }
+
+    .travel-img {
+      display: flex;
+    }
+
+/*
+      .travel-flex-container {
+        display: flex;
+        display: -webkit-flex;
+        flex-direction: row;
+        -webkit-flex-direction: row;
+        flex-wrap: nowrap;
+        -webkit-flex-wrap: nowrap;
+        background-color: blue;
       }
 
-      .headshot-lg {
-        display: block !important;
-        opacity: 0.5;
+      .brazil {
+        padding-right: 1rem;
       }
 
-      /* brazil is in next breakpoint */
+      .iceland {
+        flex-grow: 2;
+        -webkit-flex-grow: 2;
+        height: 40%;
+        background-color: yellow;
+      } */
 
-
-      .iceland-sm {
-        display: none;
+      .rga1, .rga2 {
+        height: 5%;
+        padding-right: 1rem;
       }
 
-      .iceland-lg {
-        display: block !important;
+      .rga-flex-container {
+        display: flex;
+        display: -webkit-flex;
+        flex-direction: row;
+        -webkit-flex-direction: row;
+        flex-wrap: nowrap;
+        -webkit-flex-wrap: nowrap;
+        background-color: blue;
       }
 
-      .hynish-sm {
-        display: none;
+      .aerial {
+        padding-left: 1rem;
+        padding-top: 0;
       }
 
-      .hynish-lg {
-        display: block !important;
+      .aerial-flex-container {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
       }
-
-      .rga1-sm {
-        display: none;
-      }
-
-      .rga1-lg {
-        display: block !important;
-      }
-
-      .rga2-sm {
-        display: none;
-      }
-
-      .rga2-lg {
-        display: block !important;
-      }
-
-      .aerial-sm {
-        display: none;
-      }
-
-      .aerial-lg {
-        display: block !important;
-      }
-
-
 
 
 }
@@ -187,9 +188,17 @@
     margin-bottom: 0;
   }
 
+  section {
+    width: 60%;
+  }
+
   .flex-hero {
     display: flex;
+    display: -webkit-flex;
     flex-direction: row;
+    -webkit-flex-direction: row;
+    flex-wrap: nowrap;
+    -webkit-flex-wrap: nowrap;
     height: 50rem;
     background-color: green;
   }
