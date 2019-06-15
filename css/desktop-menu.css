@@ -1,0 +1,43 @@
+nav a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.desktop-menu-container {
+  visibility: hidden;
+  z-index: 1;
+}
+
+.desktop-menu-container nav ul li {
+  display: inline-block;
+  font-size: 1.7em;
+}
+
+.desktop-menu-container nav img {
+  float: left;
+  margin-top: -2em;
+  width: 20em;
+}
+
+.desktop-menu-container nav ul li button {
+  width: 100%;
+  padding: 0.4em 0.9em 0.5em 0.9em;
+  text-transform: none;
+  font-size: 1em;
+  font-weight: normal;
+  letter-spacing: 0.02rem;
+}
+
+.desktop-menu-container nav ul {
+  float: right;
+}
+
+.desktop-menu-container nav ul li:not(:last-child) {
+  margin-right: 1.6em;
+}
+
+@media screen and (min-width: 575px) {
+  .desktop-menu-container {
+    padding: 4% 5% .15% 5%;
+  }
+}

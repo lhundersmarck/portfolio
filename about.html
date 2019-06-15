@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/mobile-menu.css">
+    <link rel="stylesheet" href="css/desktop-menu.css">
     <link rel="stylesheet" href="css/flex.css">
     <script src="https://kit.fontawesome.com/d7c1e28c2f.js"></script>
     <script src="js/mobile-menu.js"></script>
@@ -16,35 +17,49 @@
 
   <body>
     <div class="site-container">
-        <div class="mobile-menu-container">
-          <header>
-            <nav>
-              <a href="index.html"><img class="mobile-logo" src="assets/img/mobile-logo.svg" alt="logo"></img></a>
-              <div class="mobile-menu" onclick="toggleMobileMenu(this)">
-                <div class="mobile-menu-bar-1"></div>
-                <div class="mobile-menu-bar-2"></div>
-                <div class="mobile-menu-bar-3"></div>
-              </div>
-              <div class="mobile-menu-list-container">
-                <ul class="mobile-menu-list">
-                  <a href="index.html">
-                    <li onclick="toggleMobileMenuItem()">Work</li>
-                  </a>
-                  <a href="about.html">
-                    <li onclick="toggleMobileMenuItem()">
-                      About
-                    </li>
-                  </a>
+        <header class="mobile-menu-container">
+          <nav>
+            <a href="index.html"><img class="mobile-logo" src="assets/img/mobile-logo.svg" alt="logo"></img></a>
+            <div class="mobile-menu" onclick="toggleMobileMenu(this)">
+              <div class="mobile-menu-bar-1"></div>
+              <div class="mobile-menu-bar-2"></div>
+              <div class="mobile-menu-bar-3"></div>
+            </div>
+            <div class="mobile-menu-list-container">
+              <ul class="mobile-menu-list">
+                <a href="index.html">
+                  <li onclick="toggleMobileMenuItem()">Work</li>
+                </a>
+                <a href="about.html">
+                  <li onclick="toggleMobileMenuItem()">
+                    About
+                  </li>
+                </a>
+                <a href="mailto:laurahundersmarck@gmail.com">
+                  <li onclick="toggleMobileMenuItem()">
+                    Contact
+                  </li>
+                </a>
+              </ul>
+            </div>
+          </nav>
+        </header>
+        <header class="desktop-menu-container">
+          <nav>
+            <img src="assets/img/desktop-logo-LH.svg"></img>
+            <ul>
+              <li><a href="index.html">Work</a></li>
+              <li><a href="about.html">About</a></li>
+              <li>
+                <div class="button-container">
                   <a href="mailto:laurahundersmarck@gmail.com">
-                    <li onclick="toggleMobileMenuItem()">
-                      Contact
-                    </li>
-                  </a>
-                </ul>
-              </div>
-            </nav>
-          </header>
-        </div>
+                  <button>Contact</button>
+                </a>
+                </div>
+              </li>
+            </ul>
+          </nav>
+        </header>
         <div class="spacer">
         </div>
 
@@ -69,7 +84,7 @@
             <p>I’m a UX/UI designer based in Philadelphia. My background is in photography and 3D design in the cultural heritage field. I’m committed to using my industry knowledge and experiences abroad to create meaningful digital products that translate across a range of mediums and bring people together. <br/><br/>I am currently available for a full-time position or freelance opportunities. Also happy to relocate!</p>
           </div>
         </section>
-        <section class="about-background">
+        <section class="about-background about-section">
           <img class="section-header" src="assets/img/section-background.svg" alt="Section header: Background"></img>
           <p class= "about-paragraph">At 17 years old, I spent a year as an exchange student in a rural town in Brazil. The chance to learn the rules of a different culture was both thrilling and transformative.
           <br/><br/>Over the next decade, I traveled as much as I could, eager to step into someone else’s shoes. I like to observe, to listen to people and find out how things work.

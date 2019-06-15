@@ -8,6 +8,15 @@
       height: 10rem;
     }
 
+    .mobile-menu-container {
+      visibility: hidden;
+      background-color: yellow;
+    }
+
+    .desktop-menu-container {
+        visibility: visible;
+    }
+
     section {
       width: 70%;
       margin: auto;
@@ -54,6 +63,10 @@
     .design-steps {
       display: flex;
       flex-direction: column;
+    }
+
+    .step-1, .step-2, .step-3, .step-4 {
+      padding: 0 1rem 4rem 0;
     }
 
     .step-1-2, .step-3-4 {
@@ -130,7 +143,6 @@
       -webkit-flex-direction: row;
       flex-wrap: nowrap;
       -webkit-flex-wrap: nowrap;
-      background-color: blue;
     }
 
     .aerial {
@@ -237,7 +249,7 @@
   }
 
   .step-1, .step-2, .step-3, .step-4 {
-    padding: 0 4rem 4rem 0;
+    padding: 0 5rem 5rem 0;
     margin-left: 5rem;
   }
 
@@ -272,6 +284,9 @@
 
   /* About content starts here */
 
+.about-section {
+  max-width: 700px;
+  }
 
 
 }
@@ -310,7 +325,8 @@
 
   .step-1, .step-2, .step-3, .step-4 {
     padding: 0 5rem 5rem 0;
-    margin-left: 10rem;
+    margin-left: 6rem;
+    max-width: 500px;
   }
 
   .review-container {

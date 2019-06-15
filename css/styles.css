@@ -145,7 +145,6 @@ a .down-arrow {
 .project2 {
   text-align: center;
   padding: 12rem 0 12rem 0;
-  opacity: .3;
 }
 
 .design-process {
@@ -177,11 +176,14 @@ h5 {
 
 .design-process p {
   font-size: 1.8rem;
-  padding-bottom: 5.5rem;
+  padding-bottom: 1.1rem;
   margin-left: 2.5rem;
   margin-right: 2.5rem;
 }
 
+.step-1, .step-2, .step-3, .step-4 {
+  padding: 0 2rem 3rem 0;
+}
 
 blockquote p {
   font-size: 1.8rem;
