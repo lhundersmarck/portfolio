@@ -10,7 +10,6 @@
 
     .mobile-menu-container {
       visibility: hidden;
-      background-color: yellow;
     }
 
     .desktop-menu-container {
@@ -76,7 +75,7 @@
     }
 
     .design-steps {
-      background-image: url(teal-circle-no-shadow.svg);
+      background-image: url("../assets/img/teal-circle-no-shadow.svg");
       background-size: 30rem;
       background-position: center;
       background-repeat: no-repeat;
@@ -123,6 +122,12 @@
 
     /* About page starts here */
 
+    .about-hero-content {
+      width: 70%;
+      padding-top: 4rem;
+      background-color: red;
+    }
+
     .brazil, .iceland {
       display: none;
     }
@@ -156,7 +161,7 @@
       flex-wrap: nowrap;
     }
 
-
+    /* Project-1 starts here  */
 }
 
 
@@ -238,7 +243,7 @@
 
 /* Design process content starts here */
   .design-steps {
-    background-image: url(teal-circle-no-shadow.svg);
+    background-image: url("../assets/img/teal-circle-no-shadow.svg");
     background-size: 40rem;
     background-position: center;
     background-repeat: no-repeat;
@@ -288,8 +293,18 @@
   max-width: 700px;
   }
 
+  .about-hero-image img {
+    visibility: hidden;
+    /* height: 0; */
+  }
 
+  .about-hero-image {
+    background-image: url("../assets/img/headshot-2000w.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 
+  }
 
 
 }
@@ -336,6 +351,4 @@
     max-width: 1400px;
     margin: auto;
     }
-
-
 }
