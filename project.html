@@ -67,7 +67,15 @@
     <section class="project-hero" id="project-hero">
       <img class="product-logo project-image" src="assets/img-project/trove-logo-color.svg" alt="Trove Product Logo"></img>
       <h2 class="project-intro">Collect, organize & share what inspires you most. Trove is a cloud storage platform that stores all your favorite things in one place.</h2>
-      <img class="product-shot project-image" src="assets/img-project/mobile-product-shot@1x.png" alt="Trove Product Shot of Dashboard"></img>
+      <img class="product-shot project-image"
+       srcset=
+       "assets/img-project/trove-product-hero-750w.png 750w,
+       assets/img-project/trove-product-hero-2880w.png 2880w"
+       sizes:
+       "(max-width: 800px) 750px, 1440px"
+       src="assets/img-project/trove-product-hero-2880w.png"
+       alt="Trove Product Shot of Dashboard">
+     </img>
     </section>
     <section class="project-summary">
       <img class="section-header" src="assets/img-project/section-summary.svg" alt="Section header: Project Summary"></img>
@@ -78,36 +86,44 @@
           <button>view prototype</button>
         </a>
       </div>
-      <h3 class="header-spec-list center-headers">Roles</h3>
-      <ul class="summary-list">
-        <li>UX Research and Design</li>
-        <li>Visual Design</li>
-        <li>Branding</li>
-      </ul>
-      <h3 class="header-spec-list center-headers">Deliverables</h3>
-      <ul class="summary-list">
-        <li>User Survey</li>
-        <li>Competitive Analysis</li>
-        <li>Personas</li>
-        <li>User Stories & Flows</li>
-        <li>Sketches</li>
-        <li>Wireframing</li>
-        <li>User Testing</li>
-        <li>Branding</li>
-        <li>Prototypes</li>
-      </ul>
-      <h3 class="header-spec-list center-headers">Specs</h3>
-      <ul class="summary-list">
-        <li><span>Duration</span></li>
-        <li>10 weeks</li>
-        <br/>
-        <br/>
-        <li><span>Tools</span></li>
-        <li>Figma</li>
-        <li>Draw.io</li>
-        <li>UsabilityHub</li>
-        <li>Google Forms</li>
-      </ul>
+      <div class="summary-list-flex-group">
+        <div class="summary-list">
+          <h3 class="header-spec-list center-headers">Roles</h3>
+          <ul>
+            <li>UX Research</li>
+            <li>Visual Design</li>
+            <li>Branding</li>
+          </ul>
+        </div>
+        <div class="summary-list">
+          <h3 class="header-spec-list center-headers">Deliverables</h3>
+          <ul>
+            <li>User Survey</li>
+            <li>Competitive Analysis</li>
+            <li>Personas</li>
+            <li>User Stories & Flows</li>
+            <li>Sketches</li>
+            <li>Wireframing</li>
+            <li>User Testing</li>
+            <li>Branding</li>
+            <li>Prototypes</li>
+          </ul>
+        </div>
+        <div class="summary-list">
+          <h3 class="header-spec-list center-headers">Specs</h3>
+          <ul>
+            <li><span>Duration</span></li>
+            <li>10 weeks</li>
+            <br/>
+            <br/>
+            <li><span>Tools</span></li>
+            <li>Figma</li>
+            <li>Draw.io</li>
+            <li>UsabilityHub</li>
+            <li>Google Forms</li>
+          </ul>
+        </div>
+      </div>
       <h3 class="header-summary">The Problem</h3>
       <p>With so many cloud storage platforms on the market, is there room to throw another hat in the ring? The cloud storage industry has evolved dramatically and users needs have evolved with it. I set out to uncover the problems users face today and
         build a product that met those needs.
