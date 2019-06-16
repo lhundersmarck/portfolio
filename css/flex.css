@@ -165,13 +165,29 @@
     }
 
     /* Project-1 starts here  */
+    .project-hero {
+      width: 100%;
+    }
+
+    .product-logo {
+      padding: 1rem .7rem 2rem 0;
+    }
+
+    .product-shot {
+      margin: 0 auto;
+    }
+
     .project-image {
       width: 100%;
-      margin-top: 4rem;
+      margin: 3rem 0 2rem 0;
+    }
+
+    .project-hero h2 {
+      width: 60%;
+      margin: auto;
     }
 
     .summary-list-flex-group {
-      margin-top: 2rem;
       display: flex;
       display: -webkit-flex;
       flex-direction: row;
@@ -179,11 +195,21 @@
       flex-wrap: nowrap;
       -webkit-flex-wrap: nowrap;
       width: 100%;
+      margin: 0 auto;
+      justify-content: center;
     }
 
-    .summary-list {
-      margin: 0 1rem 0 1rem;
-      background-color: pink;
+    .summary-list:not(:last-child) {
+      margin-right: 4rem;
+    }
+
+    .summary-list h3 {
+      margin-top: 0;
+      padding: 0 2rem 1rem 2rem;
+    }
+
+    .summary-list li {
+      font-size: 1.7rem;
     }
 
 }
@@ -327,9 +353,19 @@
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-
   }
 
+  /* project starts here  */
+
+  .project-hero h2 {
+    width: 40%;
+    max-width: 600px;
+    margin: auto;
+  }
+
+  .summary-list:not(:last-child) {
+    margin-right: 10rem;
+  }
 
 }
 
