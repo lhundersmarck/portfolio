@@ -98,6 +98,10 @@ section {
   width: 90%;
 }
 
+figcaption span {
+  font-weight: 700;
+}
+
 .container section:not(:first-child) {
     margin-bottom: 8rem;
 }
