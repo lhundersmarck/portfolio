@@ -216,9 +216,90 @@
       margin-top: 4rem;
     }
 
-    .research-highlights {
+    .user-survey, .research-highlights,
+    .competitive-analysis, .target-audience,
+    .personas, .user-stories, .user-flow,
+    .wireframe, .early-testing, .moodboard,
+    .color-typography, .logo, .a-b-testing,
+    .hi-fi-testing {
+      margin-bottom: 12rem;
+    }
+
+    .research-sub-section {
+      width: 70%;
+      margin: 0 auto;
+    }
+
+    .fig-row img {
+      width: 20%;
+    }
+
+    .persona-icon-2 {
+      padding-top: 5rem;
+    }
+
+
+    .personas, .project-image {
+      margin-top: 1rem;
+      width:
+    }
+
+    .persona-flex-container {
+      display: flex;
+      display: -webkit-flex;
+      flex-direction: row;
+      -webkit-flex-direction: column;
+      width: 70%;
+      margin: 0 auto;
+    }
+
+    .user-story {
+      padding-top: 2rem;
+    }
+
+    .user-story img {
+      width: 40%;
+      margin: 0 auto;
+    }
+
+    .user-story figcaption {
+      width: 60%;
+      margin: 0 auto;
+    }
+
+    .double-button-flex {
+      display: flex;
+      display: -webkit-flex;
+      flex-direction: row;
+      -webkit-flex-direction: row;
+      flex-wrap: nowrap;
+      -webkit-flex-wrap: nowrap;
+    }
+
+    .double-button-flex button {
+      width: 70%;
+    }
+
+    .double-button-flex, .button-container {
+      margin-top: 1rem;
+    }
+
+    .information-arch-sub-section {
+      width: 70%;
+      margin: 0 auto;
+    }
+
+    .wireframe {
       width: 100%;
     }
+
+    .wireframe-intro {
+      width: 70%;
+      margin: 0 auto;
+    }
+
+
+
 
 }
 

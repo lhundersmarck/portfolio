@@ -198,19 +198,20 @@ blockquote p {
   padding-bottom: .5rem;
 }
 
-.reviewer {
-  font-size: 1.6rem;
-  line-height: 2.2rem;
-  padding-top: 2rem;
-  float: right;
-  text-align: right;
-}
-
 .review-container {
   padding: 4rem 0 4rem 0;
   margin-left: auto;
   margin-right: auto;
 }
+
+.reviewer {
+  font-size: 1.6rem;
+  line-height: 2.2rem;
+  padding-top: 2rem;
+  text-align: right;
+}
+
+
 
 .quotation-mark-left, .quotation-mark-right {
   width: 2rem;
@@ -385,15 +386,17 @@ figcaption {
 
 
 .project-image {
+  border-radius: .3rem;
   width: 100%;
   margin-top: 2rem;
+
 }
 
-.product-shot {
+/* .product-shot {
   margin-left: -6%;
   margin-right: -6%;
   width: 112%;
-}
+} */
 
 .project-nav {
   display: flex;
@@ -478,18 +481,32 @@ li span {
 
 .teal-background {
   background-color: #18A2A2;
-  margin-left: -6%;
-  margin-right: -6%;
   padding-top: 1rem;
   margin-bottom: 1rem;
   color: #FDFDFD;
+  width: 100%;
 }
+
+.research, .information-architecture {
+  width: 100%;
+}
+
+.research-sub-section, .information-arch-sub-section {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.wireframe-intro {
+  width: 90%;
+  margin: 0 auto;
+}
+
 
 .teal-background .project-image {
   width: 90%;
+  margin: 0 auto;
   display: flex;
   flex-direction: column;
-  margin: 0 5% 0 5%;
   padding: 0 0 1rem 0;
 }
 
@@ -499,20 +516,20 @@ li span {
 
 .teal-background .research-highlight-container .project-image {
   width: 40%;
-  margin: 0 30% 0 30%;
 }
+
 
 .research-highlights h3 {
   padding-top:3rem;
 }
 
 .research-highlights p {
-  padding: 1rem 15% 4rem 15%;
   font-size: 2.2rem;
 }
 
 .research-insights {
-  margin: 0 6% 0 6%;
+  width: 90%;
+  margin: 0 auto;
 }
 
 .research-insights p {
@@ -573,10 +590,14 @@ li span {
   padding-bottom: 2rem;
 }
 
-.user-story figcaption, .user-story img {
+ .user-story img {
   margin: 0 1rem 2rem 1rem;
   width: 60%;
   margin-left: 3rem;
+}
+
+.user-story figcaption {
+  margin: 0 .5rem 0 .5rem;
 }
 
 .user-story {
