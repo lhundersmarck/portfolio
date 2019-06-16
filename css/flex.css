@@ -212,6 +212,14 @@
       font-size: 1.7rem;
     }
 
+    .button-container {
+      margin-top: 4rem;
+    }
+
+    .research-highlights {
+      width: 100%;
+    }
+
 }
 
 

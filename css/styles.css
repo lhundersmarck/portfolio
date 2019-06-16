@@ -44,6 +44,20 @@ h3 {
   text-align: left;
 }
 
+h4 {
+  font-size: 1.8rem;
+  letter-spacing: .18rem;
+  text-transform: uppercase;
+}
+
+
+h5 {
+  font-family: 'Sand Dunes', 'Gilda Display', serif;
+  font-size: 2.5rem;
+  padding-bottom: 1.1rem;
+  margin: 0 1.5rem 0 1.5rem;
+}
+
 .center-headers {
   text-align: center;
 }
@@ -157,19 +171,6 @@ a .down-arrow {
   text-align: center;
   font-weight: 700;
   padding-bottom: 6rem;
-}
-
-h4 {
-  font-size: 1.8rem;
-  letter-spacing: .18rem;
-}
-
-
-h5 {
-  font-family: 'Sand Dunes', 'Gilda Display', serif;
-  font-size: 2.5rem;
-  padding-bottom: 1.1rem;
-  margin: 0 1.5rem 0 1.5rem;
 }
 
 
@@ -419,12 +420,11 @@ figcaption {
 
 .header-spec-list {
   color: #18A2A2;
-  padding-top: 3rem;
 }
 
 .summary-list {
   text-align: center;
-  margin-top: 3rem;
+  margin-top: 2rem;
 }
 
 .summary-list li {
@@ -434,7 +434,6 @@ figcaption {
 .summary-list h3 {
   padding-bottom: 1rem;
 }
-
 
 li {
   font-size: 1.9rem;
@@ -458,6 +457,24 @@ li span {
 .header-summary {
   padding-top: 4rem;
 }
+
+.the-problem p {
+  padding-bottom: 1rem;
+}
+
+.the-solution p {
+  padding-bottom: 1rem;
+}
+
+.user-survey, .research-highlights,
+.competitive-analysis, .target-audience,
+.personas, .user-stories, .user-flow,
+.wireframe, .early-testing, .moodboard,
+.color-typography, .logo, .a-b-testing,
+.hi-fi-testing {
+  margin-bottom: 7rem;
+}
+
 
 .teal-background {
   background-color: #18A2A2;
