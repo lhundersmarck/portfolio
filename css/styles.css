@@ -510,7 +510,7 @@ li span {
   width: 90%;
   margin: 0 auto;
   display: flex;
-  flex-direction: column;
+  /* flex-direction: column; */
   padding: 0 0 1rem 0;
 }
 

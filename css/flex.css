@@ -238,7 +238,6 @@
       padding-top: 5rem;
     }
 
-
     .personas, .project-image {
       margin-top: 1rem;
       width:
@@ -297,6 +296,41 @@
       width: 70%;
       margin: 0 auto;
     }
+
+     .wireframe-flex-container {
+      padding: 1rem;
+      display: flex;
+      display: -webkit-flex;
+      flex-direction: row;
+      -webkit-flex-direction: row;
+      flex-wrap: wrap;
+      -webkit-flex-wrap: wrap;
+      margin: 0 auto;
+    }
+
+     .wireframe-flex-container .project-image {
+       width: 48%;
+       justify-content: center;
+       margin-bottom: 1rem;
+    }
+
+    .early-testing-flex-container {
+      display: flex;
+      display: -webkit-flex;
+      flex-direction: row;
+      -webkit-flex-direction: row;
+      flex-wrap: wrap;
+      -webkit-flex-wrap: wrap;
+      margin: 0 auto;
+      background-color: red;
+    }
+
+    .early-testing-flex-container .project-image {
+      width: 60%;
+      margin: 0 auto;
+    }
+
+    
 
 
 
