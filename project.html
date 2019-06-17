@@ -588,34 +588,85 @@
       </div>
     </section>
     <section class="user-testing">
-      <img class="section-header" src="assets/img-project/section-visual-testing.svg" alt="Section header: Visual Design and Testing"></img>
-      <p class="section-summary">After gathering some early feedback from user testing and developing the brand identity, I transformed my wireframes into high fidelity mockups breathing life and color into the final prototype. </p>
+      <div class="visual-testing-sub-section">
+        <img class="section-header" src="assets/img-project/section-visual-testing.svg" alt="Section header: Visual Design and Testing"></img>
+        <p class="section-summary">After gathering some early feedback from user testing and developing the brand identity, I transformed my wireframes into high fidelity mockups breathing life and color into the final prototype. </p>
+      </div>
       <div class="a-b-testing">
-        <h4>User testing</h4>
-        <h3>A/B testing</h3>
-        <p>To test some of my design decisions, I conducted several preference tests using UsabilityHub and consulted senior designers. </p>
-          <div class="a-b-testing-group">
-            <div class="teal-background">
-              <p class="a-b-header"><span>Screen A</span></p>
-              <figure>
-                <img class="project-image" src="assets/img-project/testing-hero-image.svg" alt="Product hero image"></img>
-                <img class="project-image" src="assets/img-project/a-b-testing-screen1.svg" alt="Product sign up screen A"></img>
+        <div class="a-b-testing-intro">
+          <h4>User testing</h4>
+          <h3>A/B testing</h3>
+          <p>To test some of my design decisions, I conducted several preference tests using UsabilityHub and consulted senior designers. </p>
+        </div>
+        <div class="a-b-testing-group">
+          <div class="teal-background">
+            <figure class="a-b-flex-container">
+              <div class="option-a">
+                <p class="a-b-header"><span>Screen A</span></p>
+                <img class="project-image"
+                  srcset=
+                  "assets/img-project/landing-page-hero-720w.jpg 720w,
+                  assets/img-project/landing-page-hero-1080w.jpg 1080w,
+                  assets/img-project/landing-page-hero-1440w.jpg 1440w"
+                  sizes:
+                  "(max-width: 720px) 720px,
+                  (max-width: 1080px) 1080px, 1440px"
+                  src="assets/img-project/landing-page-hero-1440w.jpg"
+                  alt="Product hero image">
+                </img>
+                <img class="project-image"
+                  srcset=
+                  "assets/img-project/testing-signup-a-720w.jpg 720w,
+                  assets/img-project/testing-signup-a-1080w.jpg 1080w,
+                  assets/img-project/testing-signup-a-1440w.jpg 1440w"
+                  sizes:
+                  "(max-width: 720px) 720px,
+                  (max-width: 1080px) 1080px, 1440px"
+                  src="assets/img-project/testing-signup-a-1440w.jpg"
+                  alt="Product sign up screen A">
+                </img>
                 <figcaption>Hero image [above] and sign up screen [below]</figcaption>
-                <br/>
-                <br/>
+              </div>
+              <br/>
+              <br/>
+
+              <div class="option-b">
                 <p class="a-b-header"><span>Screen B<span></p>
-                <img class="project-image" src="assets/img-project/testing-hero-image.svg" alt="Product hero image"></img>
-                <img class="project-image" src="assets/img-project/a-b-testing-screen2.svg" alt="Product sign up screen B"></img>
+                <img class="project-image"
+                  srcset=
+                  "assets/img-project/landing-page-hero-720w.jpg 720w,
+                  assets/img-project/landing-page-hero-1080w.jpg 1080w,
+                  assets/img-project/landing-page-hero-1440w.jpg 1440w"
+                  sizes:
+                  "(max-width: 720px) 720px,
+                  (max-width: 1080px) 1080px, 1440px"
+                  src="assets/img-project/landing-page-hero-1440w.jpg"
+                  alt="Product hero image">
+                </img>
+                <img class="project-image"
+                  srcset=
+                  "assets/img-project/testing-signup-b-720w.jpg 720w,
+                  assets/img-project/testing-signup-b-1080w.jpg 1080w,
+                  assets/img-project/testing-signup-b-1440w.jpg 1440w"
+                  sizes:
+                  "(max-width: 720px) 720px,
+                  (max-width: 1080px) 1080px, 1440px"
+                  src="assets/img-project/testing-signup-b-1440w.jpg"
+                  alt="Product sign up screen B">
+                </img>
                 <figcaption>Hero image [above] and sign up screen [below]</figcaption>
-              </figure>
+              </div>
+            </figure>
+            <div class="a-b-results">
               <br/>
               <p><span>Content Preference Test</span>: Sign up background images
                   <br/>
                   <br/> I asked users which sign up background image best reflected the brand identity. I included the hero image for context since it provides the clearest insight into the branding direction.
                   <br/>
                   <br/> Although the data wasn’t statistically significant, users felt that both images conveyed a similar calming and positive vibe. Users felt that the Screen A followed the brand identity slightly more than the second.</p>
+              </div>
             </div>
-            <p class="percentage-population">*Based on 26 participants</p>
+              <p class="percentage-population">*Based on 26 participants</p>
             <div class="button-container">
               <a href="https://docs.google.com/document/d/1omdo9-qCXfEJkhejyL0SWeB3I2frVuPcQBg69_POblM/edit?usp=sharing">
                 <button>view analysis</button>
@@ -623,56 +674,58 @@
             </div>
           </div>
         </div>
-      <div class="hi-fi-testing">
-        <h4>User Testing</h4>
-        <h3>Testing the prototype usability</h3>
-        <p>Using my high fidelity prototype, I conducted another four usability tests to assess how users handled crucial user flows and how they responded to visual elements.</p>
-        <p class="list-heading"><span>Tasks tested:</span></p>
-        <ul class="indent-list">
-          <li>Signing up for a new account</li>
-          <li>Adding a note to the dashboard</li>
-          <li>Sharing a file, searching for a file</li>
-          <li>Navigating to a specific category</li>
-          <li>Adding a tag to a file </li>
-        </ul>
-        <div class="button-container">
-          <a href="https://docs.google.com/document/d/1jZ_SnHuO0DGDF1Kc-3Ssa4_oY7tgpvxTLEMgSDb5agc/edit?usp=sharing">
-            <button>view usability script</button>
-          </a>
+      <div class="visual-testing-sub-section">
+          <div class="hi-fi-testing">
+            <h4>User Testing</h4>
+            <h3>Testing the prototype usability</h3>
+            <p>Using my high fidelity prototype, I conducted another four usability tests to assess how users handled crucial user flows and how they responded to visual elements.</p>
+            <p class="list-heading"><span>Tasks tested:</span></p>
+            <ul class="indent-list">
+              <li>Signing up for a new account</li>
+              <li>Adding a note to the dashboard</li>
+              <li>Sharing a file, searching for a file</li>
+              <li>Navigating to a specific category</li>
+              <li>Adding a tag to a file </li>
+            </ul>
+            <div class="button-container">
+              <a href="https://docs.google.com/document/d/1jZ_SnHuO0DGDF1Kc-3Ssa4_oY7tgpvxTLEMgSDb5agc/edit?usp=sharing">
+                <button>view usability script</button>
+              </a>
+            </div>
+            <div class="testing-changes">
+              <p>Armed with fresh insights from my users, <span>a few things were clear:</span>
+                <br/>
+                <br/><span>1) The categories weren’t working.</span> Several users didn’t understand the functional difference between categories and tags and I realized they were absolutely right. I wanted to make it easier for users to organize, but I soon realized
+                it was at the expense of other organization features that had been validated by user testing, so I nixed the categories!</p>
+              <figure>
+                <!-- these images aren't showing project-image properties -->
+                <img class="project-image" src="assets/img-project/hifi-testing-category-before@1.5x.png" alt="Product dashboard showing category design before change"></img>
+                <figcaption>Before - Categories page</figcaption>
+                <img class="arrow" src="assets/img-project/straight-arrow.svg" alt="Down arrow"></img>
+                <img class="project-image" src="assets/img-project/hifi-testing-tags-page-after@1.5x.png" alt="Product dashboard showing tag design after removing categories"></img>
+                <figcaption>After - Tags page</figcaption>
+              </figure>
+              <p><span>2) Viewing tags was less important than I anticipated. </span>This was something that I tested through preference testing, but the results were not statistically significant, so I followed up with my users during testing. On the whole,
+                users liked the clickable icon to view all the tags in a separate dropdown, so I made the change. Users also noted that it made the interface feel less cluttered when the tags were accessible via an icon. </p>
+              <figure>
+                <img class="project-image" src="assets/img-project/hifi-testing-tags-before.svg" alt="content card showing tags"></img>
+                <figcaption>Before - Tags shown on content cards</figcaption>
+                <img class="arrow" src="assets/img-project/straight-arrow.svg" alt="Down arrow"></img>
+                <img class="project-image" src="assets/img-project/hifi-testing-tags-after.svg" alt="content card showing tag icon"></img>
+                <figcaption>After - Tags collapsed to an icon and dropdown menu</figcaption>
+              </figure>
+              <p><span>3) Clarifying the product’s tagline wasn’t a bad idea. </span>Although most users agreed the hero image was inspiring and reflected the creativity brand, I modified the sub-tagline to include the term “cloud storage tool” to reinforce
+                that this was, in fact, a cloud storage application. </p>
+              <figure>
+                <img class="project-image" src="assets/img-project/hifi-testing-tagline-before.svg" alt="Hero image with tagline reading: Trove stores all your favorite things in one place."></img>
+                <figcaption>Before - Branding tagline</figcaption>
+                <img class="arrow" src="assets/img-project/straight-arrow.svg" alt="down arrow"></img>
+                <img class="project-image" src="assets/img-project/hifi-testing-tagline-after.svg" alt="Hero image with tagline reading: Trove is a cloud storage platform that stores all your favorite things in one place."></img>
+                <figcaption>After - Branding tagline</figcaption>
+              </figure>
+            </div>
+          </div>
         </div>
-        <div class="testing-changes">
-          <p>Armed with fresh insights from my users, <span>a few things were clear:</span>
-            <br/>
-            <br/><span>1) The categories weren’t working.</span> Several users didn’t understand the functional difference between categories and tags and I realized they were absolutely right. I wanted to make it easier for users to organize, but I soon realized
-            it was at the expense of other organization features that had been validated by user testing, so I nixed the categories!</p>
-          <figure>
-            <!-- these images aren't showing project-image properties -->
-            <img class="project-image" src="assets/img-project/hifi-testing-category-before@1.5x.png" alt="Product dashboard showing category design before change"></img>
-            <figcaption>Before - Categories page</figcaption>
-            <img class="arrow" src="assets/img-project/straight-arrow.svg" alt="Down arrow"></img>
-            <img class="project-image" src="assets/img-project/hifi-testing-tags-page-after@1.5x.png" alt="Product dashboard showing tag design after removing categories"></img>
-            <figcaption>After - Tags page</figcaption>
-          </figure>
-          <p><span>2) Viewing tags was less important than I anticipated. </span>This was something that I tested through preference testing, but the results were not statistically significant, so I followed up with my users during testing. On the whole,
-            users liked the clickable icon to view all the tags in a separate dropdown, so I made the change. Users also noted that it made the interface feel less cluttered when the tags were accessible via an icon. </p>
-          <figure>
-            <img class="project-image" src="assets/img-project/hifi-testing-tags-before.svg" alt="content card showing tags"></img>
-            <figcaption>Before - Tags shown on content cards</figcaption>
-            <img class="arrow" src="assets/img-project/straight-arrow.svg" alt="Down arrow"></img>
-            <img class="project-image" src="assets/img-project/hifi-testing-tags-after.svg" alt="content card showing tag icon"></img>
-            <figcaption>After - Tags collapsed to an icon and dropdown menu</figcaption>
-          </figure>
-          <p><span>3) Clarifying the product’s tagline wasn’t a bad idea. </span>Although most users agreed the hero image was inspiring and reflected the creativity brand, I modified the sub-tagline to include the term “cloud storage tool” to reinforce
-            that this was, in fact, a cloud storage application. </p>
-          <figure>
-            <img class="project-image" src="assets/img-project/hifi-testing-tagline-before.svg" alt="Hero image with tagline reading: Trove stores all your favorite things in one place."></img>
-            <figcaption>Before - Branding tagline</figcaption>
-            <img class="arrow" src="assets/img-project/straight-arrow.svg" alt="down arrow"></img>
-            <img class="project-image" src="assets/img-project/hifi-testing-tagline-after.svg" alt="Hero image with tagline reading: Trove is a cloud storage platform that stores all your favorite things in one place."></img>
-            <figcaption>After - Branding tagline</figcaption>
-          </figure>
-        </div>
-      </div>
       </section>
       <section class="final-prototype">
         <img class="section-header" src="assets/img-project/section-prototype.svg" alt="Section header: the final prototype"></img>
