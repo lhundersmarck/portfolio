@@ -203,6 +203,10 @@
       margin-right: 4rem;
     }
 
+    .summary-list {
+      margin-top: 0rem;
+    }
+
     .summary-list h3 {
       margin-top: 0;
       padding: 0 2rem 1rem 2rem;
@@ -243,7 +247,7 @@
       padding-top: 5rem;
     }
 
-    .personas, .project-image {
+     .persona-img {
       margin-top: 1rem;
       width:
     }
@@ -314,18 +318,15 @@
        margin-bottom: 1rem;
     }
 
-    .early-testing-flex-container {
-      display: flex;
-      display: -webkit-flex;
-      flex-direction: row;
-      -webkit-flex-direction: row;
-      flex-wrap: wrap;
-      -webkit-flex-wrap: wrap;
-      margin: 0 auto;
-    }
+
 
     .early-testing-flex-container .project-image {
       box-shadow: 2px 2px 4px 2px rgba(0, 0, 0, .1);
+    }
+
+    .branding .project-image {
+      margin: 0 auto;
+      width: 90%;
     }
 
 
@@ -364,8 +365,32 @@
       text-align: center;
     }
 
+    .testing-changes .project-image {
+      box-shadow: 2px 2px 4px 2px rgba(0, 0, 0, .1);
+    }
 
+    .visual-testing-flex-container {
+      display: flex;
+      display: -webkit-flex;
+      flex-direction: row;
+      -webkit-flex-direction: row;
+      flex-wrap: wrap;
+      -webkit-flex-wrap: wrap;
+      margin: 0 auto;
+     }
 
+     .rotated-arrow {
+       height: 20%;
+       transform: rotate(270deg);
+       width: 10%;
+       margin: 4rem;
+     }
+
+     .visual-testing-flex-container .testing-before,
+     .testing-after {
+       width: 35%;
+       justify-content: center;
+    }
 
 }
 

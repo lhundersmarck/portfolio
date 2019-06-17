@@ -610,11 +610,37 @@ li span {
   text-align: center;
 }
 
+.early-testing-flex-container {
+  display: flex;
+  display: -webkit-flex;
+  flex-direction: column;
+  -webkit-flex-direction: column;
+  flex-wrap: wrap;
+  -webkit-flex-wrap: wrap;
+  margin: 0 auto;
+}
+
+.visual-testing-flex-container {
+  display: flex;
+  display: -webkit-flex;
+  flex-direction: column;
+  -webkit-flex-direction: column;
+  margin: 0 auto;
+}
+
+.testing-changes p {
+  padding-top: 2rem;
+}
+
 .arrow {
   height: 10rem;
-  padding: 2rem 45% 2rem 45%;
-  text-align: center;
+  padding: 2rem;
 }
+
+.vertical-arrow {
+  margin: 0 auto;
+}
+
 
 .branding .project-image {
   padding-bottom: 2rem;
