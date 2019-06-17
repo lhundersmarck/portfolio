@@ -394,7 +394,6 @@ figcaption {
   border-radius: .3rem;
   width: 100%;
   margin-top: 2rem;
-
 }
 
 /* .product-shot {
@@ -477,6 +476,12 @@ li span {
 .color-typography, .logo, .a-b-testing,
 .hi-fi-testing {
   margin-bottom: 7rem;
+}
+
+.user-survey-img {
+  height: 0px;
+  width: 0px;
+  visibility: hidden;
 }
 
 
@@ -572,6 +577,14 @@ li span {
 }
 
 .fig-row img {
+  margin: 0 1rem 2rem 1rem;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  width: 30%;
+}
+
+.fig-row-competitive {
   margin: 0 1rem 2rem 1rem;
   display: flex;
   justify-content: center;
