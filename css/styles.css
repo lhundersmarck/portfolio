@@ -466,11 +466,7 @@ li span {
   padding-top: 4rem;
 }
 
-.the-problem p {
-  padding-bottom: 1rem;
-}
-
-.the-solution p {
+.problem-solution-flex-container p {
   padding-bottom: 1rem;
 }
 
