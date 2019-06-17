@@ -586,12 +586,16 @@ li span {
   width: 30%;
 }
 
-.fig-row-competitive {
-  margin: 0 1rem 2rem 1rem;
+.fig-row-competitive, .fig-row-users {
+  margin: 1rem auto;
   display: flex;
   justify-content: center;
   flex-direction: row;
-  width: 30%;
+  width: 80%;
+}
+
+.persona-icon-2 {
+  margin-top: 3rem;
 }
 
 .persona-text {
