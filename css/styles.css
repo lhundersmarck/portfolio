@@ -493,11 +493,13 @@ li span {
   width: 100%;
 }
 
-.research, .information-architecture {
+.research, .information-architecture,
+.user-testing, .final-prototype {
   width: 100%;
 }
 
-.research-sub-section, .information-arch-sub-section {
+.research-sub-section, .information-arch-sub-section,
+.visual-testing-sub-section, .a-b-testing-intro, .prototype-sub-section {
   width: 90%;
   margin: 0 auto;
 }
@@ -667,6 +669,10 @@ li span {
   color: #FDFDFD;
   padding: 2rem 0 1rem 0;
   margin-top: 1rem;
+}
+
+.percentage-population {
+  text-align: center;
 }
 
 .teal-background p, .teal-background figcaption {
