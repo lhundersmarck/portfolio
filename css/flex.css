@@ -222,10 +222,10 @@
 
     .user-survey-flex-container, .research-highlights,
     .competitive-analysis-flex-container, .target-audience-flex-container,
-    .personas, .user-stories, .user-flow,
-    .wireframe, .early-testing, .moodboard,
-    .color-typography, .logo, .a-b-testing,
-    .hi-fi-testing {
+    .personas, .user-stories-flex-container, .user-flow-flex-container,
+    .wireframe-sub-section, .early-testing-flex-container, .moodboard-flex-container,
+    .color-typography-flex-container, .logo-flex-container, .a-b-testing-content, .a-b-testing-group,
+    .hi-fi-testing-content {
       margin-bottom: 12rem;
     }
 
@@ -311,13 +311,8 @@
       margin-top: 1rem;
     }
 
-    .wireframe {
+    .wireframe-sub-section {
       width: 100%;
-    }
-
-    .wireframe-intro {
-      width: 70%;
-      margin: 0 auto;
     }
 
      .wireframe-flex-container {
@@ -329,19 +324,32 @@
       flex-wrap: wrap;
       -webkit-flex-wrap: wrap;
       margin: 0 auto;
+      width: 70%;
     }
 
-     .wireframe-flex-container .project-image {
-       width: 48%;
+     .wireframe-group-flex-container {
+       padding: 1rem;
+       display: flex;
+       display: -webkit-flex;
+       flex-direction: row;
+       -webkit-flex-direction: row;
+       flex-wrap: wrap;
+       -webkit-flex-wrap: wrap;
+       margin: 0 auto;
+       width: 100%;
        justify-content: center;
-       margin-bottom: 1rem;
     }
+
+    .wireframe-img {
+      width: 48%;
+    }
+
 
     .centered-caption {
       text-align: center;
     }
 
-    .early-testing-flex-container .project-image {
+    .early-testing-fig-flex-container .project-image {
       box-shadow: 2px 2px 4px 2px rgba(0, 0, 0, .1);
     }
 
@@ -351,7 +359,7 @@
     }
 
 
-    .a-b-testing-intro {
+    .a-b-testing-content {
       width: 70%;
       margin: 0 auto;
     }
@@ -372,8 +380,8 @@
       margin: 0 auto;
      }
 
-     .a-b-flex-container .option-a, .option-b {
-       width: 50%;
+      .option-a, .option-b {
+       width: 48%;
        justify-content: center;
     }
 
@@ -381,11 +389,13 @@
       text-align: center;
     }
 
-    .testing-changes .project-image {
+    .user-testing-img {
       box-shadow: 2px 2px 4px 2px rgba(0, 0, 0, .1);
     }
 
-    .visual-testing-flex-container {
+    .testing-1-fig-flex-container,
+    .testing-2-fig-flex-container,
+    .testing-3-fig-flex-container {
       display: flex;
       display: -webkit-flex;
       flex-direction: row;
@@ -402,7 +412,7 @@
        margin: 4rem;
      }
 
-    .visual-testing-flex-container .testing-before,
+    .testing-before,
     .testing-after {
        width: 35%;
        justify-content: center;
@@ -426,13 +436,15 @@
      flex-wrap: wrap;
      -webkit-flex-wrap: wrap;
      margin: 0 auto;
+     width: 100%;
    }
 
-    .prototype-flex-container .project-image {
+    .prototype-flex-container img {
       width: 48%;
       justify-content: center;
       margin-bottom: 1rem;
    }
+
 
 
 }
@@ -602,8 +614,8 @@
     margin: 1rem 0 2rem 0;
   }
 
-  .visual-testing-sub-section, .wireframe-intro,
-  .a-b-testing-intro, .a-b-results,
+  .visual-testing-sub-section, .wireframe-flex-container,
+  .a-b-testing-content, .a-b-results,
   .prototype-sub-section {
     width: 50%;
     margin: 0 auto;
@@ -682,7 +694,7 @@
     }
 
     .competitive-analysis-flex-container,
-    .user-stories {
+    .user-stories-flex-container {
       width: 100%;
       background-color: teal;
       display: flex;
@@ -693,14 +705,12 @@
       -webkit-flex-wrap: wrap;
     }
 
-
     .competitive-analysis-content,
     .user-stories-content {
       display: flex;
       flex-direction: column;
       width: 50%;
     }
-
 
     .fig-row-competitive, .fig-row {
       display: flex;

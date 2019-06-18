@@ -471,10 +471,10 @@ li span {
 
 .user-survey-flex-container, .research-highlights,
 .competitive-analysis-flex-container, .target-audience-flex-container,
-.personas, .user-stories, .user-flow,
-.wireframe, .early-testing, .moodboard,
-.color-typography, .logo, .a-b-testing,
-.hi-fi-testing {
+.personas, .user-stories-flex-container, .user-flow-flex-container,
+.wireframe-sub-section, .early-testing-flex-container, .moodboard-flex-container,
+.color-typography-flex-container, .logo-flex-container, .a-b-testing-content, .a-b-testing-group,
+.hi-fi-testing-content {
   margin-bottom: 7rem;
 }
 
@@ -499,24 +499,24 @@ li span {
 }
 
 .research-sub-section, .information-arch-sub-section,
-.visual-testing-sub-section, .a-b-testing-intro, .prototype-sub-section {
+.visual-testing-sub-section, .a-b-testing-content, .prototype-sub-section {
   width: 90%;
   margin: 0 auto;
 }
 
-.wireframe-intro {
+.wireframe-group-flex-container, .wireframe-flex-container {
   width: 90%;
   margin: 0 auto;
 }
 
 
 .teal-background .project-image {
-  width: 90%;
   margin: 0 auto;
   display: flex;
-  /* flex-direction: column; */
+  flex-direction: column;
   padding: 0 0 1rem 0;
 }
+
 
 .teal-background .research-highlight-container {
   width: 100%;
@@ -632,7 +632,7 @@ li span {
   margin-top: 5rem;
 }
 
-.early-testing-flex-container {
+.early-testing-fig-flex-container {
   display: flex;
   display: -webkit-flex;
   flex-direction: column;
@@ -642,7 +642,9 @@ li span {
   margin: 0 auto;
 }
 
-.visual-testing-flex-container {
+.testing-1-fig-flex-container,
+.testing-2-fig-flex-container,
+.testing-3-fig-flex-container {
   display: flex;
   display: -webkit-flex;
   flex-direction: column;
@@ -650,7 +652,7 @@ li span {
   margin: 0 auto;
 }
 
-.testing-changes p {
+.hi-fi-testing-changes p {
   padding-top: 2rem;
 }
 
@@ -686,16 +688,23 @@ li span {
   text-align: center;
 }
 
-.teal-background p, .teal-background figcaption {
-  margin: 0 6% 0 6%;
+.option-a, .option-b,
+.a-b-results {
+  width: 90%;
+  margin: 0 auto;
 }
 
-.testing-changes {
+.hi-fi-testing-changes {
   margin-top: 3rem;
 }
 
 .teal-background figure {
   margin-bottom: 3rem;
+}
+
+.prototype-flex-container {
+  width: 90%;
+  margin: 0 auto;
 }
 
 .conclusion p {
