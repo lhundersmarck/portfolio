@@ -570,7 +570,10 @@ li span {
   padding-bottom: 1rem;
 }
 
+/* user story group */
+
 .fig-row {
+  margin-top: 2rem;
   text-align: center;
   display: flex;
   flex-direction: row;
@@ -578,6 +581,7 @@ li span {
   justify-content: center;
 }
 
+/* user story indiv images */
 .fig-row img {
   margin: 0 1rem 2rem 1rem;
   display: flex;
@@ -585,6 +589,8 @@ li span {
   flex-direction: row;
   width: 30%;
 }
+
+/* competitor icons and personas */
 
 .fig-row-competitive, .fig-row-users {
   margin: 1rem auto;
@@ -623,6 +629,7 @@ li span {
 .user-story {
   width: 45%;
   text-align: center;
+  margin-top: 5rem;
 }
 
 .early-testing-flex-container {

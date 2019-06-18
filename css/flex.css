@@ -243,10 +243,22 @@
       visibility: hidden;
     }
 
+/* user story icons */
     .fig-row img {
       width: 20%;
     }
 
+/* group of persona icons */
+    .fig-row-users {
+      width: 70%;
+    }
+
+/* individual persona icons */
+    .persona-icon {
+      margin: 0 2rem 0 2rem;
+    }
+
+/* competitor icons */
     .fig-row-competitive {
       width: 80%;
       margin-bottom: 2rem;
@@ -256,6 +268,7 @@
       margin-top: 5rem;
     }
 
+/* persona photos */
      .persona-img {
       margin-top: 1rem;
       width:
@@ -270,10 +283,7 @@
       margin: 0 auto;
     }
 
-    .user-story {
-      padding-top: 2rem;
-    }
-
+/* indvidual user story icons */
     .user-story img {
       width: 40%;
       margin: 0 auto;
@@ -327,7 +337,9 @@
        margin-bottom: 1rem;
     }
 
-
+    .centered-caption {
+      text-align: center;
+    }
 
     .early-testing-flex-container .project-image {
       box-shadow: 2px 2px 4px 2px rgba(0, 0, 0, .1);
@@ -570,6 +582,12 @@
 
   /* project starts here  */
 
+  .section-header {
+    height: 17rem;
+    margin-left: -1rem;
+    padding-bottom: 1rem;
+  }
+
   .project-hero h2 {
     width: 40%;
     max-width: 600px;
@@ -580,7 +598,7 @@
     margin-right: 10rem;
   }
 
-   .information-arch-sub-section,
+
   .visual-testing-sub-section, .wireframe-intro,
   .a-b-testing-intro, .a-b-results,
   .prototype-sub-section {
@@ -624,11 +642,13 @@
       width: 190%;
     }
 
-    .research-sub-section {
+    .research-sub-section,
+    .information-arch-sub-section {
       width: 90%;
     }
 
-    .user-survey, .target-audience {
+    .user-survey,
+    .target-audience {
       width: 100%;
       background-color: red;
       display: flex;
@@ -656,9 +676,10 @@
       margin-left: 10%;
     }
 
-    .competitive-analysis {
+    .competitive-analysis,
+    .user-stories {
       width: 100%;
-      background-color: blue;
+      background-color: teal;
       display: flex;
       display: -webkit-flex;
       flex-direction: row;
@@ -668,7 +689,8 @@
     }
 
 
-    .competitive-analysis-content {
+    .competitive-analysis-content,
+    .user-stories-content {
       display: flex;
       flex-direction: column;
       width: 50%;
@@ -684,7 +706,7 @@
       width: 50%;
     } */
 
-    .fig-row-competitive {
+    .fig-row-competitive, .fig-row {
       display: flex;
       display: -webkit-flex;
       flex-direction: row;
@@ -693,6 +715,7 @@
       -webkit-flex-wrap: wrap;
       width: 40%;
     }
+
 
     .competitors {
       display: flex;
@@ -749,10 +772,14 @@
 
     .persona-1, .persona-2 {
       /* flex-grow: 1; */
-      width: 40%;
+      width: 35%;
       margin: 3rem auto;
     }
 
+    .persona-text {
+      margin-top: 0;
+      padding-top: 0;
+    }
 
 
 
