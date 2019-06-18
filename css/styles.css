@@ -469,8 +469,8 @@ li span {
   padding-bottom: 1rem;
 }
 
-.user-survey, .research-highlights,
-.competitive-analysis, .target-audience,
+.user-survey-flex-container, .research-highlights,
+.competitive-analysis-flex-container, .target-audience-flex-container,
 .personas, .user-stories, .user-flow,
 .wireframe, .early-testing, .moodboard,
 .color-typography, .logo, .a-b-testing,
