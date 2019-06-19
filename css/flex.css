@@ -793,11 +793,14 @@ plus moodboard because image comes before text */
 /* Figures on left side */
 
     .user-flow-figure,
-    .early-testing-fig-flex-container,
     .branding-figure,
     .logo-figure {
       width: 40%;
       margin-right: 6rem;
+    }
+
+    .early-testing-fig-flex-container {
+      width: 40%;
     }
 
     .branding-figure {
@@ -1088,4 +1091,6 @@ arrows - need to hide the ones from before? */
       margin-left: 15%;
       width: 50%;
     }
+
+    .
 }
