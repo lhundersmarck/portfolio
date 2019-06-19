@@ -389,7 +389,7 @@
 
     .early-testing-fig-before,
     .early-testing-fig-after {
-      width: 80%;
+      width: 70%;
       margin: auto;
     }
 
@@ -512,7 +512,7 @@
 
     section {
       width: 70%;
-      background-color: yellow;
+      /* background-color: yellow; */
     }
 
     .teal-circle {
@@ -666,7 +666,6 @@
 
     .problem-solution-flex-container {
       width: 100%;
-      background-color: blue;
       display: flex;
       display: -webkit-flex;
       flex-direction: row;
@@ -709,7 +708,7 @@ content on right side */
     .logo-flex-container,
     .testing-2-flex-container {
       width: 100%;
-      background-color: red;
+      /* background-color: red; */
       display: flex;
       display: -webkit-flex;
       flex-direction: row-reverse;
@@ -729,7 +728,7 @@ plus moodboard because image comes before text */
     .testing-1-flex-container,
     .testing-3-flex-container {
       width: 100%;
-      background-color: teal;
+      /* background-color: teal; */
       display: flex;
       display: -webkit-flex;
       flex-direction: row;
@@ -801,11 +800,6 @@ plus moodboard because image comes before text */
     .logo-figure {
       width: 40%;
       margin-right: 6rem;
-      flex-grow: 1;
-    }
-
-    .early-testing-fig-flex-container {
-      width: 40%;
       flex-grow: 1;
     }
 
@@ -924,7 +918,6 @@ plus moodboard because image comes before text */
      width: 45%;
      padding-top: 8rem;
      margin-left: 4rem;
-     background-color: orange;
      flex-grow: 1;
    }
 
@@ -934,6 +927,7 @@ plus moodboard because image comes before text */
 
    .arrow {
      width: 14%;
+     margin: 5rem 0 0 -2rem;
    }
 
    .rotated-arrow {
@@ -958,7 +952,6 @@ plus moodboard because image comes before text */
 
    .color-typography-figure {
      width: 35%;
-     background-color: orange;
      flex-grow: 1;
    }
 
@@ -985,10 +978,25 @@ plus moodboard because image comes before text */
       margin: 0 auto;
     }
 
+    .early-testing-fig-flex-container {
+      display: flex;
+      display: -webkit-flex;
+      flex-direction: row;
+      -webkit-flex-direction: row;
+      flex-wrap: wrap;
+      -webkit-flex-wrap: wrap;
+      margin: 0 auto;
+    }
+
+    .early-testing-fig-flex-container,
     .testing-1-fig-flex-container,
     .testing-3-fig-flex-container {
       width: 45%;
       flex-grow: 1;
+     }
+
+     .early-testing-fig-flex-container {
+       margin-right: 2rem;
      }
 
      .testing-2-flex-container,
@@ -1008,6 +1016,8 @@ plus moodboard because image comes before text */
        flex-grow: 1;
      }
 
+     .early-testing-before,
+     .early-testing-after,
      .testing-1-after,
      .testing-1-before,
      .testing-3-after,
@@ -1018,7 +1028,6 @@ plus moodboard because image comes before text */
        -webkit-flex-direction: row;
        flex-wrap: wrap;
        -webkit-flex-wrap: wrap;
-       /* background-color: orange; */
        padding-top: 2rem;
         width: 70%;
         margin: auto;
