@@ -235,9 +235,14 @@
     }
 
     .research-sub-section, .information-arch-sub-section,
-    .visual-testing-sub-section {
+    .hi-fi-testing-content, .hi-fi-testing-intro,
+    .hi-fi-testing-changes {
       width: 70%;
       margin: 0 auto;
+    }
+
+    .hi-fi-testing-content {
+      margin-bottom: 5rem;
     }
 
     .user-survey-img {
@@ -403,7 +408,6 @@
       -webkit-flex-direction: row;
       flex-wrap: wrap;
       -webkit-flex-wrap: wrap;
-      margin: 0 auto;
      }
 
     .rotated-arrow {
@@ -413,8 +417,8 @@
        margin: 4rem;
      }
 
-    .testing-before,
-    .testing-after {
+    .testing-2-before,
+    .testing-2-after {
        width: 35%;
        justify-content: center;
     }
@@ -615,15 +619,6 @@
       margin: 1rem 0 2rem 0;
     }
 
-    .visual-testing-sub-section,
-    .a-b-testing-content, .a-b-results,
-    .prototype-sub-section {
-      width: 50%;
-      margin: 0 auto;
-      background-color: purple;
-    }
-
-
 
     .project-summary {
       width: 90%;
@@ -660,11 +655,15 @@
       width: 190%;
     }
 
+
+
     .research-sub-section,
     .information-arch-sub-section,
-    .branding {
+    .branding, .hi-fi-testing-content,
+    .hi-fi-testing-changes {
       width: 90%;
     }
+
 
 /* All sections row-reversed showing
 content on right side */
@@ -672,7 +671,8 @@ content on right side */
     .target-audience-flex-container,
     .user-flow-flex-container,
     .early-testing-flex-container,
-    .logo-flex-container {
+    .logo-flex-container,
+    .testing-2-flex-container {
       width: 100%;
       background-color: red;
       display: flex;
@@ -690,7 +690,9 @@ plus moodboard because image comes before text */
     .user-stories-flex-container,
     .wireframe-flex-container,
     .moodboard-flex-container,
-    .color-typography-flex-container {
+    .color-typography-flex-container,
+    .testing-1-flex-container,
+    .testing-3-flex-container {
       width: 100%;
       background-color: teal;
       display: flex;
@@ -707,7 +709,9 @@ plus moodboard because image comes before text */
     .early-testing-content,
     .branding-content,
     .color-typography-content,
-    .logo-content {
+    .logo-content,
+    .a-b-testing-content, .testing-1-content,
+    .testing-2-content, .testing-3-content {
       width: 50%;
       max-width: 650px;
     }
@@ -731,7 +735,18 @@ plus moodboard because image comes before text */
     .persona-content {
       width: 50%;
       max-width: 650px;
+      margin: 0;
     }
+
+    .hi-fi-testing-intro,
+    .hi-fi-testing-sub-section,
+    .a-b-testing-content,
+    .hi-fi-testing-content,
+    .prototype-sub-section {
+      width: 50%;
+      margin-left: 5%;
+    }
+
 
 /* figures on right side */
     .user-survey-figure {
@@ -749,8 +764,8 @@ plus moodboard because image comes before text */
     .early-testing-fig-flex-container,
     .branding-figure,
     .logo-figure {
-      width: 42%;
-      margin-right: 8rem;
+      width: 40%;
+      margin-right: 6rem;
     }
 
     .fig-row-users {
@@ -793,8 +808,6 @@ plus moodboard because image comes before text */
     .competitors {
       width: 20%;
     }
-
-
 
     .branding-content {
       padding-top: 10rem;
@@ -852,13 +865,13 @@ plus moodboard because image comes before text */
    .wireframe-figure {
      width: 45%;
      padding-top: 8rem;
-     margin-left: 5rem;
+     margin-left: 4rem;
      background-color: orange;
    }
 
    .color-typography-figure {
      width: 45%;
-     margin-left: 5rem;
+     margin-left: 4rem;
      background-color: orange;
    }
 
@@ -874,6 +887,41 @@ plus moodboard because image comes before text */
       width: 100%;
       justify-content: center;
    }
+
+   .a-b-results {
+      width: 50%;
+      margin: 0 auto;
+    }
+
+    .testing-1-fig-flex-container,
+    .testing-3-fig-flex-container {
+      width: 45%;
+     }
+
+     .testing-2-fig-flex-container {
+       display: flex;
+       display: -webkit-flex;
+       flex-direction: column;
+       -webkit-flex-direction: column;
+       flex-wrap: wrap;
+       -webkit-flex-wrap: wrap;
+       width: 45%;
+     }
+
+     /* .testing-2-after,
+     .testing-2-before {
+        width: 60%;
+     } */
+
+
+/* Haven't decided how to handle the desktop
+arrows - need to hide the ones from before? */
+     .rotated-arrow {
+        height: 20%;
+        transform: rotate(360deg);
+        width: 10%;
+        margin: 4rem;
+      }
 
 
 

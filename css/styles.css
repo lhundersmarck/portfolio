@@ -499,7 +499,9 @@ li span {
 }
 
 .research-sub-section, .information-arch-sub-section,
-.visual-testing-sub-section, .a-b-testing-content, .prototype-sub-section {
+.hi-fi-testing-sub-section, .hi-fi-testing-content,
+.hi-fi-testing-changes, .hi-fi-testing-intro,
+.a-b-testing-content, .prototype-sub-section {
   width: 90%;
   margin: 0 auto;
 }
