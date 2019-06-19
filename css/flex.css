@@ -595,48 +595,50 @@
 
   /* project starts here  */
 
-  .section-header {
-    height: 17rem;
-    margin-left: -1rem;
-    padding-bottom: 1rem;
-  }
+    .section-header {
+      height: 17rem;
+      margin-left: -1rem;
+      padding-bottom: 1rem;
+    }
 
-  .project-hero h2 {
-    width: 40%;
-    max-width: 600px;
-    margin: auto;
-  }
+    .project-hero h2 {
+      width: 40%;
+      max-width: 600px;
+      margin: auto;
+    }
 
-  .summary-list:not(:last-child) {
-    margin-right: 10rem;
-  }
+    .summary-list:not(:last-child) {
+      margin-right: 10rem;
+    }
 
-  .project-image {
-    margin: 1rem 0 2rem 0;
-  }
+    .project-image {
+      margin: 1rem 0 2rem 0;
+    }
 
-  .visual-testing-sub-section, .wireframe-flex-container,
-  .a-b-testing-content, .a-b-results,
-  .prototype-sub-section {
-    width: 50%;
-    margin: 0 auto;
-    background-color: purple;
-  }
+    .visual-testing-sub-section,
+    .a-b-testing-content, .a-b-results,
+    .prototype-sub-section {
+      width: 50%;
+      margin: 0 auto;
+      background-color: purple;
+    }
 
-  .project-summary {
-    width: 90%;
-  }
 
-  .problem-solution-flex-container {
-    width: 100%;
-    background-color: blue;
-    display: flex;
-    display: -webkit-flex;
-    flex-direction: row;
-    -webkit-flex-direction: row;
-    flex-wrap: nowrap;
-    -webkit-flex-wrap: nowrap;
-  }
+
+    .project-summary {
+      width: 90%;
+    }
+
+    .problem-solution-flex-container {
+      width: 100%;
+      background-color: blue;
+      display: flex;
+      display: -webkit-flex;
+      flex-direction: row;
+      -webkit-flex-direction: row;
+      flex-wrap: nowrap;
+      -webkit-flex-wrap: nowrap;
+    }
 
     .problem-solution-flex-container h3 {
       background-color: green;
@@ -659,12 +661,15 @@
     }
 
     .research-sub-section,
-    .information-arch-sub-section {
+    .information-arch-sub-section,
+    .branding {
       width: 90%;
     }
 
     .user-survey-flex-container,
-    .target-audience-flex-container, .user-flow-flex-container {
+    .target-audience-flex-container,
+    .user-flow-flex-container,
+    .early-testing-flex-container {
       width: 100%;
       background-color: red;
       display: flex;
@@ -695,7 +700,8 @@
     }
 
     .competitive-analysis-flex-container,
-    .user-stories-flex-container {
+    .user-stories-flex-container,
+    .wireframe-flex-container  {
       width: 100%;
       background-color: teal;
       display: flex;
@@ -735,15 +741,17 @@
     }
 
     .target-audience-content,
-    .user-flow-content {
+    .user-flow-content,
+    .early-testing-content {
       width: 50%;
       max-width: 650px;
       /* margin-left: 10%; */
     }
 
-    .user-flow-figure {
-      width: 45%;
-      margin: auto;
+    .user-flow-figure,
+    .early-testing-fig-flex-container {
+      width: 42%;
+      margin-right: 8rem;
     }
 
     .fig-row-users {
@@ -791,6 +799,41 @@
       padding-top: 0;
     }
 
+    .wireframe-flex-container {
+     padding: 1rem;
+     display: flex;
+     display: -webkit-flex;
+     flex-direction: row;
+     -webkit-flex-direction: row;
+     flex-wrap: wrap;
+     -webkit-flex-wrap: wrap;
+     margin-bottom: 12rem;
+     width: 90%;
+   }
+
+   .wireframe-content {
+    width: 50%;
+   }
+
+   .wireframe-figure {
+     width: 45%;
+     padding-top: 4rem;
+     margin: auto;
+     background-color: orange;
+   }
+
+    .wireframe-group-flex-container {
+      padding: 1rem;
+      display: flex;
+      display: -webkit-flex;
+      flex-direction: row;
+      -webkit-flex-direction: row;
+      flex-wrap: wrap;
+      -webkit-flex-wrap: wrap;
+      margin: 0 auto;
+      width: 100%;
+      justify-content: center;
+   }
 
 
 
