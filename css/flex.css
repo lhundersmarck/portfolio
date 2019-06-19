@@ -671,30 +671,26 @@
       -webkit-flex-wrap: nowrap;
     }
 
-    .problem-solution-flex-container h3 {
-      background-color: green;
-      width: 85%;
-    }
-
-    .problem-solution-flex-container p {
-      background-color: red;
-      width: 85%;
-    }
-
-    .problem-solution-flex-container li {
-      background-color: teal;
-      width: 85%;
-    }
-
     .landing-page {
       padding-top: 4rem;
-      flex-grow: 2;
-      width: 190%;
+      /* flex-grow: 1; */
+      width: 50%;
+      margin-left: 2%;
     }
 
-    .research-sub-section,
+    /* .research-sub-section,
     .information-arch-sub-section,
     .branding, .hi-fi-testing-content,
+    .hi-fi-testing-changes {
+      width: 90%;
+    } */
+
+    .project-summary, .research-sub-section,
+    .information-arch-sub-section,
+    .wireframe-flex-container,
+    .branding, .hi-fi-testing-intro,
+    .a-b-testing-content,
+    .hi-fi-testing-content,
     .hi-fi-testing-changes {
       width: 90%;
     }
@@ -739,6 +735,7 @@ plus moodboard because image comes before text */
     }
 
 /* content on right and left side */
+    .the-problem-solution,
     .target-audience-content,
     .user-flow-content,
     .early-testing-content,
@@ -892,6 +889,10 @@ plus moodboard because image comes before text */
       padding-top: 0;
     }
 
+    .user-flow-figure {
+      margin-top: 0rem;
+    }
+
     .wireframe-flex-container {
      padding: 1rem;
      display: flex;
@@ -974,13 +975,13 @@ arrows - need to hide the ones from before? */
 
 @media screen and (min-width: 1199px) {
   html {
-    font-size: 12px;
+    font-size: 11px;
   }
 
 /* Section & container sizes */
   .site-container {
     width: 100%;
-    max-width: 1440px;
+    /* max-width: 1440px; */
     margin: 0 auto;
   }
 
@@ -1027,7 +1028,64 @@ arrows - need to hide the ones from before? */
       width: 60%;
       max-width: 650px;
       margin-left: 8%;
-
     }
 
+    .project-intro {
+      padding-top: 4rem;
+      width: 50%;
+    }
+
+    .summary-hero {
+      margin-bottom: 3rem;
+    }
+
+    .summary-list-flex-group {
+      margin-bottom: 4rem;
+    }
+
+    .container section:not(:first-child) {
+      margin-bottom: 9rem;
+    }
+
+    .container section section:last-child {
+      margin-bottom: 0;
+    }
+
+    .fig-row-stories {
+      margin-left: 4rem;
+    }
+
+    .wireframe-figure {
+    padding-top: 10rem;
+    }
+
+    .landing-page {
+      width: 40%;
+      margin: auto;
+    }
+
+
+}
+
+
+@media screen and (min-width: 1440px) {
+
+/* all sections that don't have to be full width */
+    .project-summary, .research-sub-section,
+    .information-arch-sub-section,
+    .wireframe-flex-container,
+    .branding, .hi-fi-testing-intro,
+    .a-b-testing-content,
+    .hi-fi-testing-content,
+    .hi-fi-testing-changes {
+      width: 70%;
+    }
+
+    .hi-fi-testing-intro,
+    .a-b-testing-content,
+    .hi-fi-testing-content,
+    .prototype-intro {
+      margin-left: 15%;
+      width: 50%;
+    }
 }
