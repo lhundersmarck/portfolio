@@ -404,6 +404,7 @@ figcaption {
 
 .project-nav {
   display: flex;
+  display: -webkit-flex;
 }
 
 .mobile-menu {
@@ -579,17 +580,24 @@ li span {
   margin-top: 2rem;
   text-align: center;
   display: flex;
+  display: -webkit-flex;
   flex-direction: row;
+  -webkit-flex-direction: row;
   flex-wrap: wrap;
+  -webkit-flex-wrap: wrap;
   justify-content: center;
 }
 
 /* user story indiv images */
 .fig-row-stories img {
   margin: 0 1rem 2rem 1rem;
-  display: flex;
   justify-content: center;
+  display: flex;
+  display: -webkit-flex;
   flex-direction: row;
+  -webkit-flex-direction: row;
+  flex-wrap: wrap;
+  -webkit-flex-wrap: wrap;
   width: 30%;
 }
 
@@ -597,14 +605,32 @@ li span {
 
 .fig-row-competitive, .fig-row-users {
   margin: 1rem auto;
-  display: flex;
   justify-content: center;
+  display: flex;
+  display: -webkit-flex;
   flex-direction: row;
+  -webkit-flex-direction: row;
+  flex-wrap: wrap;
+  -webkit-flex-wrap: wrap;
   width: 80%;
 }
 
+.competitor-group {
+  width: 50%;
+  display: flex;
+  display: -webkit-flex;
+  flex-direction: row;
+  -webkit-flex-direction: row;
+  flex-wrap: nowrap;
+  -webkit-flex-wrap: nowrap;
+}
+
+.persona-icon, .persona-icon-2 {
+  width: 25%;
+}
+
 .persona-icon-2 {
-  margin-top: 3rem;
+  margin: 3rem 1rem 0 1rem;
 }
 
 .persona-text {
