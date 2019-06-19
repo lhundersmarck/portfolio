@@ -501,7 +501,8 @@ li span {
 .research-sub-section, .information-arch-sub-section,
 .hi-fi-testing-sub-section, .hi-fi-testing-content,
 .hi-fi-testing-changes, .hi-fi-testing-intro,
-.a-b-testing-content, .prototype-sub-section {
+.a-b-testing-content, .prototype-intro,
+.prototype-sub-section {
   width: 90%;
   margin: 0 auto;
 }
@@ -574,7 +575,7 @@ li span {
 
 /* user story group */
 
-.fig-row {
+.fig-row-stories {
   margin-top: 2rem;
   text-align: center;
   display: flex;
@@ -584,7 +585,7 @@ li span {
 }
 
 /* user story indiv images */
-.fig-row img {
+.fig-row-stories img {
   margin: 0 1rem 2rem 1rem;
   display: flex;
   justify-content: center;
@@ -631,7 +632,11 @@ li span {
 .user-story {
   width: 45%;
   text-align: center;
-  margin-top: 5rem;
+  margin-top: 3rem;
+}
+
+.user-story figcaption {
+  font-weight: 600;
 }
 
 .early-testing-fig-flex-container {

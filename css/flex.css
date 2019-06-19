@@ -167,20 +167,22 @@
 
     /* Project-1 starts here  */
     .project-hero {
+      margin-top: 6rem;
       width: 100%;
     }
 
     .product-logo {
-      padding: 1rem .7rem 2rem 0;
+      padding: 1rem .7rem 3rem 0;
     }
 
     .product-shot {
       margin: 0 auto;
+      padding-top: 3rem;
     }
 
     .project-image {
       width: 100%;
-      margin: 3rem 0 2rem 0;
+      margin: 1rem 0 1rem 0;
     }
 
     .project-hero h2 {
@@ -250,8 +252,9 @@
     }
 
 /* user story icons */
-    .fig-row img {
+    .fig-row-stories img {
       width: 20%;
+      padding-bottom: 2rem;
     }
 
 /* group of persona icons */
@@ -283,10 +286,19 @@
     .persona-group-flex-container {
       display: flex;
       display: -webkit-flex;
-      flex-direction: column;
-      -webkit-flex-direction: column;
-      width: 70%;
+      flex-direction: row;
+      -webkit-flex-direction: row;
+      /* width: 70%; */
       margin: 0 auto;
+    }
+
+    .persona-1, .persona-2 {
+      width: 46%;
+    }
+
+    .persona-group-flex-container div:not(:last-child) {
+      margin-right: 6rem;
+
     }
 
 /* indvidual user story icons */
@@ -298,6 +310,10 @@
     .user-story figcaption {
       width: 60%;
       margin: 0 auto;
+    }
+
+    .user-flow-figure {
+      margin-top: 6rem;
     }
 
     .double-button-flex {
@@ -359,7 +375,22 @@
       box-shadow: 2px 2px 4px 2px rgba(0, 0, 0, .1);
     }
 
-    .color-palette .project-image {
+    .wireframe-figure {
+      width: 80%;
+      margin: auto;
+      padding: 2rem 0 2rem 0;
+    }
+
+
+    .early-testing-fig-before,
+    .early-testing-fig-after {
+      width: 80%;
+      margin: auto;
+    }
+
+
+    .color-typography-figure,
+    .logo-figure {
       margin: 0 auto;
       width: 70%;
     }
@@ -386,7 +417,7 @@
       margin: 0 auto;
      }
 
-      .option-a, .option-b {
+    .option-a, .option-b {
        width: 48%;
        justify-content: center;
     }
@@ -408,6 +439,7 @@
       -webkit-flex-direction: row;
       flex-wrap: wrap;
       -webkit-flex-wrap: wrap;
+      width: 80%;
      }
 
     .rotated-arrow {
@@ -615,10 +647,14 @@
       margin-right: 10rem;
     }
 
-    .project-image {
+    /* .project-image {
       margin: 1rem 0 2rem 0;
-    }
+    } */
 
+
+    .project-image {
+      margin: 0 0 1rem 0;
+    }
 
     .project-summary {
       width: 90%;
@@ -651,11 +687,10 @@
     }
 
     .landing-page {
+      padding-top: 4rem;
       flex-grow: 2;
       width: 190%;
     }
-
-
 
     .research-sub-section,
     .information-arch-sub-section,
@@ -742,7 +777,7 @@ plus moodboard because image comes before text */
     .hi-fi-testing-sub-section,
     .a-b-testing-content,
     .hi-fi-testing-content,
-    .prototype-sub-section {
+    .prototype-intro {
       width: 50%;
       margin-left: 5%;
     }
@@ -756,9 +791,6 @@ plus moodboard because image comes before text */
 
 
 /* Figures on left side */
-    .early-testing-content {
-      padding-top: 1rem;
-    }
 
     .user-flow-figure,
     .early-testing-fig-flex-container,
@@ -766,6 +798,10 @@ plus moodboard because image comes before text */
     .logo-figure {
       width: 40%;
       margin-right: 6rem;
+    }
+
+    .branding-figure {
+      margin-top: 3rem;
     }
 
     .fig-row-users {
@@ -785,13 +821,17 @@ plus moodboard because image comes before text */
       height: 100%;
     }
 
-    .fig-row {
-      /* display: flex;
-      display: -webkit-flex;
-      flex-direction: row;
-      -webkit-flex-direction: row;
-      flex-wrap: wrap;
-      -webkit-flex-wrap: wrap; */
+    .user-story {
+      margin-top: 3rem;
+    }
+
+    .user-story img {
+      width: 50%;
+      margin: 0 auto;
+      /* padding-bottom: 2rem; */
+    }
+
+    .fig-row-stories {
       width: 40%;
     }
 
@@ -809,12 +849,10 @@ plus moodboard because image comes before text */
       width: 20%;
     }
 
-    .branding-content {
-      padding-top: 10rem;
-    }
-
+    .user-stories-content,
+    .branding-content,
     .color-typography-content {
-      padding-top: 15rem;
+      padding-top: 7rem;
     }
 
     .persona-icon {
@@ -870,8 +908,7 @@ plus moodboard because image comes before text */
    }
 
    .color-typography-figure {
-     width: 45%;
-     margin-left: 4rem;
+     width: 35%;
      background-color: orange;
    }
 
