@@ -666,10 +666,13 @@
       width: 90%;
     }
 
+/* All sections row-reversed showing
+content on right side */
     .user-survey-flex-container,
     .target-audience-flex-container,
     .user-flow-flex-container,
-    .early-testing-flex-container {
+    .early-testing-flex-container,
+    .logo-flex-container {
       width: 100%;
       background-color: red;
       display: flex;
@@ -680,14 +683,33 @@
       -webkit-flex-wrap: nowrap;
     }
 
-    .user-survey-figure {
-      flex-grow: 1;
+
+/* All sections showing content on left side,
+plus moodboard because image comes before text */
+    .competitive-analysis-flex-container,
+    .user-stories-flex-container,
+    .wireframe-flex-container,
+    .moodboard-flex-container,
+    .color-typography-flex-container {
+      width: 100%;
+      background-color: teal;
+      display: flex;
+      display: -webkit-flex;
+      flex-direction: row;
+      -webkit-flex-direction: row;
+      flex-wrap: wrap;
+      -webkit-flex-wrap: wrap;
     }
 
-    .user-survey-img {
-      visibility: visible;
-      width: 100%;
-      height: 100%;
+/* content on right and left side */
+    .target-audience-content,
+    .user-flow-content,
+    .early-testing-content,
+    .branding-content,
+    .color-typography-content,
+    .logo-content {
+      width: 50%;
+      max-width: 650px;
     }
 
     .user-survey-content {
@@ -699,19 +721,6 @@
       margin-left: 10%;
     }
 
-    .competitive-analysis-flex-container,
-    .user-stories-flex-container,
-    .wireframe-flex-container  {
-      width: 100%;
-      background-color: teal;
-      display: flex;
-      display: -webkit-flex;
-      flex-direction: row;
-      -webkit-flex-direction: row;
-      flex-wrap: wrap;
-      -webkit-flex-wrap: wrap;
-    }
-
     .competitive-analysis-content,
     .user-stories-content {
       display: flex;
@@ -719,37 +728,27 @@
       width: 50%;
     }
 
-    .fig-row-competitive, .fig-row {
-      display: flex;
-      display: -webkit-flex;
-      flex-direction: row;
-      -webkit-flex-direction: row;
-      flex-wrap: wrap;
-      -webkit-flex-wrap: wrap;
-      width: 40%;
-    }
-
-
-    .competitors {
-      display: flex;
-      display: -webkit-flex;
-      flex-direction: row;
-      -webkit-flex-direction: row;
-      flex-wrap: wrap;
-      -webkit-flex-wrap: wrap;
-      width: 20%;
-    }
-
-    .target-audience-content,
-    .user-flow-content,
-    .early-testing-content {
+    .persona-content {
       width: 50%;
       max-width: 650px;
-      /* margin-left: 10%; */
+    }
+
+/* figures on right side */
+    .user-survey-figure {
+      flex-grow: 1;
+    }
+
+
+
+/* Figures on left side */
+    .early-testing-content {
+      padding-top: 1rem;
     }
 
     .user-flow-figure,
-    .early-testing-fig-flex-container {
+    .early-testing-fig-flex-container,
+    .branding-figure,
+    .logo-figure {
       width: 42%;
       margin-right: 8rem;
     }
@@ -765,9 +764,44 @@
       flex-grow: 1;
     }
 
-    .persona-content {
-      width: 50%;
-      max-width: 650px;
+    .user-survey-img {
+      visibility: visible;
+      width: 100%;
+      height: 100%;
+    }
+
+    .fig-row {
+      /* display: flex;
+      display: -webkit-flex;
+      flex-direction: row;
+      -webkit-flex-direction: row;
+      flex-wrap: wrap;
+      -webkit-flex-wrap: wrap; */
+      width: 40%;
+    }
+
+    .fig-row-competitive {
+      display: flex;
+      display: -webkit-flex;
+      flex-direction: row;
+      -webkit-flex-direction: row;
+      flex-wrap: wrap;
+      -webkit-flex-wrap: wrap;
+      width: 40%;
+    }
+
+    .competitors {
+      width: 20%;
+    }
+
+
+
+    .branding-content {
+      padding-top: 10rem;
+    }
+
+    .color-typography-content {
+      padding-top: 15rem;
     }
 
     .persona-icon {
@@ -817,8 +851,14 @@
 
    .wireframe-figure {
      width: 45%;
-     padding-top: 4rem;
-     margin: auto;
+     padding-top: 8rem;
+     margin-left: 5rem;
+     background-color: orange;
+   }
+
+   .color-typography-figure {
+     width: 45%;
+     margin-left: 5rem;
      background-color: orange;
    }
 
