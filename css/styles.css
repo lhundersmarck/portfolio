@@ -689,15 +689,15 @@ li span {
   padding-top: 2rem;
 }
 
-.arrow {
-  height: 10rem;
-  padding: 2rem;
+.curved-arrow {
+  visibility: hidden;
 }
 
-.vertical-arrow {
+.arrow {
+  padding: .5rem;
+  width: 8%;
   margin: 0 auto;
 }
-
 
 .branding .project-image {
   padding-bottom: 2rem;

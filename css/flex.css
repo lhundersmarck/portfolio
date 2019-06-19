@@ -316,6 +316,7 @@
       margin-top: 6rem;
     }
 
+
     .double-button-flex {
       display: flex;
       display: -webkit-flex;
@@ -364,6 +365,10 @@
 
     .wireframe-img {
       width: 48%;
+    }
+
+    .arrow {
+      padding: .5rem;
     }
 
 
@@ -445,8 +450,7 @@
     .rotated-arrow {
        height: 20%;
        transform: rotate(270deg);
-       width: 10%;
-       margin: 4rem;
+       margin-right: 4rem;
      }
 
     .testing-2-before,
@@ -797,14 +801,17 @@ plus moodboard because image comes before text */
     .logo-figure {
       width: 40%;
       margin-right: 6rem;
+      flex-grow: 1;
     }
 
     .early-testing-fig-flex-container {
       width: 40%;
+      flex-grow: 1;
     }
 
     .branding-figure {
       margin-top: 3rem;
+      flex-grow: 1;
     }
 
     .fig-row-users {
@@ -822,6 +829,7 @@ plus moodboard because image comes before text */
       visibility: visible;
       width: 100%;
       height: 100%;
+      flex-grow: 1;
     }
 
     .user-story {
@@ -917,11 +925,46 @@ plus moodboard because image comes before text */
      padding-top: 8rem;
      margin-left: 4rem;
      background-color: orange;
+     flex-grow: 1;
+   }
+
+   .vertical-arrow {
+     visibility: hidden;
+   }
+
+   .arrow {
+     width: 14%;
+   }
+
+   .rotated-arrow {
+     height: 0;
+     transform: none;
+     margin: 0 auto;
+   }
+
+   .curved-arrow {
+     visibility: visible;
+      transform: rotate(-45deg);
+   }
+
+   .testing-2-before,
+   .testing-2-after {
+     width: 40%;
+   }
+
+   .testing-2-after {
+     margin-left: 9rem;
    }
 
    .color-typography-figure {
      width: 35%;
      background-color: orange;
+     flex-grow: 1;
+   }
+
+   .color-palette.project-image {
+     width: 80%;
+     margin: auto;
    }
 
     .wireframe-group-flex-container {
@@ -945,36 +988,57 @@ plus moodboard because image comes before text */
     .testing-1-fig-flex-container,
     .testing-3-fig-flex-container {
       width: 45%;
+      flex-grow: 1;
      }
 
+     .testing-2-flex-container,
+     .testing-3-flex-container {
+       margin-top: 4rem;
+      }
+
      .testing-2-fig-flex-container {
+       padding-top: 2rem;
        display: flex;
        display: -webkit-flex;
-       flex-direction: column;
-       -webkit-flex-direction: column;
+       flex-direction: row;
+       -webkit-flex-direction: row;
        flex-wrap: wrap;
        -webkit-flex-wrap: wrap;
        width: 45%;
+       flex-grow: 1;
      }
 
-     /* .testing-2-after,
-     .testing-2-before {
-        width: 60%;
-     } */
+     .testing-1-after,
+     .testing-1-before,
+     .testing-3-after,
+     .testing-3-before {
+       display: flex;
+       display: -webkit-flex;
+       flex-direction: row;
+       -webkit-flex-direction: row;
+       flex-wrap: wrap;
+       -webkit-flex-wrap: wrap;
+       /* background-color: orange; */
+       padding-top: 2rem;
+        width: 70%;
+        margin: auto;
+     }
 
+     .arrow-vertical {
+       display: flex;
+       display: -webkit-flex;
+       flex-direction: row-reverse;
+       -webkit-flex-direction: row-reverse;
+       flex-wrap: wrap;
+       -webkit-flex-wrap: wrap;
+     }
 
-/* Haven't decided how to handle the desktop
-arrows - need to hide the ones from before? */
-     .rotated-arrow {
-        height: 20%;
-        transform: rotate(360deg);
-        width: 10%;
-        margin: 4rem;
-      }
 
 
 
 }
+
+
 
 @media screen and (min-width: 1199px) {
   html {
@@ -1081,7 +1145,7 @@ arrows - need to hide the ones from before? */
     .a-b-testing-content,
     .hi-fi-testing-content,
     .hi-fi-testing-changes {
-      width: 70%;
+      width: 76%;
     }
 
     .hi-fi-testing-intro,
@@ -1092,5 +1156,19 @@ arrows - need to hide the ones from before? */
       width: 50%;
     }
 
-    .
+    .the-problem-solution,
+    .target-audience-content,
+    .user-flow-content,
+    .early-testing-content,
+    .branding-content,
+    .color-typography-content,
+    .logo-content,
+    .a-b-testing-content, .testing-1-content,
+    .testing-2-content, .testing-3-content {
+      width: 40%;
+      max-width: 650px;
+      flex-grow: 1;
+    }
+
+
 }
