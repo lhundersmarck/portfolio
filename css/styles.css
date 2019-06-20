@@ -363,6 +363,7 @@ footer .footer-icons {
 .about-image {
   padding-top: 2rem;
   width: 100%;
+  border-radius: .3rem;
 }
 
 .travel-img {
@@ -387,6 +388,7 @@ figcaption {
 }
 
 
+
 /* Project starts here */
 
 
@@ -396,11 +398,13 @@ figcaption {
   margin-top: 2rem;
 }
 
-/* .product-shot {
-  margin-left: -6%;
-  margin-right: -6%;
-  width: 112%;
-} */
+.project-hero {
+  width: 100%;
+}
+
+.product-shot {
+  width: 100%;
+}
 
 .project-nav {
   display: flex;
@@ -419,7 +423,8 @@ figcaption {
 .project-tagline {
   font-size: 2.2rem;
   line-height: 3.5rem;
-  padding: 0 1rem 0 1rem;
+  width: 90%;
+  margin: auto;
 }
 
 .summary-hero {
@@ -474,7 +479,7 @@ li span {
 .competitive-analysis-flex-container, .target-audience-flex-container,
 .personas, .user-stories-flex-container, .user-flow-flex-container,
 .wireframe-sub-section, .early-testing-flex-container, .moodboard-flex-container,
-.color-typography-flex-container, .logo-flex-container, .a-b-testing-content, .a-b-testing-group,
+.color-typography-flex-container, .a-b-testing-content, .a-b-testing-group,
 .hi-fi-testing-content {
   margin-bottom: 7rem;
 }
@@ -517,8 +522,23 @@ li span {
 .teal-background .project-image {
   margin: 0 auto;
   display: flex;
+  display: -webkit-flex;
   flex-direction: column;
+  -webkit-flex-direction: column;
   padding: 0 0 1rem 0;
+  height: 5%;
+}
+
+.a-b-img {
+  margin: 0 auto;
+  display: flex;
+  display: -webkit-flex;
+  flex-direction: column;
+  -webkit-flex-direction: column;
+  padding: 0 0 1rem 0;
+  border-radius: .3rem;
+  width: 100%;
+  margin-top: 2rem;
 }
 
 
@@ -704,6 +724,7 @@ li span {
   text-align: center;
   width: 100%;
   display: flex;
+  display: -webkit-flex;
 }
 
 .section-summary {

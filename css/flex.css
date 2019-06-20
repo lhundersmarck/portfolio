@@ -38,7 +38,11 @@
 
     .hero {
       display: flex;
+      display: -webkit-flex;
       flex-direction: column;
+      -webkit-flex-direction: column;
+      flex-wrap: nowrap;
+      -webkit-flex-wrap: nowrap;
       padding-top: 8rem;
     }
 
@@ -58,11 +62,14 @@
     .project-card {
       width: 100%;
       display: flex;
+      display: -webkit-flex;
     }
 
     .design-steps {
       display: flex;
+      display: -webkit-flex;
       flex-direction: column;
+      -webkit-flex-direction: column;
     }
 
     .step-1, .step-2, .step-3, .step-4 {
@@ -71,7 +78,9 @@
 
     .step-1-2, .step-3-4 {
       display: flex;
+      display: -webkit-flex;
       flex-direction: row;
+      -webkit-flex-direction: row;
       margin-bottom: 2rem;
     }
 
@@ -114,8 +123,11 @@
     }
 
     button {
-      width: 30%;
+      padding: 1.2rem 2rem 1.2rem 2rem;
+      font-size: 1.5rem;
+      width: fit-content;
     }
+
 
     .footer ul {
       padding-top: 2rem;
@@ -125,8 +137,12 @@
 
     .about-hero-content {
       width: 70%;
-      padding-top: 4rem;
-      background-color: red;
+      padding-top: 7rem;
+      margin: 0 auto;
+    }
+
+    .about-background {
+      margin-top: 10rem;
     }
 
     .brazil, .iceland {
@@ -135,11 +151,13 @@
 
     .travel-img {
       display: flex;
+      display: -webkit-flex;
     }
 
     .rga1, .rga2 {
       height: 5%;
       padding-right: 1rem;
+      width: 50%;
     }
 
     .rga-flex-container {
@@ -227,7 +245,7 @@
     .competitive-analysis-flex-container, .target-audience-flex-container,
     .personas, .user-stories-flex-container, .user-flow-flex-container,
     .wireframe-sub-section, .early-testing-flex-container, .moodboard-flex-container,
-    .color-typography-flex-container, .logo-flex-container, .a-b-testing-content, .a-b-testing-group,
+    .color-typography-flex-container, .a-b-testing-content, .a-b-testing-group,
     .hi-fi-testing-content {
       margin-bottom: 12rem;
     }
@@ -324,10 +342,11 @@
       -webkit-flex-direction: row;
       flex-wrap: nowrap;
       -webkit-flex-wrap: nowrap;
+      justify-content: center;
     }
 
-    .double-button-flex button {
-      width: 70%;
+    .double-button-container {
+      margin-right: 5rem;
     }
 
     .double-button-flex, .button-container {
@@ -365,6 +384,8 @@
 
     .wireframe-img {
       width: 48%;
+      display: flex;
+      display: -webkit-flex;
     }
 
     .arrow {
@@ -381,7 +402,7 @@
     }
 
     .wireframe-figure {
-      width: 80%;
+      width: 100%;
       margin: auto;
       padding: 2rem 0 2rem 0;
     }
@@ -485,9 +506,6 @@
       justify-content: center;
       margin-bottom: 1rem;
    }
-
-
-
 }
 
 
@@ -549,27 +567,36 @@
     }
 
 /* hero content starts here */
+  .hero {
+    padding-top: 2rem;
+  }
+
   .hero-content {
-    padding-top: 9rem;
-      flex-grow: 1;
+    padding-top: 4rem;
+    flex-grow: 1;
     }
 
-    .hero-image {
-      padding-right: 5rem;
-      width: 70%;
-    }
+  .hero-image {
+    padding-right: 5rem;
+    width: 80%;
+    display: flex;
+    display: -webkit-flex;
+    flex-grow: 1;
+  }
 
+  .scroll-down-arrow {
+    padding: 3rem 0 3rem 0;
+    width: 100%;
+  }
 
-    .hero-image {
-      display: flex;
-    }
+  .featured-work {
+    margin-top: 10rem;
+  }
 
-    .scroll-down-arrow {
-      padding-top: 3rem;
-      width: 100%;
-    }
+  .design-process {
+    margin-top: 5rem;
+  }
 
-/* Design process content starts here */
   .design-steps {
     background-image: url("../assets/img/teal-circle-no-shadow.svg");
     background-size: 40rem;
@@ -617,20 +644,28 @@
 
   /* About content starts here */
 
-.about-section {
-  max-width: 700px;
+  .about-hero-content {
+    width: 50%;
+    padding: 7% 0 3% 6%;
+    float: left;
+  }
+
+  .about-section {
+    max-width: 700px;
   }
 
   .about-hero-image img {
     visibility: hidden;
-    /* height: 0; */
+    height: 0;
   }
 
   .about-hero-image {
-    background-image: url("../assets/img/headshot-2000w.jpg");
+    background-image: linear-gradient(rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.6)), url("../assets/img/headshot-2000w.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    position: relative;
+    height: 70vh;
   }
 
   /* project starts here  */
@@ -1033,6 +1068,16 @@ plus moodboard because image comes before text */
         margin: auto;
      }
 
+     .project-image.user-testing-img {
+      background: blue;
+      height: 5%;
+     }
+
+     .testing-1-content,  .testing-2-content,
+     .testing-3-content {
+       padding-top: 12rem;
+     }
+
      .arrow-vertical {
        display: flex;
        display: -webkit-flex;
@@ -1099,7 +1144,9 @@ plus moodboard because image comes before text */
 
     .user-survey-content {
       display: flex;
+      display: -webkit-flex;
       flex-direction: column;
+      -webkit-flex-direction: column;
       flex-grow: 2;
       width: 60%;
       max-width: 650px;

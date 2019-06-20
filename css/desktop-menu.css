@@ -15,7 +15,7 @@ nav a {
 
 .desktop-menu-container nav img {
   float: left;
-  margin-top: -2em;
+  margin-top: -1em;
   width: 20em;
 }
 
@@ -38,8 +38,27 @@ nav a {
 
 @media screen and (min-width: 575px) {
   .desktop-menu-container {
-    padding: 4% 5% .15% 5%;
-      max-width: 1440px;
+    padding: 2% 5% 0 5%;
+    margin: 0 auto;
+  }
+
+  .desktop-menu-container nav img {
+    float: left;
+    width: 17em;
+  }
+}
+
+
+
+@media screen and (min-width: 991px) {
+  .desktop-menu-container nav ul li:not(:last-child) {
+    margin-right: 2.7em;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .desktop-menu-container nav {
+      width: 84%;
       margin: 0 auto;
   }
 }
