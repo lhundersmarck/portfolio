@@ -5,7 +5,7 @@
     }
 
     .spacer {
-      height: 10rem;
+      height: 9rem;
     }
 
     .mobile-menu-container {
@@ -138,8 +138,8 @@
     .about-hero-content {
       width: 70%;
       margin: 0 auto;
+      padding-top: 4rem;
     }
-
 
     .brazil, .iceland {
       display: none;
