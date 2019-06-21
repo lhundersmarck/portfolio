@@ -70,7 +70,6 @@ h1 span {
 
 h2 span {
   color: #18A2A2;
-  /* teal color */
   font-weight: 600;
 }
 
@@ -114,7 +113,7 @@ figcaption span {
 .review {
   width: 100%;
   margin: auto;
-  background-color: #18A2A2;
+  background-color: #EBEBEB;
 }
 
 .mobile-menu {
@@ -196,7 +195,7 @@ a .down-arrow {
 blockquote p {
   font-size: 1.8rem;
   width: 100%;
-  color: #FDFDFD;
+  color: #282828;
   padding-top: 1rem;
   padding-left: 5rem;
   padding-right: 5rem;
@@ -287,7 +286,7 @@ button {
 footer .footer-icons {
   padding-top: 4rem;
   padding-bottom: 3rem;
-  background-color: #E7E7E7;
+  background-color: #EBEBEB;
 }
 
 .footer ul {
@@ -334,7 +333,7 @@ footer .footer-icons {
 .about-hero-content {
   width: 90%;
   margin: auto;
-  padding: 2rem 0 5rem 0; 
+  padding: 2rem 0 5rem 0;
 }
 
 
@@ -500,6 +499,14 @@ li span {
   width: 100%;
 }
 
+.gray-background {
+  background-color: #EBEBEB;
+  padding-top: 1rem;
+  margin-bottom: 1rem;
+  color: #484848;
+  width: 100%;
+}
+
 .research, .information-architecture,
 .user-testing, .final-prototype {
   width: 100%;
@@ -530,6 +537,16 @@ li span {
   height: 5%;
 }
 
+.gray-background .project-image {
+  margin: 0 auto;
+  display: flex;
+  display: -webkit-flex;
+  flex-direction: column;
+  -webkit-flex-direction: column;
+  padding: 0 0 1rem 0;
+  height: 5%;
+}
+
 .a-b-img {
   margin: 0 auto;
   display: flex;
@@ -543,21 +560,60 @@ li span {
 }
 
 
-.teal-background .research-highlight-container {
+/* .teal-background .research-highlight-container {
   width: 100%;
 }
 
 .teal-background .research-highlight-container .project-image {
   width: 40%;
-}
+} */
 
 
 .research-highlights h3 {
   padding-top:3rem;
 }
 
+.research-highlights h4 {
+  font-size: 2.2rem;
+  font-weight: 600;
+}
+
 .research-highlights p {
   font-size: 2.2rem;
+}
+
+p.large-stat {
+  font-size: 4rem;
+  font-weight: 600;
+}
+
+.bar-graph-data p {
+  display: inline;
+}
+
+.storage-name p {
+  line-height: normal;
+  padding-bottom: 1rem;
+}
+
+.storage-percentage p {
+  line-height: normal;
+  padding-bottom: 1rem;
+}
+
+figure.storage-bar-graph {
+  padding: 1rem .5rem 1rem .5rem;
+}
+
+
+.storage-stats-flex-container {
+  display: flex;
+  display: -webkit-flex;
+  flex-direction: row;
+  -webkit-flex-direction: row;
+  flex-wrap: nowrap;
+  -webkit-flex-wrap: nowrap;
+  justify-content: center;
 }
 
 .research-insights {
@@ -576,8 +632,14 @@ li span {
   padding-bottom: 1rem;
 }
 
-.research-highlights .percentage-population {
+/* .research-highlights .percentage-population {
   font-size: 1.6rem;
+  line-height: 2.2rem;
+  text-align: center;
+} */
+
+p.percentage-population {
+  font-size: 1.7rem;
   line-height: 2.2rem;
   text-align: center;
 }
@@ -734,7 +796,7 @@ li span {
 
 .a-b-header {
   font-size: 2.2rem;
-  color: #FDFDFD;
+  color: #484848;
   padding: 2rem 0 1rem 0;
   margin-top: 1rem;
 }
@@ -754,6 +816,10 @@ li span {
 }
 
 .teal-background figure {
+  margin-bottom: 3rem;
+}
+
+.gray-background figure {
   margin-bottom: 3rem;
 }
 
