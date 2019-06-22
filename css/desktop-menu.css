@@ -13,6 +13,16 @@ nav a {
   font-size: 1.7em;
 }
 
+.desktop-menu-container a {
+  transition: 0.3s linear;
+}
+
+@media (hover: hover) {
+  .desktop-menu-container a:hover {
+  color: #91DAD5;
+  }
+}
+
 .desktop-menu-container nav img {
   float: left;
   width: 20em;
