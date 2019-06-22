@@ -133,6 +133,7 @@
     button {
       padding: 1.2rem 2rem 1.2rem 2rem;
       font-size: 1.5rem;
+      width: fit-content;
       width: -moz-fit-content;
     }
 
@@ -269,6 +270,7 @@
 /* group of persona icons */
     .fig-row-users {
       width: 70%;
+      margin: 0 auto;
     }
 
 
@@ -279,7 +281,7 @@
   }
 
   p.research-insights {
-    font-size: 1.8rem;
+    font-size: 1.6rem;
   }
 
   .trend-stat {
@@ -304,9 +306,7 @@ p.large-stat {
     margin: 0 auto;
   }
 
-  .storage-products, .storage-reasons, .demographics {
-    padding-top: 7rem;
-  }
+
 
   .storage-reasons-flex-container {
     display: flex;
@@ -342,7 +342,8 @@ p.large-stat {
 /* competitor icons */
     .fig-row-competitive {
       width: 80%;
-      margin-bottom: 2rem;
+      margin: 0 auto;
+      padding-bottom: 2rem;
     }
 
     .persona-icon-2 {
@@ -451,9 +452,6 @@ p.large-stat {
       text-align: center;
     }
 
-    .early-testing-fig-flex-container .project-image {
-      box-shadow: 2px 2px 4px 2px rgba(0, 0, 0, .1);
-    }
 
     .wireframe-figure {
       width: 100%;
@@ -502,10 +500,6 @@ p.large-stat {
     .option-a, .option-b {
        width: 48%;
        justify-content: center;
-    }
-
-    .option-a, .option-b p {
-      text-align: center;
     }
 
     .user-testing-img {

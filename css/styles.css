@@ -120,7 +120,7 @@ figcaption span {
 }
 
 .hero {
-  padding-top: 7rem;
+  padding-top: 4rem;
   background-color: #FCFCFC;
   font-family: 'Assistant', sans-serif;
 }
@@ -644,7 +644,8 @@ li span {
 }
 
 .research-sub-headers {
-  padding-bottom: 1rem;
+  /* padding-bottom: 1rem; */
+  margin: 0 5% 0 5%;
 }
 
 
@@ -688,9 +689,12 @@ p.user-trends {
 
 .storage-products,
 .storage-reasons {
-  width: 90%;
+  width: 100%;
   margin: 0 auto;
-  padding: 3rem 0 0 0;
+}
+
+.storage-products, .storage-reasons, .demographics {
+  padding-top: 7rem;
 }
 
 .bar-graph {
@@ -699,6 +703,10 @@ p.user-trends {
   width: 90%;
 }
 
+figure.storage-bar-graph {
+  margin: 0 auto;
+  text-align: center;
+}
 
 img.reason-icon {
   padding-bottom: 1rem;
@@ -713,7 +721,6 @@ img.reason-icon {
   -webkit-flex-wrap: wrap;
   justify-content: center;
   font-size: 4rem;
-  padding-bottom: 3rem;
 }
 
 p.research-insights {
@@ -801,7 +808,6 @@ p.percentage-population {
 /* competitor icons and personas */
 
 .fig-row-competitive, .fig-row-users {
-  margin: 1rem auto;
   justify-content: center;
   display: flex;
   display: -webkit-flex;
@@ -809,7 +815,6 @@ p.percentage-population {
   -webkit-flex-direction: row;
   flex-wrap: wrap;
   -webkit-flex-wrap: wrap;
-  width: 80%;
 }
 
 .competitor-group {
@@ -875,6 +880,17 @@ p.percentage-population {
   -webkit-flex-wrap: wrap;
   margin: 0 auto;
 }
+
+.early-testing-fig-flex-container .project-image {
+  box-shadow: 2px 2px 4px 2px rgba(0, 0, 0, .1);
+  padding-bottom: 1rem;
+
+}
+
+.option-a, .option-b p {
+  text-align: center;
+}
+
 
 .testing-1-fig-flex-container,
 .testing-2-fig-flex-container,
