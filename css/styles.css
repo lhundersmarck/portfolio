@@ -13,7 +13,7 @@ html {
 }
 
 body {
-  background-color: #F5F5F5;
+  background-color: #FCFCFC;
   color: #282828;
   font-family: 'Assistant', sans-serif;
   letter-spacing: .02rem;
@@ -90,7 +90,7 @@ p span {
 
 
 section {
-  background-color: #F5F5F5;
+  background-color: #FCFCFC;
   display: block;
   margin: 0 auto;
   margin-top: 0;
@@ -121,7 +121,7 @@ figcaption span {
 
 .hero {
   padding-top: 7rem;
-  background-color: #F5F5F5;
+  background-color: #FCFCFC;
   font-family: 'Assistant', sans-serif;
 }
 
@@ -152,7 +152,7 @@ a .down-arrow {
 }
 
 .featured-work {
-  background-color: #F5F5F5;
+  background-color: #FCFCFC;
 }
 
 .project-card a {
@@ -190,6 +190,7 @@ a .down-arrow {
   margin: 0 5rem 0 5rem;
   padding-top: 40%;
   opacity: 0;
+  line-height: 4rem;
 }
 
 .project1 p:hover {
@@ -197,10 +198,12 @@ a .down-arrow {
 }
 
 .project-name {
-  font-weight: bold;
+  font-size: 3rem;
+  font-weight: 400;
 }
 
 .project-description {
+  font-size: 2.2rem;
   font-weight: bold;
 }
 
@@ -217,7 +220,7 @@ a .down-arrow {
 }
 
 .design-process {
-  background-color: #F5F5F5;
+  background-color: #FCFCFC;
 }
 
 .design-process h3 {
@@ -282,7 +285,7 @@ blockquote p {
 }
 
 .contact-group {
-  background-color: #F5F5F5;
+  background-color: #FCFCFC;
   text-align: center;
   padding-bottom: 15rem;
 }
