@@ -693,9 +693,10 @@ p.user-trends {
   padding: 3rem 0 0 0;
 }
 
-.storage-bar-graph {
+.bar-graph {
   margin: 0 auto;
   text-align: center;
+  width: 90%;
 }
 
 
@@ -730,12 +731,12 @@ p.research-insights {
 .storage-icon-text-3,
 .storage-icon-text-4,
 .storage-icon-text-5 {
-  width: 40%;
+  width: 45%;
   display: flex;
   display: -webkit-flex;
   flex-direction: column;
   -webkit-flex-direction: column;
-  padding: 0 2rem 2rem 0;
+  padding: 0 2rem 2rem 1rem;
 }
 
 p.research-insights {
@@ -819,6 +820,10 @@ p.percentage-population {
   -webkit-flex-direction: row;
   flex-wrap: nowrap;
   -webkit-flex-wrap: nowrap;
+}
+
+.competitors {
+  width: 50%;
 }
 
 .persona-icon, .persona-icon-2 {
@@ -952,4 +957,9 @@ p.percentage-population {
 .nav-button {
   margin: 0;
   padding: 0;
+}
+
+.double-button-container {
+  text-align: center;
+  margin-bottom: 1rem;
 }
