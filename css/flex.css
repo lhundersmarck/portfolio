@@ -173,14 +173,6 @@
       -webkit-flex-wrap: nowrap;
     }
 
-    /* .aerial-flex-container {
-      display: flex;
-      display: -webkit-flex;
-      flex-direction: row;
-      -webkit-flex-direction: row;
-      flex-wrap: nowrap;
-      -webkit-flex-wrap: nowrap;
-    } */
 
     /* Project-1 starts here  */
     .project-hero {
@@ -279,22 +271,72 @@
       width: 70%;
     }
 
-/* individual persona icons */
-    /* .persona-icon {
-      margin: 0 2rem 0 2rem;
-    } */
 
 /* Research highlights section */
 
+.research-highlights h4 {
+    font-size: 1.9rem;
+  }
+
+  p.research-insights {
+    font-size: 1.8rem;
+  }
+
+  .trend-stat {
+    padding: 0;
+  }
+
 .pie-chart {
-  background-color: teal;
   width: 25%;
   padding: 1rem;
 }
 
 p.large-stat {
-  font-size: 4.8rem;
+  font-size: 4rem;
+ }
 
+.storage-trends-flex-container {
+    display: flex;
+    display: -webkit-flex;
+    flex-direction: column;
+    -webkit-flex-direction: column;
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .storage-products, .storage-reasons, .demographics {
+    padding-top: 7rem;
+  }
+
+  .storage-reasons-flex-container {
+    display: flex;
+    display: -webkit-flex;
+    flex-direction: row;
+    -webkit-flex-direction: row;
+    flex-wrap: nowrap;
+    -webkit-flex-wrap: nowrap;
+    justify-content: space-between;
+    padding-bottom: 0;
+  }
+
+/* .storage-bar-graph img {
+  padding-top: 3rem;
+} */
+
+.demographics-flex-container {
+  display: flex;
+  display: -webkit-flex;
+  flex-direction: row;
+  -webkit-flex-direction: row;
+  flex-wrap: nowrap;
+  -webkit-flex-wrap: nowrap;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.industry-data, .gender-data {
+  width: 50%;
+}
 
 
 /* competitor icons */
@@ -543,7 +585,6 @@ p.large-stat {
 
     section {
       width: 70%;
-      /* background-color: yellow; */
     }
 
     .teal-circle {
@@ -656,7 +697,7 @@ p.large-stat {
 
   .about-hero-content {
     width: 50%;
-    padding: 7% 0 3% 6%;
+    padding: 18% 0 3% 6%;
     float: left;
   }
 
@@ -700,11 +741,6 @@ p.large-stat {
       margin-right: 10rem;
     }
 
-    /* .project-image {
-      margin: 1rem 0 2rem 0;
-    } */
-
-
     .project-image {
       margin: 0 0 1rem 0;
     }
@@ -725,17 +761,9 @@ p.large-stat {
 
     .landing-page {
       padding-top: 4rem;
-      /* flex-grow: 1; */
       width: 50%;
       margin-left: 2%;
     }
-
-    /* .research-sub-section,
-    .information-arch-sub-section,
-    .branding, .hi-fi-testing-content,
-    .hi-fi-testing-changes {
-      width: 90%;
-    } */
 
     .project-summary, .research-sub-section,
     .information-arch-sub-section,
@@ -757,7 +785,6 @@ content on right side */
     .logo-flex-container,
     .testing-2-flex-container {
       width: 100%;
-      /* background-color: red; */
       display: flex;
       display: -webkit-flex;
       flex-direction: row-reverse;
@@ -777,7 +804,6 @@ plus moodboard because image comes before text */
     .testing-1-flex-container,
     .testing-3-flex-container {
       width: 100%;
-      /* background-color: teal; */
       display: flex;
       display: -webkit-flex;
       flex-direction: row;
@@ -810,6 +836,65 @@ plus moodboard because image comes before text */
       margin-left: 10%;
     }
 
+    .storage-products, .storage-reasons {
+      margin: 3%;
+    }
+
+    .demographics {
+      padding: 3rem 0 2rem 0;
+    }
+
+    .storage-icon-text-1,
+    .storage-icon-text-2,
+    .storage-icon-text-3,
+    .storage-icon-text-4,
+    .storage-icon-text-5 {
+      width: 30%;
+      display: flex;
+      display: -webkit-flex;
+      flex-direction: column;
+      -webkit-flex-direction: column;
+      padding: 2rem 2rem 2rem 0;
+    }
+
+    .user-trends, .storage-trends-flex-container,
+    .demographics {
+      width: 100%;
+    }
+
+    figure.storage-bar-graph {
+      width: 80%;
+      margin: 0 auto;
+    }
+
+    .storage-trends-flex-container {
+      display: flex;
+      display: -webkit-flex;
+      flex-direction: row;
+      -webkit-flex-direction: row;
+      flex-wrap: nowrap;
+      -webkit-flex-wrap: nowrap;
+    }
+
+    .storage-bar-graph img {
+      margin-top: 2rem;
+    }
+
+    .storage-icon-text-1,
+    .storage-icon-text-2,
+    .storage-icon-text-3,
+    .storage-icon-text-4,
+    .storage-icon-text-5 {
+      /* width: 20%; */
+      padding: 1rem 1rem 1rem 1rem;
+    }
+
+    .persona-content {
+      width: 50%;
+      max-width: 650px;
+      margin: 0;
+    }
+
     .competitive-analysis-content,
     .user-stories-content {
       display: flex;
@@ -817,12 +902,6 @@ plus moodboard because image comes before text */
       flex-direction: column;
       -webkit-flex-direction: column;
       width: 50%;
-    }
-
-    .persona-content {
-      width: 50%;
-      max-width: 650px;
-      margin: 0;
     }
 
     .hi-fi-testing-intro,
@@ -1153,6 +1232,9 @@ plus moodboard because image comes before text */
     margin: auto;
     }
 
+    .storage-products, .storage-reasons {
+      margin: 2%;
+    }
 
     /* Project starts here  */
 
@@ -1208,6 +1290,13 @@ plus moodboard because image comes before text */
 
 
 }
+
+@media screen and (min-width: 1300px) {
+  .storage-bar-graph img {
+    padding: .8rem;
+  }
+}
+
 
 
 @media screen and (min-width: 1440px) {

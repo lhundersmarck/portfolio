@@ -91,7 +91,6 @@ p span {
 
 section {
   background-color: #F5F5F5;
-  /* height: 100vh; */
   display: block;
   margin: 0 auto;
   margin-top: 0;
@@ -169,10 +168,6 @@ a .down-arrow {
     border-radius: .5rem;
     width: 100%;
 }
-
-/* .project-card:not(:last-child) {
-  margin-right: .5rem;
-} */
 
 
 .project1 {
@@ -369,7 +364,7 @@ footer .footer-icons {
   color: #828282;
   font-size: 1.5rem;
   line-height: 1.9rem;
-  letter-spacing: .05rem;
+  letter-spacing: .07rem;
 }
 
 /* About starts here */
@@ -544,7 +539,6 @@ li span {
   visibility: hidden;
 }
 
-
 .teal-background {
   background-color: #18A2A2;
   padding-top: 1rem;
@@ -613,16 +607,6 @@ li span {
   margin-top: 2rem;
 }
 
-
-/* .teal-background .research-highlight-container {
-  width: 100%;
-}
-
-.teal-background .research-highlight-container .project-image {
-  width: 40%;
-} */
-
-
 .research-highlights h3 {
   padding-top:3rem;
 }
@@ -630,6 +614,7 @@ li span {
 .research-highlights h4 {
   font-size: 2.2rem;
   font-weight: 600;
+  padding-bottom: 4rem;
 }
 
 .research-highlights p {
@@ -639,7 +624,6 @@ li span {
 
 .research-sub-headers {
   padding-bottom: 1rem;
-  /* background-color: green; */
 }
 
 
@@ -656,9 +640,9 @@ li span {
 }
 
 .pie-chart {
-  /* background-color: yellow; */
   width: 48%;
   padding: 0 1rem 0 0;
+  margin: 0 auto;
 }
 
 .trend-stat {
@@ -671,13 +655,11 @@ li span {
 p.large-stat {
   font-size: 3.8rem;
   font-weight: 600;
-  /* background-color: purple; */
   padding: 2rem 0 2rem 0;
   text-align: center;
 }
 
 p.user-trends {
-  /* background-color: orange; */
   line-height: 2.9rem;
   text-align: center;
   padding: 0;
@@ -688,30 +670,19 @@ p.user-trends {
   width: 90%;
   margin: 0 auto;
   padding: 3rem 0 0 0;
-  /* background-color: tan; */
 }
 
-.storage-bar-graph img{
-  width: 100%;
-}
-
-figure.storage-bar-graph {
-  padding: 1rem .5rem 1rem .5rem;
+.storage-bar-graph {
+  margin: 0 auto;
+  text-align: center;
 }
 
 
-/* .storage-stats-flex-container {
-  display: flex;
-  display: -webkit-flex;
-  flex-direction: row;
-  -webkit-flex-direction: row;
-  flex-wrap: nowrap;
-  -webkit-flex-wrap: nowrap;
-  justify-content: center;
-} */
+img.reason-icon {
+  padding-bottom: 1rem;
+}
 
 .storage-reasons-flex-container {
-  /* background-color: red; */
   display: flex;
   display: -webkit-flex;
   flex-direction: row;
@@ -727,7 +698,6 @@ p.research-insights {
   text-align: center;
   font-size: 1.9rem;
   letter-spacing: 0.03rem;
-  /* background-color: teal; */
 }
 
 .research-insights {
@@ -744,7 +714,7 @@ p.research-insights {
   display: -webkit-flex;
   flex-direction: column;
   -webkit-flex-direction: column;
-  padding: 2rem 2rem 2rem 0;
+  padding: 0 2rem 2rem 0;
 }
 
 p.research-insights {
@@ -769,26 +739,11 @@ p.research-insights {
 }
 
 
-/* .research-highlights .percentage-population {
-  font-size: 1.6rem;
-  line-height: 2.2rem;
-  text-align: center;
-} */
-
 p.percentage-population {
   font-size: 1.7rem;
   line-height: 2.2rem;
   text-align: center;
 }
-
-/* .research-highlight-container {
-  display: block;
-  text-align: center;
-}
-
-.project-image .research-highlights {
-  margin: 0;
-} */
 
 .list-heading {
   padding-bottom: 1rem;
@@ -956,10 +911,6 @@ p.percentage-population {
   margin-bottom: 3rem;
 }
 
-/* .gray-background figure {
-  margin-bottom: 3rem;
-} */
-
 .prototype-flex-container {
   width: 90%;
   margin: 0 auto;
@@ -972,11 +923,6 @@ p.percentage-population {
 .about-hero-content-moved {
   background-color: blue;
 }
-
-/* .project1 img:hover {
-  opacity: 0.5;
-  background-color: teal;
-} */
 
 .desktop-menu-container ul li {
   vertical-align: top;
