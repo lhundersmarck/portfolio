@@ -305,7 +305,7 @@ blockquote p {
 }
 
 button {
-  border-radius: .4rem;
+  border-radius: .7rem;
   background-color: #91DAD5;
   /* box-shadow: 2px 2px 4px 2px rgba(0, 0, 0, .1); */
   border: 0;
@@ -359,9 +359,19 @@ footer .footer-icons {
 }
 
 @media (hover: hover) {
+  button {
+    background-color: inherit;
+    border: 2px solid #91DAD5;
+  }
   button:hover {
-  background-color: #B1EFE7;
-  box-shadow: 2px 2px 4px 2px rgba(0, 0, 0, .1);
+    background-color: #91DAD5;
+    box-shadow: 2px 2px 4px 2px rgba(0, 0, 0, .1);
+  }
+}
+
+@media (hover: none) {
+  button {
+    background-color: #91DAD5;
   }
 }
 
@@ -936,7 +946,6 @@ p.percentage-population {
 }
 
 .desktop-menu-container ul li {
-  vertical-align: top;
   padding-top: 30px;
 }
 
