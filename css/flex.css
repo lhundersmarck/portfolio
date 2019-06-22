@@ -1,3 +1,10 @@
+@media screen and (max-height: 600px) {
+.scroll-down-arrow {
+    visibility: hidden;
+  }
+}
+
+
 @media screen and (min-width: 575px) {
 
     .site-container {
@@ -21,6 +28,7 @@
       width: 70%;
       margin: auto;
     }
+
 
     .teal-circle {
       visibility: hidden;
@@ -125,7 +133,7 @@
     button {
       padding: 1.2rem 2rem 1.2rem 2rem;
       font-size: 1.5rem;
-      width: fit-content;
+      width: -moz-fit-content;
     }
 
 
@@ -445,6 +453,7 @@ p.large-stat {
       flex-wrap: wrap;
       -webkit-flex-wrap: wrap;
       margin: 0 auto;
+      padding-top: 3rem;
      }
 
     .option-a, .option-b {
@@ -545,12 +554,14 @@ p.large-stat {
     }
 
     .flex-hero {
+      margin-top: 10%;
       display: flex;
       display: -webkit-flex;
       flex-direction: row;
       -webkit-flex-direction: row;
       flex-wrap: nowrap;
       -webkit-flex-wrap: nowrap;
+      align-items: center;
     }
 
     .hero p {
@@ -586,11 +597,6 @@ p.large-stat {
     display: flex;
     display: -webkit-flex;
     flex-grow: 1;
-  }
-
-  .scroll-down-arrow {
-    padding: 3rem 0 3rem 0;
-    width: 100%;
   }
 
   .featured-work {
@@ -1240,4 +1246,15 @@ plus moodboard because image comes before text */
     }
 
 
+}
+
+@media screen and (min-width: 900px) {
+  #hero {
+    width: 80vw;
+    height: 100vh;
+  }
+  .scroll-down-arrow {
+    position: absolute;
+    bottom: 0;
+  }
 }

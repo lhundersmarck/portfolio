@@ -142,22 +142,78 @@ figcaption span {
 
 a .down-arrow {
   display: block;
-  margin-left: auto;
-  margin-right: auto;
-  padding-bottom: 3rem;
+  margin: 0 auto;
+}
+
+.scroll-down-arrow {
+  width: 80%;
+  display: block;
+  margin: 0 auto;
+  padding: 3rem 0 3rem 0;
 }
 
 .featured-work {
   background-color: #F5F5F5;
 }
 
+.project-card a {
+  padding: 0;
+  width: 100%;
+  margin-right: .5rem;
+
+}
 
 .project1, .project2{
     background-color: #E7E7E7;
     padding: .08rem;
-    margin: .5rem;
     border-radius: .5rem;
     width: 100%;
+}
+
+/* .project-card:not(:last-child) {
+  margin-right: .5rem;
+} */
+
+
+.project1 {
+  padding: 0;
+  height: 100%;
+  background-image: url("../assets/img/Project-card1-600w.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  /* transition: 0.3s linear; */
+}
+
+.project-card a {
+  color: #000;
+  text-decoration: none;
+  margin: 0 1rem 0 1rem;
+}
+
+.project1 p {
+  margin: 0 5rem 0 5rem;
+  padding-top: 40%;
+  opacity: 0;
+}
+
+.project1 p:hover {
+  opacity: 1;
+}
+
+.project-name {
+  font-weight: bold;
+}
+
+.project-description {
+  font-weight: bold;
+}
+
+.project1:hover {
+  background-image: linear-gradient(to right bottom, #91DAD5, #91DAD5), url("../assets/img/Project-card1-600w.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .project2 {
@@ -214,8 +270,6 @@ blockquote p {
   padding-top: 2rem;
   text-align: right;
 }
-
-
 
 .quotation-mark-left, .quotation-mark-right {
   width: 2rem;
@@ -917,4 +971,19 @@ p.percentage-population {
 
 .about-hero-content-moved {
   background-color: blue;
+}
+
+/* .project1 img:hover {
+  opacity: 0.5;
+  background-color: teal;
+} */
+
+.desktop-menu-container ul li {
+  vertical-align: top;
+  padding-top: 30px;
+}
+
+.nav-button {
+  margin: 0;
+  padding: 0;
 }
