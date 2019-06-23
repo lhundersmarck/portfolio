@@ -470,6 +470,7 @@ figcaption {
 
 .project-hero {
   width: 100%;
+  padding-bottom: 3rem;
 }
 
 .product-shot {
@@ -879,8 +880,6 @@ p.percentage-population {
 
 .early-testing-fig-flex-container .project-image {
   box-shadow: 2px 2px 4px 2px rgba(0, 0, 0, .1);
-  padding-bottom: 1rem;
-
 }
 
 .option-a, .option-b p {

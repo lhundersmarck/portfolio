@@ -276,37 +276,35 @@
 
 /* Research highlights section */
 
-.research-highlights h4 {
-    font-size: 1.9rem;
+  .research-highlights h4 {
+      font-size: 1.9rem;
+    }
+
+    p.research-insights {
+      font-size: 1.6rem;
+    }
+
+    .trend-stat {
+      padding: 0;
+    }
+
+  .pie-chart {
+    width: 25%;
+    padding: 1rem;
   }
 
-  p.research-insights {
-    font-size: 1.6rem;
-  }
+  p.large-stat {
+    font-size: 4rem;
+   }
 
-  .trend-stat {
-    padding: 0;
-  }
-
-.pie-chart {
-  width: 25%;
-  padding: 1rem;
-}
-
-p.large-stat {
-  font-size: 4rem;
- }
-
-.storage-trends-flex-container {
-    display: flex;
-    display: -webkit-flex;
-    flex-direction: column;
-    -webkit-flex-direction: column;
-    width: 90%;
-    margin: 0 auto;
-  }
-
-
+  .storage-trends-flex-container {
+      display: flex;
+      display: -webkit-flex;
+      flex-direction: column;
+      -webkit-flex-direction: column;
+      width: 90%;
+      margin: 0 auto;
+    }
 
   .storage-reasons-flex-container {
     display: flex;
@@ -319,24 +317,24 @@ p.large-stat {
     padding-bottom: 0;
   }
 
-/* .storage-bar-graph img {
-  padding-top: 3rem;
-} */
+  .bar-graph {
+    width: 55%;
+  }
 
-.demographics-flex-container {
-  display: flex;
-  display: -webkit-flex;
-  flex-direction: row;
-  -webkit-flex-direction: row;
-  flex-wrap: nowrap;
-  -webkit-flex-wrap: nowrap;
-  width: 90%;
-  margin: 0 auto;
-}
+  .demographics-flex-container {
+    display: flex;
+    display: -webkit-flex;
+    flex-direction: row;
+    -webkit-flex-direction: row;
+    flex-wrap: nowrap;
+    -webkit-flex-wrap: nowrap;
+    width: 90%;
+    margin: 0 auto;
+  }
 
-.industry-data, .gender-data {
-  width: 50%;
-}
+  .industry-data, .gender-data {
+    width: 50%;
+  }
 
 
 /* competitor icons */
@@ -389,7 +387,6 @@ p.large-stat {
       margin-top: 6rem;
     }
 
-
     .double-button-flex {
       display: flex;
       display: -webkit-flex;
@@ -435,128 +432,132 @@ p.large-stat {
        margin: 0 auto;
        width: 100%;
        justify-content: center;
-    }
-
-    .wireframe-img {
-      width: 48%;
-      display: flex;
-      display: -webkit-flex;
-    }
-
-    .arrow {
-      padding: .5rem;
-    }
-
-
-    .centered-caption {
-      text-align: center;
-    }
-
-
-    .wireframe-figure {
-      width: 100%;
-      margin: auto;
-      padding: 2rem 0 2rem 0;
-    }
-
-
-    .early-testing-fig-before,
-    .early-testing-fig-after {
-      width: 70%;
-      margin: auto;
-    }
-
-
-    .color-typography-figure,
-    .logo-figure {
-      margin: 0 auto;
-      width: 70%;
-    }
-
-
-    .a-b-testing-content {
-      width: 70%;
-      margin: 0 auto;
-    }
-
-    .a-b-results {
-      width: 70%;
-      margin: 0 auto;
-      padding-bottom: 5.5rem;
-    }
-
-    .a-b-flex-container {
-      padding: 1rem;
-      display: flex;
-      display: -webkit-flex;
-      flex-direction: row;
-      -webkit-flex-direction: row;
-      flex-wrap: wrap;
-      -webkit-flex-wrap: wrap;
-      margin: 0 auto;
-      padding-top: 3rem;
      }
 
-    .option-a, .option-b {
-       width: 48%;
-       justify-content: center;
-    }
+      .wireframe-img {
+        width: 48%;
+        display: flex;
+        display: -webkit-flex;
+      }
 
-    .user-testing-img {
-      box-shadow: 2px 2px 4px 2px rgba(0, 0, 0, .1);
-    }
+      .arrow {
+        padding: .5rem;
+        width: 7%;
+      }
 
-    .testing-1-fig-flex-container,
-    .testing-2-fig-flex-container,
-    .testing-3-fig-flex-container {
-      display: flex;
-      display: -webkit-flex;
-      flex-direction: row;
-      -webkit-flex-direction: row;
-      flex-wrap: wrap;
-      -webkit-flex-wrap: wrap;
-      width: 80%;
+
+      .centered-caption {
+        text-align: center;
+      }
+
+
+      .wireframe-figure {
+        width: 100%;
+        margin: auto;
+        padding: 2rem 0 2rem 0;
+      }
+
+
+      .early-testing-fig-before,
+      .early-testing-fig-after {
+        width: 70%;
+        margin: auto;
+      }
+
+
+      .color-typography-figure,
+      .logo-figure {
+        margin: 0 auto;
+        width: 70%;
+      }
+
+
+      .a-b-testing-content {
+        width: 70%;
+        margin: 0 auto;
+      }
+
+      .a-b-results {
+        width: 70%;
+        margin: 0 auto;
+        padding-bottom: 5.5rem;
+      }
+
+      .a-b-flex-container {
+        padding: 1rem;
+        display: flex;
+        display: -webkit-flex;
+        flex-direction: row;
+        -webkit-flex-direction: row;
+        flex-wrap: wrap;
+        -webkit-flex-wrap: wrap;
+        margin: 0 auto;
+        padding-top: 3rem;
+       }
+
+      .option-a, .option-b {
+         width: 48%;
+         justify-content: center;
+      }
+
+      .user-testing-img {
+        box-shadow: 2px 2px 4px 2px rgba(0, 0, 0, .1);
+      }
+
+      .testing-1-fig-flex-container,
+      .testing-2-fig-flex-container,
+      .testing-3-fig-flex-container {
+        display: flex;
+        display: -webkit-flex;
+        flex-direction: row;
+        -webkit-flex-direction: row;
+        flex-wrap: wrap;
+        -webkit-flex-wrap: wrap;
+        width: 80%;
+       }
+
+      .rotated-arrow {
+         height: 20%;
+         transform: rotate(270deg);
+         margin-right: 4rem;
+       }
+
+      .testing-2-before,
+      .testing-2-after {
+         width: 35%;
+         justify-content: center;
+      }
+
+      .final-prototype {
+        width: 100%;
+      }
+
+      .prototype-sub-section {
+        width: 70%;
+        margin: 0 auto;
+      }
+
+      .prototype-flex-container {
+       padding: 1rem;
+       display: flex;
+       display: -webkit-flex;
+       flex-direction: row;
+       -webkit-flex-direction: row;
+       flex-wrap: wrap;
+       -webkit-flex-wrap: wrap;
+       margin: 0 auto;
+       width: 100%;
      }
 
-    .rotated-arrow {
-       height: 20%;
-       transform: rotate(270deg);
-       margin-right: 4rem;
+      .prototype-flex-container img {
+        width: 48%;
+        justify-content: center;
+        margin-bottom: 1rem;
      }
 
-    .testing-2-before,
-    .testing-2-after {
-       width: 35%;
-       justify-content: center;
-    }
-
-    .final-prototype {
-      width: 100%;
-    }
-
-    .prototype-sub-section {
-      width: 70%;
-      margin: 0 auto;
-    }
-
-    .prototype-flex-container {
-     padding: 1rem;
-     display: flex;
-     display: -webkit-flex;
-     flex-direction: row;
-     -webkit-flex-direction: row;
-     flex-wrap: wrap;
-     -webkit-flex-wrap: wrap;
-     margin: 0 auto;
-     width: 100%;
-   }
-
-    .prototype-flex-container img {
-      width: 48%;
-      justify-content: center;
-      margin-bottom: 1rem;
-   }
 }
+
+
 
 
 @media screen and (min-width: 991px) {
@@ -618,105 +619,105 @@ p.large-stat {
     }
 
 /* hero content starts here */
-  .hero {
-    padding-top: 2rem;
-  }
-
-  .hero-content {
-    padding-top: 4rem;
-    flex-grow: 1;
+    .hero {
+      padding-top: 2rem;
     }
 
-  .hero-image {
-    padding-right: 5rem;
-    width: 80%;
-    display: flex;
-    display: -webkit-flex;
-    flex-grow: 1;
-  }
+    .hero-content {
+      padding-top: 4rem;
+      flex-grow: 1;
+      }
 
-  .featured-work {
-    margin-top: 10rem;
-  }
+    .hero-image {
+      padding-right: 5rem;
+      width: 80%;
+      display: flex;
+      display: -webkit-flex;
+      flex-grow: 1;
+    }
 
-  .design-process {
-    margin-top: 5rem;
-  }
+    .featured-work {
+      margin-top: 10rem;
+    }
 
-  .design-steps {
-    background-image: url("../assets/img/teal-circle-no-shadow.svg");
-    background-size: 40rem;
-    background-position: center;
-    background-repeat: no-repeat;
-  }
+    .design-process {
+      margin-top: 5rem;
+    }
 
-  .step-1-2, .step-3-4 {
-    margin-bottom: 3rem;
-  }
+    .design-steps {
+      background-image: url("../assets/img/teal-circle-no-shadow.svg");
+      background-size: 40rem;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
 
-  .step-1, .step-2, .step-3, .step-4 {
-    padding: 0 5rem 5rem 0;
-    margin-left: 5rem;
-  }
+    .step-1-2, .step-3-4 {
+      margin-bottom: 3rem;
+    }
 
-  .step-2, .step-4 {
-    margin-left: 5rem;
-  }
+    .step-1, .step-2, .step-3, .step-4 {
+      padding: 0 5rem 5rem 0;
+      margin-left: 5rem;
+    }
 
-/* review content starts here */
-  .review {
-    width: 100%;
-    display: inline-block;
-    margin: 0;
-  }
+    .step-2, .step-4 {
+      margin-left: 5rem;
+    }
 
-  .review-container {
-    position: relative;
-    display: block;
-    padding: 6rem 9rem 6rem 9rem;
-    overflow: hidden;
-    margin-left: auto;
-    margin-right: auto;
-  }
+  /* review content starts here */
+    .review {
+      width: 100%;
+      display: inline-block;
+      margin: 0;
+    }
 
-  .review-1 {
-    max-width: 120rem;
-  }
+    .review-container {
+      position: relative;
+      display: block;
+      padding: 6rem 9rem 6rem 9rem;
+      overflow: hidden;
+      margin-left: auto;
+      margin-right: auto;
+    }
 
-  /* footer content starts here */
-  .back-to-top-arrow  {
-    visibility: hidden;
-  }
+    .review-1 {
+      max-width: 120rem;
+    }
 
-  /* About content starts here */
+    /* footer content starts here */
+    .back-to-top-arrow  {
+      visibility: hidden;
+    }
 
-  .about-hero-content {
-    width: 50%;
-    padding: 8% 0 3% 6%;
-    float: left;
-  }
+    /* About content starts here */
 
-  .about-background {
-    margin-top: 10rem;
-  }
+    .about-hero-content {
+      width: 50%;
+      padding: 8% 0 3% 6%;
+      float: left;
+    }
 
-  .about-section {
-    max-width: 700px;
-  }
+    .about-background {
+      margin-top: 10rem;
+    }
 
-  .about-hero-image img {
-    visibility: hidden;
-    height: 0;
-  }
+    .about-section {
+      max-width: 700px;
+    }
 
-  .about-hero-image {
-    background-image: linear-gradient(rgba(255, 255, 255, 0.65), rgba(255, 255, 255, 0.65)), url("../assets/img/headshot-2000w.jpg");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    position: relative;
-    height: 70vh;
-  }
+    .about-hero-image img {
+      visibility: hidden;
+      height: 0;
+    }
+
+    .about-hero-image {
+      background-image: linear-gradient(rgba(255, 255, 255, 0.65), rgba(255, 255, 255, 0.65)), url("../assets/img/headshot-2000w.jpg");
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      position: relative;
+      height: 70vh;
+    }
 
   /* project starts here  */
 
@@ -829,6 +830,10 @@ plus moodboard because image comes before text */
       width: 70%;
       max-width: 650px;
       margin-left: 10%;
+    }
+
+    .bar-graph {
+      width: 90%;
     }
 
     .storage-products, .storage-reasons {

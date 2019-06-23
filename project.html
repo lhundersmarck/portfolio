@@ -62,15 +62,25 @@
         </ul>
       </nav>
     </header>
-    <div class="spacer">
+    <div class="spacer" id="top-page">
     </div>
     <div class="container">
       <!-- hero unit -->
-      <section class="project-hero" id="project-hero">
+      <section class="project-hero">
         <img class="product-logo project-image" src="assets/img-project/trove-logo-color.svg" alt="Trove Product Logo"></img>
         <h2 class="project-tagline">Collect, organize & share what inspires you most. Trove is a cloud storage platform that stores all your favorite things in one place.</h2>
-        <img class="product-shot project-image" srcset="assets/img-project/trove-product-hero-750w.png 750w,
-       assets/img-project/trove-product-hero-2880w.png 2880w" sizes: "(max-width: 800px) 750px, 1440px" src="assets/img-project/trove-product-hero-2880w.png" alt="Trove Product Shot of Dashboard">
+        <img class="product-shot project-image"
+        srcset="assets/img-project/trove-product-hero-500w.png 500w,
+        assets/img-project/trove-product-hero-750w.png 750w,
+        assets/img-project/trove-product-hero-1000w.png 1000w,
+        assets/img-project/trove-product-hero-1080w.png 1080w,
+        assets/img-project/trove-product-hero-2880w.png 2880w"
+        sizes: "(max-width: 575px) 100vw,
+        (max-width: 750px) 100vw,
+        (max-width: 1000px) 100vw,
+        (max-width: 1080px) 100vw,
+        (max-width: 1440px) 100vw"
+        src="assets/img-project/trove-product-hero-2880w.png" alt="Trove Product Shot of Dashboard">
         </img>
       </section>
       <section class="project-intro">
@@ -643,7 +653,7 @@
                   src="assets/img-project/testing-signup-b-1440w.jpg"
                   alt="Product sign up screen B">
                 </img>
-                <figcaption>Hero image [above] and sign up screen [below]</figcaption>
+                <figcaption class="centered-caption">Hero image [above] and sign up screen [below]</figcaption>
               </div>
             </figure>
             <div class="a-b-results">
@@ -901,7 +911,7 @@
                 <button>Get in Touch</button>
               </a>
             </div>
-            <a href="#hero">
+            <a href="#top-page">
               <img class="back-to-top-arrow" src="assets/img/back-to-top-arrow.svg" alt="back to top arrow"></img>
             </a>
           </div>

@@ -5,17 +5,17 @@
 
 .mobile-menu {
   float: right;
-  /* padding-top: .5em; */
+  padding-top: .2em;
   cursor: pointer;
 }
 
 .mobile-menu-bar-1,
 .mobile-menu-bar-2,
 .mobile-menu-bar-3 {
-  width: 3em;
+  width: 2.8em;
   height: 0.25em;
   background-color: #282828;
-  margin: 0.7em 0;
+  margin: 0.6em 0;
   transition: 0.4s;
   border-radius: 2px;
 }
