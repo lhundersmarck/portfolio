@@ -70,10 +70,6 @@
   opacity: 0;
 }
 
-.mobile-menu-container {
-  transition: background-color 0.6s linear;
-}
-
 .open-mobile-menu {
   background-color: #18a2a2;
   color: #fdfdfd;
