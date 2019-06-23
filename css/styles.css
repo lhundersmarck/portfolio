@@ -481,10 +481,6 @@ figcaption {
   display: -webkit-flex;
 }
 
-.mobile-menu {
-  height: 5em;
-}
-
 .product-logo {
   height: 17rem;
   padding: 2rem 1.2rem 4rem 0;
