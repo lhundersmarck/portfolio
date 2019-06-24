@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
   <meta charset="utf-8">
@@ -20,7 +20,8 @@
   <div class="site-container">
     <header class="mobile-menu-container">
       <nav>
-        <img class="mobile-logo" src="assets/img/mobile-logo.svg" alt="logo"></img>
+        <a href="index.html" aria-label="my work"><img class="mobile-logo" src="assets/img/mobile-logo.svg" alt="logo"></img>
+        </a>
         <div class="mobile-menu" onclick="toggleMobileMenu(this)">
           <div class="mobile-menu-bar-1"></div>
           <div class="mobile-menu-bar-2"></div>
@@ -28,15 +29,15 @@
         </div>
         <div class="mobile-menu-list-container">
           <ul class="mobile-menu-list">
-            <a href="index.html">
+            <a href="index.html" aria-label="my work">
               <li onclick="toggleMobileMenuItem()">Work</li>
             </a>
-            <a href="about.html">
+            <a href="about.html" aria-label="about me">
               <li onclick="toggleMobileMenuItem()">
                 About
               </li>
             </a>
-            <a href="mailto:laurahundersmarck@gmail.com">
+            <a href="mailto:laurahundersmarck@gmail.com" aria-label="email me">
               <li onclick="toggleMobileMenuItem()">
                 Contact
               </li>
@@ -47,15 +48,16 @@
     </header>
     <header class="desktop-menu-container">
       <nav>
-        <a href="index.html"><img src="assets/img/desktop-logo-LH.svg"></img></a>
+        <a href="index.html" aria-label="my work"><img src="assets/img/desktop-logo-LH.svg" alt="Laura Hundersmarck Logo"></img>
+        </a>
         <ul>
-          <li><a href="index.html">Work</a></li>
-          <li><a href="about.html">About</a></li>
+          <li><a href="index.html" aria-label="my work">Work</a></li>
+          <li><a href="about.html" aria-label="about page">About</a></li>
           <li>
             <div class="nav-button">
-              <a href="mailto:laurahundersmarck@gmail.com">
-              <button>Contact</button>
-            </a>
+              <a href="mailto:laurahundersmarck@gmail.com" aria-label="email me">
+                <button>Contact</button>
+              </a>
             </div>
           </li>
         </ul>
@@ -76,11 +78,11 @@
             <img class="teal-circle" src="assets/img/teal-circle.svg" alt="teal circle">
           </div>
         </div>
-          <div class="scroll-down-arrow">
-            <a href="#featured-work">
-              <img class="down-arrow" src="assets/img/down-arrow.svg" alt="down arrow"></img>
-            </a>
-          </div>
+        <div class="scroll-down-arrow">
+          <a href="#featured-work">
+            <img class="down-arrow" src="assets/img/down-arrow.svg" alt="down arrow"></img>
+          </a>
+        </div>
       </section>
       <!-- other sections below -->
       <section data-aos-easing="ease" data-aos-duration="1500" data-aos-delay="0" data-aos="fade-in" class="featured-work" id="featured-work">
@@ -131,12 +133,12 @@
           <div class="review-1">
             <img class="quotation-mark-left" src="assets/img/left-quote-mark.svg" alt="left quotation mark"></img>
             <blockquote>
-              <p>Working with Laura is an engaging, truly collaborative experience. She brings fresh, innovative ideas throughout the design process and seeks input from the team to promote a communal effort. Either as part of a team or working on her own, Laura
-                is deft at ensuring projects are completed on schedule, as well as within the constraints and resources allotted without sacrificing quality. Laura is also a talented photographer and is able to skillfully incorporate her work into a design.
-                She is always up for a challenge!</p>
-            <img class="quotation-mark-right" src="assets/img/right-quote-mark.svg" alt="right quotation mark"></img>
+              <p>Working with Laura is an engaging, truly collaborative experience. She brings fresh, innovative ideas throughout the design process and seeks input from the team to promote a communal effort. Either as part of a team or working on her own,
+                Laura is deft at ensuring projects are completed on schedule, as well as within the constraints and resources allotted without sacrificing quality. Laura is also a talented photographer and is able to skillfully incorporate her work into
+                a design. She is always up for a challenge!</p>
+              <img class="quotation-mark-right" src="assets/img/right-quote-mark.svg" alt="right quotation mark"></img>
               <p class="reviewer">- Allee Davis
-              <br/>Senior Architectural Historian at RGA, Inc.</p>
+                <br/>Senior Architectural Historian at RGA, Inc.</p>
             </blockquote>
           </div>
         </div>
@@ -147,21 +149,21 @@
             <h2>Want to learn more?</h2>
             <p>Feel free to contact me anytime.</p>
             <div class="button-container">
-              <a href="mailto:laurahundersmarck@gmail.com">
+              <a href="mailto:laurahundersmarck@gmail.com" aria-label="email me">
                 <button>Get in Touch</button>
               </a>
             </div>
-            <a href="#top-page">
+            <a href="#top-page" aria-label="Back to top arrow">
               <img class="back-to-top-arrow" src="assets/img/back-to-top-arrow.svg" alt="back to top arrow"></img>
             </a>
           </div>
         </div>
         <div class="footer-icons">
           <ul>
-            <li> <a href="https://linkedin.com/in/laurahundersmarck/"><i class="fab fa-linkedin"></i></a> </li>
-            <li> <a href="https://github.com/lhundersmarck"><i class="fab fa-github-square"></i></a> </li>
-            <li> <a href="mailto:laurahundersmarck@gmail.com"><i class="fas fa-envelope"></i></a> </li>
-            <li> <a href="https://lhundersmarck.wixsite.com/photo"><i class="fas fa-camera"></i></a> </li>
+            <li> <a href="https://linkedin.com/in/laurahundersmarck/" aria-label="connect on linkedin"><i class="fab fa-linkedin"></i></a> </li>
+            <li> <a href="https://github.com/lhundersmarck" aria-label="find me on github"><i class="fab fa-github-square"></i></a> </li>
+            <li> <a href="mailto:laurahundersmarck@gmail.com" aria-label="email me"><i class="fas fa-envelope"></i></a> </li>
+            <li> <a href="https://lhundersmarck.wixsite.com/photo" aria-label="my photography work"><i class="fas fa-camera"></i></a> </li>
           </ul>
           <!-- <i class="far fa-copyright copyright"></i> -->
           <p>Laura Hundersmarck 2019.
@@ -171,9 +173,9 @@
     </div>
   </div>
   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-<script>
-  AOS.init();
-</script>
+  <script>
+    AOS.init();
+  </script>
 </body>
 
 </html>

@@ -23,7 +23,7 @@ function handleMinWidth991(minWidth991) {
     // take the content div with text and put it back inside the sections
     // so that it doesn't overlap the image
     const aboutHeroContentDiv = document.getElementsByClassName("about-hero-content")[0];
-    const aboutSection = document.getElementById("about-hero");
+    const aboutSection = document.getElementsByClassName("about-hero")[0];
     aboutSection.appendChild(aboutHeroContentDiv);
   }
 }

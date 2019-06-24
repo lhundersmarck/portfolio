@@ -177,8 +177,8 @@ a .down-arrow {
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
-  /* transition: 0.3s linear; */
-}
+  transition: background-image 3s linear;
+  }
 
 .project-card a {
   color: #000;
@@ -382,7 +382,7 @@ footer .footer-icons {
 }
 
 .footer .footer-icons p {
-  color: #828282;
+  color: #696969;
   font-size: 1.5rem;
   line-height: 1.9rem;
   letter-spacing: .07rem;
@@ -810,22 +810,15 @@ p.percentage-population {
   display: -webkit-flex;
   flex-direction: row;
   -webkit-flex-direction: row;
-  flex-wrap: wrap;
-  -webkit-flex-wrap: wrap;
-}
-
-.competitor-group {
-  width: 50%;
-  display: flex;
-  display: -webkit-flex;
-  flex-direction: row;
-  -webkit-flex-direction: row;
   flex-wrap: nowrap;
   -webkit-flex-wrap: nowrap;
+  width: 90%;
+  margin: 0 auto;
 }
 
 .competitors {
-  width: 50%;
+  width: 25%;
+  padding: 0 .5rem 2rem .5rem;
 }
 
 .persona-icon, .persona-icon-2 {

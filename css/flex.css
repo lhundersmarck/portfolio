@@ -344,6 +344,11 @@
       padding-bottom: 2rem;
     }
 
+    .competitors {
+      width: 20%;
+      margin: 0 2rem 0 2rem;
+    }
+
     .persona-icon-2 {
       margin-top: 5rem;
     }
@@ -587,7 +592,9 @@
       visibility: visible;
       width: 100%;
       height: 100%;
-      margin: 0 2rem 0 3rem;
+      max-width: 450px;
+      float: right;
+      margin: 0 0 0 3rem;
     }
 
     .flex-hero {
@@ -629,8 +636,7 @@
       }
 
     .hero-image {
-      padding-right: 5rem;
-      width: 80%;
+      width: 100%;
       display: flex;
       display: -webkit-flex;
       flex-grow: 1;
@@ -968,6 +974,10 @@ plus moodboard because image comes before text */
       width: 40%;
     }
 
+    .competitors {
+      width: 30%;
+    }
+
     .fig-row-competitive {
       display: flex;
       display: -webkit-flex;
@@ -977,14 +987,6 @@ plus moodboard because image comes before text */
       -webkit-flex-wrap: wrap;
       width: 35%;
       margin: 0 0 0 8rem;
-    }
-
-    .competitors {
-      width: 40%;
-    }
-    .competitor-group {
-      width: 100%;
-      margin: auto;
     }
 
     .user-stories-content,
@@ -1343,7 +1345,6 @@ plus moodboard because image comes before text */
     height: 100vh;
   }
   .scroll-down-arrow {
-    position: absolute;
     bottom: 0;
   }
 }

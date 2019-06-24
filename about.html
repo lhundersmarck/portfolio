@@ -1,242 +1,219 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Portfolio | Laura Hundersmarck</title>
-    <link href="https://fonts.googleapis.com/css?family=Assistant:400,600,700|Gilda+Display&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="css/mobile-menu.css">
-    <link rel="stylesheet" href="css/desktop-menu.css">
-    <link rel="stylesheet" href="css/flex.css">
-    <script src="https://kit.fontawesome.com/d7c1e28c2f.js"></script>
-    <script src="js/mobile-menu.js"></script>
-    <script src="js/media-queries.js"></script>
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-  </head>
+<html lang="en">
 
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Portfolio | Laura Hundersmarck</title>
+  <link href="https://fonts.googleapis.com/css?family=Assistant:400,600,700|Gilda+Display&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/mobile-menu.css">
+  <link rel="stylesheet" href="css/desktop-menu.css">
+  <link rel="stylesheet" href="css/flex.css">
+  <script src="https://kit.fontawesome.com/d7c1e28c2f.js"></script>
+  <script src="js/mobile-menu.js"></script>
+  <script src="js/media-queries.js"></script>
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
 
-  <body>
-    <div class="site-container">
-        <header class="mobile-menu-container">
-          <nav>
-            <a href="index.html"><img class="mobile-logo" src="assets/img/mobile-logo.svg" alt="logo"></img></a>
-            <div class="mobile-menu" onclick="toggleMobileMenu(this)">
-              <div class="mobile-menu-bar-1"></div>
-              <div class="mobile-menu-bar-2"></div>
-              <div class="mobile-menu-bar-3"></div>
-            </div>
-            <div class="mobile-menu-list-container">
-              <ul class="mobile-menu-list">
-                <a href="index.html">
-                  <li onclick="toggleMobileMenuItem()">Work</li>
-                </a>
-                <a href="about.html">
-                  <li onclick="toggleMobileMenuItem()">
-                    About
-                  </li>
-                </a>
-                <a href="mailto:laurahundersmarck@gmail.com">
-                  <li onclick="toggleMobileMenuItem()">
-                    Contact
-                  </li>
-                </a>
-              </ul>
-            </div>
-          </nav>
-        </header>
-        <header class="desktop-menu-container">
-          <nav>
-            <a href="index.html"><img src="assets/img/desktop-logo-LH.svg"></img></a>
-            <ul>
-              <li><a href="index.html">Work</a></li>
-              <li><a href="about.html">About</a></li>
-              <li>
-                <div class="nav-button">
-                  <a href="mailto:laurahundersmarck@gmail.com">
-                  <button>Contact</button>
-                </a>
-                </div>
-              </li>
-            </ul>
-          </nav>
-        </header>
-        <div class="spacer" id="top-page">
+<body>
+  <div class="site-container">
+    <header class="mobile-menu-container">
+      <nav>
+        <a href="index.html" aria-label="my work"><img class="mobile-logo" src="assets/img/mobile-logo.svg" alt="logo"></img>
+        </a>
+        <div class="mobile-menu" onclick="toggleMobileMenu(this)">
+          <div class="mobile-menu-bar-1"></div>
+          <div class="mobile-menu-bar-2"></div>
+          <div class="mobile-menu-bar-3"></div>
         </div>
-
-        <!-- hero unit -->
-      <div class="container">
-        <section data-aos-easing="ease" data-aos-duration="2000" data-aos-delay="0" data-aos="fade-in" class="about-hero">
-          <div class="about-hero-image">
-            <img class="about-hero-headshot headshot"
-              srcset=
-              "assets/img/headshot-575w.jpg 575w,
-              assets/img/headshot-800w.jpg 800w,
-              assets/img/headshot-2000w.jpg 1200w"
-              sizes:
-              "(max-width: 575px) 575px,
-              (max-width: 800px) 800px,
-              (max-width: 1200px) 1200px, 2000px"
-              src="assets/img/headshot-2000w.jpg" alt="Headshot">
-            </img>
-          </div>
-          <div class="about-hero-content">
-            <h1>Hi! Nice to meet you, I'm Laura.</h1>
-            <p>I'm a UX/UI Designer with a background in photography and 3D design in the cultural heritage field. I’m committed to using my industry knowledge and experiences abroad to create meaningful digital products that translate across a range of mediums and bring people together. <br/><br/>I am currently available for a <span>full-time position</span> or <span>freelance opportunities</span>. Also happy to relocate!</p>
-          </div>
-        </section>
-        <section data-aos-easing="ease" data-aos-duration="2000" data-aos-delay="0" data-aos="fade-in" class="about-background about-section">
-          <img class="section-header" src="assets/img/section-background.svg" alt="Section header: Background"></img>
-          <p class= "about-paragraph">At 17 years old, I spent a year as an exchange student in a rural town in Brazil. The chance to learn the rules of a different culture was both thrilling and transformative.
-          <br/><br/>Over the next decade, I traveled as much as I could, eager to step into someone else’s shoes. I like to observe, to listen to people and find out how things work.
-          <br/><br/>The ability to step into someone’s shoes is what user experience design is all about.</p>
-          <br/><br/><p class="quote">What has made me a curious traveler is the same thing that makes me a successful UX designer - the ability to adapt to changing situations and listen to people’s needs in order to better serve them.</p>
-          <p class= "about-paragraph"><br/>My encounters abroad drive me to create experiences that translate across a range of mediums and connect people from different cultural backgrounds.</p>
-          <figure>
-            <div class="travel-flex-container">
-              <img class="about-image travel-img"
-               srcset=
-               "assets/img/travel-800w.png 800w,
-               assets/img/travel-1200w.png 1200w,
-               assets/img/travel-2880w.png 2880w"
-               sizes:
-               "(max-width: 800px) 700px,
-               (max-width: 1200px) 1200px, 2880px"
-               src="assets/img/travel-2880w.png" alt="Ouro Preto in Brazil and Iceland waterfall">
-             </img>
-              <img class="about-image brazil"
-               srcset=
-               "assets/img/brazil-575w.jpg 575w,
-               assets/img/brazil-800w.jpg 800w"
-               sizes:
-               "(max-width: 575px) 450px, 800px"
-               src="assets/img/brazil-800w.jpg" alt="Ouro Preto in Brazil">
-             </img>
-              <img class="about-image iceland"
-                srcset=
-                "assets/img/iceland-575w.jpg 575w,
-                assets/img/iceland-800w.jpg 800w"
-                sizes:
-                "(max-width: 575px) 575px,800px"
-                src="assets/img/iceland-800w.jpg"
-                alt="Icelandic waterfall">
-              </img>
-            </div>
-            <figcaption>Above: The historic town of Ouro Preto in Brazil taken during my exchange year in 2008. Below: Goðafoss waterfall in Iceland taken while volunteering in 2012.</figcaption>
-            </figure>
-        </section>
-        <section data-aos-easing="ease" data-aos-duration="2000" data-aos-delay="0" data-aos="fade-in" class="about-profession about-section">
-          <img class="section-header" src="assets/img/section-profession.svg" alt="Section header: Profession"></img>
-          <p class= "about-paragraph">I’ve held all sorts of jobs and titles in the design world before finding UX design. I started my professional career as a photography assistant nine years ago, where I discovered I had an eye for symmetry, color and composition.
-            <br/><br/>Soon after I worked my way into the cultural heritage field, eager to combine my love of history and visual design. I earned a master’s degree in international heritage visualization--a dynamic and growing field of digital heritage and 3D documentation.
-            <br/><br/>Upon graduation, I had the opportunity to learn from some of the pioneers in the industry at the Digital Design Studio (DDS) at the Glasgow School of Art and their partner, Historic Environment Scotland. Alongside a talented team, I laser scanned historic structures, developed 3D models from real-world data and stitched together panoramic photographs of World Heritage sites for VR applications.</p>
-            <br/><br/><p class="quote">My work at the DDS trained me to assess a technical problem and solve it using a range of technologies and context-specific methods, essential skills that I routinely employ as a UX designer.</p>
-          <figure>
-            <img class="about-image hynish"
-              srcset=
-              "assets/img/hynish-575w.jpg 575w,
-              assets/img/hynish-800w.jpg 800w,
-              assets/img/hynish-1100w.jpg 1100w"
-              sizes:
-              "(max-width: 575px) 450px,
-              (max-width: 800px) 800px, 1100px"
-              src="assets/img/hynish-1100w.jpg"
-              alt="3D model of Hynish Harbor">
-            </img>
-            <figcaption>A rendered 3D interpretation of Hynish Harbor in Scotland modeled over laser scan data (courtesy of the Digital Design Studio at the Glasgow School of Art).</figcaption>
-          </figure>
-          <p class= "about-paragraph">In 2017, I worked as a graphics specialist at a cultural resource management firm that conducts archaeological and historic architecture assessments. I spent my days photographing historic structures, mapping boundary lines in ArcGIS, and designing interpretive and wayfinding signs for clients. </p>
-          <figure>
-            <div class="rga-flex-container">
-              <img class="about-image rga1"
-                srcset=
-                "assets/img/rga1-575w.jpg 450w,
-                assets/img/rga1-800w.jpg 800w,
-                assets/img/rga1-1200w.jpg 1200w,
-                assets/img/rga1-2700w.jpg 1440w"
-                sizes:
-                "(max-width: 575px) 450px,
-                (max-width: 800px) 800px,
-                (max-width: 1200px) 1100px, 2700px"
-                src="assets/img/rga1-2700w.jpg"
-                alt="Railroad building in New Jersey">
-              </img>
-              <img class="about-image rga2"
-                srcset=
-                "assets/img/rga2-575w.jpg 575w,
-                assets/img/rga2-800w.jpg 800w,
-                assets/img/rga2-1200w.jpg 1200w,
-                assets/img/rga2-2880w.jpg 1440w"
-                sizes:
-                "(max-width: 575px) 575px,
-                (max-width: 800px) 800px,
-                (max-width: 1200px) 1200px, 2880px"
-                src="assets/img/rga2-2880w.jpg"
-                alt="Historic Founders Grove Estate in New Jersey">
-              </img>
-            </div>
-            <figcaption>Photographs taken while employed at RGA to document historic buildings and engineering structures in New Jersey. </figcaption>
-          </figure>
-          <p class= "about-paragraph">It was during this period of my professional life that I realized that something was missing. Although it is immensely important to document cultural heritage to preserve our history, I no longer felt connected to people and their experiences.</p>
-        </section>
-        <section data-aos-easing="ease" data-aos-duration="2000" data-aos-delay="0" data-aos="fade-in" class="about-design-approach about-section">
-          <img class="section-header" src="assets/img/section-design-approach.svg" alt="Section header: Design Approach"></img>
-          <p class= "about-paragraph">And there it was. UX Design. I found myself back where I knew I belonged - surrounded by people and their stories. Only this time I have the tools to be more than just an active listener and more than just an observant traveler.</p>
-            <br/><br/><p class="quote">Now, by designing experiences that reflect the needs of my users, I can make a difference in how they view the world. That’s what I love most about UX design - its impact.</p>
-            <br/><br/><p class= "about-paragraph">And yes, I know - it can go either way. Bad design can leave you feeling powerless and frustrated. It’s a huge responsibility. But if you get it right, the reward is unmatched - someone finding love, reconnecting with an old friend, getting home on time.
-            <br/><br/>Small decisions make good design, and good design leads to big impacts. That’s what I’m committed to - intentional design that brings people together.</p>
-        </section>
-        <section data-aos-easing="ease" data-aos-duration="2000" data-aos-delay="0" data-aos="fade-in" class="about-interests about-section">
-          <img class="section-header" src="assets/img/section-interests.svg" alt="Section header: When I'm not designing"></img>
-          <div class="aerial-flex-container">
-            <p class= "about-paragraph">I’m usually hanging from a trapeze at my circus gym. I’ve listened to every episode of This American Life, Radiolab and Invisibilia (ask me which other podcasts I like). I speak fluent Portuguese and am currently learning Polish. </p>
-            <figure>
-              <img class="about-image aerial"
-                srcset=
-                "assets/img/circus-600w.jpg 600w,
-                assets/img/circus-900w.jpg 900w"
-                sizes:
-                "(max-width: 700px) 600px, 900px"
-                src="assets/img/circus-900w.jpg"
-                alt="Designer hanging from aerial silks">
-              </img>
-              <figcaption class="aerial">Shot during an aerial circus showcase in 2016 (courtesy of <a href="https://eate.eu/">Asier Goikoetxea</a>).</figcaption>
-            </figure>
-          </div>
-        </section>
-        <footer class="footer">
-          <div class="contact-group">
-            <div class="contact">
-              <h2>Want to learn more?</h2>
-              <p>Feel free to contact me anytime.</p>
-              <div class="button-container">
-                <a href="mailto:laurahundersmarck@gmail.com">
-                  <button>Get in Touch</button>
-                </a>
-              </div>
-              <a href="#top-page">
-                <img class="back-to-top-arrow" src="assets/img/back-to-top-arrow.svg" alt="back to top arrow"></img>
+        <div class="mobile-menu-list-container">
+          <ul class="mobile-menu-list">
+            <a href="index.html" aria-label="my work">
+              <li onclick="toggleMobileMenuItem()">Work</li>
+            </a>
+            <a href="about.html" aria-label="about me">
+              <li onclick="toggleMobileMenuItem()">
+                About
+              </li>
+            </a>
+            <a href="mailto:laurahundersmarck@gmail.com" aria-label="email me">
+              <li onclick="toggleMobileMenuItem()">
+                Contact
+              </li>
+            </a>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <header class="desktop-menu-container">
+      <nav>
+        <a href="index.html" aria-label="my work"><img src="assets/img/desktop-logo-LH.svg" alt="Laura Hundersmarck Logo"></img>
+        </a>
+        <ul>
+          <li><a href="index.html" aria-label="my work">Work</a></li>
+          <li><a href="about.html" aria-label="about page">About</a></li>
+          <li>
+            <div class="nav-button">
+              <a href="mailto:laurahundersmarck@gmail.com" aria-label="email me">
+                <button>Contact</button>
               </a>
             </div>
-          </div>
-          <div class="footer-icons">
-            <ul>
-              <li> <a href="https://linkedin.com/in/laurahundersmarck/"><i class="fab fa-linkedin"></i></a> </li>
-              <li> <a href="https://github.com/lhundersmarck"><i class="fab fa-github-square"></i></a> </li>
-              <li> <a href="mailto:laurahundersmarck@gmail.com"><i class="fas fa-envelope"></i></a> </li>
-              <li> <a href="https://lhundersmarck.wixsite.com/photo"><i class="fas fa-camera"></i></a> </li>
-            </ul>
-            <!-- <i class="far fa-copyright copyright"></i> -->
-            <p>Laura Hundersmarck 2019.
-              <br/> All Rights Reserved.</p>
-          </div>
-        </footer>
-      </div>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <div class="spacer" id="top-page">
     </div>
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <!-- hero unit -->
+    <div class="container">
+      <section data-aos-easing="ease" data-aos-duration="2000" data-aos-delay="0" data-aos="fade-in" class="about-hero">
+        <div class="about-hero-image">
+          <img class="about-hero-headshot headshot" srcset="assets/img/headshot-575w.jpg 575w,
+              assets/img/headshot-800w.jpg 800w,
+              assets/img/headshot-2000w.jpg 1200w" sizes: "(max-width: 575px) 575px,
+              (max-width: 800px) 800px,
+              (max-width: 1200px) 1200px, 2000px" src="assets/img/headshot-2000w.jpg" alt="Headshot">
+          </img>
+        </div>
+        <div class="about-hero-content">
+          <h1>Hi! Nice to meet you, I'm Laura.</h1>
+          <p>I'm a UX/UI Designer with a background in photography and 3D design in the cultural heritage field. I’m committed to using my industry knowledge and experiences abroad to create meaningful digital products that translate across a range of mediums
+            and bring people together.
+            <br/>
+            <br/>I am currently available for a <span>full-time position</span> or <span>freelance opportunities</span>. Also happy to relocate!</p>
+        </div>
+      </section>
+      <section data-aos-easing="ease" data-aos-duration="2000" data-aos-delay="0" data-aos="fade-in" class="about-background about-section">
+        <img class="section-header" src="assets/img/section-background.svg" alt="Section header: Background"></img>
+        <p class="about-paragraph">At 17 years old, I spent a year as an exchange student in a rural town in Brazil. The chance to learn the rules of a different culture was both thrilling and transformative.
+          <br/>
+          <br/>Over the next decade, I traveled as much as I could, eager to step into someone else’s shoes. I like to observe, to listen to people and find out how things work.
+          <br/>
+          <br/>The ability to step into someone’s shoes is what user experience design is all about.</p>
+        <br/>
+        <br/>
+        <p class="quote">What has made me a curious traveler is the same thing that makes me a successful UX designer - the ability to adapt to changing situations and listen to people’s needs in order to better serve them.</p>
+        <p class="about-paragraph">
+          <br/>My encounters abroad drive me to create experiences that translate across a range of mediums and connect people from different cultural backgrounds.</p>
+        <figure>
+          <div class="travel-flex-container">
+            <img class="about-image travel-img" srcset="assets/img/travel-800w.png 800w,
+               assets/img/travel-1200w.png 1200w,
+               assets/img/travel-2880w.png 2880w" sizes: "(max-width: 800px) 700px,
+               (max-width: 1200px) 1200px, 2880px" src="assets/img/travel-2880w.png" alt="Ouro Preto in Brazil and Iceland waterfall">
+            </img>
+            <img class="about-image brazil" srcset="assets/img/brazil-575w.jpg 575w,
+               assets/img/brazil-800w.jpg 800w" sizes: "(max-width: 575px) 450px, 800px" src="assets/img/brazil-800w.jpg" alt="Ouro Preto in Brazil">
+            </img>
+            <img class="about-image iceland" srcset="assets/img/iceland-575w.jpg 575w,
+                assets/img/iceland-800w.jpg 800w" sizes: "(max-width: 575px) 575px,800px" src="assets/img/iceland-800w.jpg" alt="Icelandic waterfall">
+            </img>
+          </div>
+          <figcaption>Above: The historic town of Ouro Preto in Brazil taken during my exchange year in 2008. Below: Goðafoss waterfall in Iceland taken while volunteering in 2012.</figcaption>
+        </figure>
+      </section>
+      <section data-aos-easing="ease" data-aos-duration="2000" data-aos-delay="0" data-aos="fade-in" class="about-profession about-section">
+        <img class="section-header" src="assets/img/section-profession.svg" alt="Section header: Profession"></img>
+        <p class="about-paragraph">I’ve held all sorts of jobs and titles in the design world before finding UX design. I started my professional career as a photography assistant nine years ago, where I discovered I had an eye for symmetry, color and composition.
+          <br/>
+          <br/>Soon after I worked my way into the cultural heritage field, eager to combine my love of history and visual design. I earned a master’s degree in international heritage visualization--a dynamic and growing field of digital heritage and 3D documentation.
+          <br/>
+          <br/>Upon graduation, I had the opportunity to learn from some of the pioneers in the industry at the Digital Design Studio (DDS) at the Glasgow School of Art and their partner, Historic Environment Scotland. Alongside a talented team, I laser scanned
+          historic structures, developed 3D models from real-world data and stitched together panoramic photographs of World Heritage sites for VR applications.</p>
+        <br/>
+        <br/>
+        <p class="quote">My work at the DDS trained me to assess a technical problem and solve it using a range of technologies and context-specific methods, essential skills that I routinely employ as a UX designer.</p>
+        <figure>
+          <img class="about-image hynish" srcset="assets/img/hynish-575w.jpg 575w,
+              assets/img/hynish-800w.jpg 800w,
+              assets/img/hynish-1100w.jpg 1100w" sizes: "(max-width: 575px) 450px,
+              (max-width: 800px) 800px, 1100px" src="assets/img/hynish-1100w.jpg" alt="3D model of Hynish Harbor">
+          </img>
+          <figcaption>A rendered 3D interpretation of Hynish Harbor in Scotland modeled over laser scan data (courtesy of the Digital Design Studio at the Glasgow School of Art).</figcaption>
+        </figure>
+        <p class="about-paragraph">In 2017, I worked as a graphics specialist at a cultural resource management firm that conducts archaeological and historic architecture assessments. I spent my days photographing historic structures, mapping boundary lines in ArcGIS, and designing
+          interpretive and wayfinding signs for clients. </p>
+        <figure>
+          <div class="rga-flex-container">
+            <img class="about-image rga1" srcset="assets/img/rga1-575w.jpg 450w,
+                assets/img/rga1-800w.jpg 800w,
+                assets/img/rga1-1200w.jpg 1200w,
+                assets/img/rga1-2700w.jpg 1440w" sizes: "(max-width: 575px) 450px,
+                (max-width: 800px) 800px,
+                (max-width: 1200px) 1100px, 2700px" src="assets/img/rga1-2700w.jpg" alt="Railroad building in New Jersey">
+            </img>
+            <img class="about-image rga2" srcset="assets/img/rga2-575w.jpg 575w,
+                assets/img/rga2-800w.jpg 800w,
+                assets/img/rga2-1200w.jpg 1200w,
+                assets/img/rga2-2880w.jpg 1440w" sizes: "(max-width: 575px) 575px,
+                (max-width: 800px) 800px,
+                (max-width: 1200px) 1200px, 2880px" src="assets/img/rga2-2880w.jpg" alt="Historic Founders Grove Estate in New Jersey">
+            </img>
+          </div>
+          <figcaption>Photographs taken while employed at RGA to document historic buildings and engineering structures in New Jersey. </figcaption>
+        </figure>
+        <p class="about-paragraph">It was during this period of my professional life that I realized that something was missing. Although it is immensely important to document cultural heritage to preserve our history, I no longer felt connected to people and their experiences.</p>
+      </section>
+      <section data-aos-easing="ease" data-aos-duration="2000" data-aos-delay="0" data-aos="fade-in" class="about-design-approach about-section">
+        <img class="section-header" src="assets/img/section-design-approach.svg" alt="Section header: Design Approach"></img>
+        <p class="about-paragraph">And there it was. UX Design. I found myself back where I knew I belonged - surrounded by people and their stories. Only this time I have the tools to be more than just an active listener and more than just an observant traveler.</p>
+        <br/>
+        <br/>
+        <p class="quote">Now, by designing experiences that reflect the needs of my users, I can make a difference in how they view the world. That’s what I love most about UX design - its impact.</p>
+        <br/>
+        <br/>
+        <p class="about-paragraph">And yes, I know - it can go either way. Bad design can leave you feeling powerless and frustrated. It’s a huge responsibility. But if you get it right, the reward is unmatched - someone finding love, reconnecting with an old friend, getting home
+          on time.
+          <br/>
+          <br/>Small decisions make good design, and good design leads to big impacts. That’s what I’m committed to - intentional design that brings people together.</p>
+      </section>
+      <section data-aos-easing="ease" data-aos-duration="2000" data-aos-delay="0" data-aos="fade-in" class="about-interests about-section">
+        <img class="section-header" src="assets/img/section-interests.svg" alt="Section header: When I'm not designing"></img>
+        <div class="aerial-flex-container">
+          <p class="about-paragraph">I’m usually hanging from a trapeze at my circus gym. I've never missed an episode of This American Life and Radiolab (ask me which other podcasts I like). I speak fluent Portuguese and am currently learning Polish.</p>
+          <figure>
+            <img class="about-image aerial" srcset="assets/img/circus-600w.jpg 600w,
+                assets/img/circus-900w.jpg 900w" sizes: "(max-width: 700px) 600px, 900px" src="assets/img/circus-900w.jpg" alt="Hanging from aerial silks">
+            </img>
+            <figcaption class="aerial">Shot during an aerial circus showcase in 2016 (courtesy of <a href="https://eate.eu/" aria-label="Asier Goikoetxea photography">Asier Goikoetxea</a>).</figcaption>
+          </figure>
+        </div>
+      </section>
+      <footer class="footer">
+        <div class="contact-group">
+          <div class="contact">
+            <h2>Want to learn more?</h2>
+            <p>Feel free to contact me anytime.</p>
+            <div class="button-container">
+              <a href="mailto:laurahundersmarck@gmail.com" aria-label="email me">
+                <button>Get in Touch</button>
+              </a>
+            </div>
+            <a href="#top-page" aria-label="Back to top arrow">
+              <img class="back-to-top-arrow" src="assets/img/back-to-top-arrow.svg" alt="back to top arrow"></img>
+            </a>
+          </div>
+        </div>
+        <div class="footer-icons">
+          <ul>
+            <li> <a href="https://linkedin.com/in/laurahundersmarck/" aria-label="connect on linkedin"><i class="fab fa-linkedin"></i></a> </li>
+            <li> <a href="https://github.com/lhundersmarck" aria-label="find me on github"><i class="fab fa-github-square"></i></a> </li>
+            <li> <a href="mailto:laurahundersmarck@gmail.com" aria-label="email me"><i class="fas fa-envelope"></i></a> </li>
+            <li> <a href="https://lhundersmarck.wixsite.com/photo" aria-label="my photography work"><i class="fas fa-camera"></i></a> </li>
+          </ul>
+          <!-- <i class="far fa-copyright copyright"></i> -->
+          <p>Laura Hundersmarck 2019.
+            <br/> All Rights Reserved.</p>
+        </div>
+      </footer>
+    </div>
+  </div>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
   <script>
     AOS.init();
   </script>
-  </body>
+</body>
+
 </html>

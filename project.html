@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
   <meta charset="utf-8">
@@ -19,7 +19,7 @@
   <div class="site-container">
     <header class="mobile-menu-container">
       <nav>
-        <a href="index.html"><img class="mobile-logo" src="assets/img/mobile-logo.svg" alt="logo"></img>
+        <a href="index.html" aria-label="my work"><img class="mobile-logo" src="assets/img/mobile-logo.svg" alt="logo"></img>
         </a>
         <div class="mobile-menu" onclick="toggleMobileMenu(this)">
           <div class="mobile-menu-bar-1"></div>
@@ -28,15 +28,15 @@
         </div>
         <div class="mobile-menu-list-container">
           <ul class="mobile-menu-list">
-            <a href="index.html">
+            <a href="index.html" aria-label="my work">
               <li onclick="toggleMobileMenuItem()">Work</li>
             </a>
-            <a href="about.html">
+            <a href="about.html" aria-label="about me">
               <li onclick="toggleMobileMenuItem()">
                 About
               </li>
             </a>
-            <a href="mailto:laurahundersmarck@gmail.com">
+            <a href="mailto:laurahundersmarck@gmail.com" aria-label="email me">
               <li onclick="toggleMobileMenuItem()">
                 Contact
               </li>
@@ -47,14 +47,14 @@
     </header>
     <header class="desktop-menu-container">
       <nav>
-        <a href="index.html"><img src="assets/img/desktop-logo-LH.svg"></img>
+        <a href="index.html" aria-label="my work"><img src="assets/img/desktop-logo-LH.svg" alt="Laura Hundersmarck Logo"></img>
         </a>
         <ul>
-          <li><a href="index.html">Work</a></li>
-          <li><a href="about.html">About</a></li>
+          <li><a href="index.html" aria-label="my work">Work</a></li>
+          <li><a href="about.html" aria-label="about page">About</a></li>
           <li>
             <div class="nav-button">
-              <a href="mailto:laurahundersmarck@gmail.com">
+              <a href="mailto:laurahundersmarck@gmail.com" aria-label="email me">
                 <button>Contact</button>
               </a>
             </div>
@@ -88,7 +88,7 @@
         <p class="summary-hero">Trove is a responsive web application that lets users store notes, images and links all in one place. Trove improves file discoverability and organization through automatic content tagging. It also makes saving links across devices easier through
           a browser bookmark extension.</p>
         <div class="button-container">
-          <a href="https://www.figma.com/proto/Aa7ce804QgYFxzQT7wpeqw/Trove-Cloud-Storage?node-id=0%3A1&viewport=283%2C68%2C0.036343906074762344&scaling=min-zoom">
+          <a href="https://www.figma.com/proto/Aa7ce804QgYFxzQT7wpeqw/Trove-Cloud-Storage?node-id=0%3A1&viewport=283%2C68%2C0.036343906074762344&scaling=min-zoom" aria-label="View Figma Prototype">
             <button>view prototype</button>
           </a>
         </div>
@@ -122,8 +122,8 @@
             <ul>
               <li><span>Duration</span></li>
               <li>10 weeks</li>
-              <br/>
-              <br/>
+            </ul>
+            <ul>
               <li><span>Tools</span></li>
               <li>Figma</li>
               <li>Draw.io</li>
@@ -154,11 +154,14 @@
             </ul>
           </div>
           <div class="landing-page">
-            <img class="project-image" srcset="assets/img-project/trove-landingpage-cropped-720w.png 720w,
-            assets/img-project/trove-landingpage-cropped-1080w.png 1080w,
-            assets/img-project/trove-landingpage-cropped-1440w.png 1440w" sizes: "(max-width: 575px) 100vw,
-            (max-width: 800px) 100vw,
-            (max-width: 1200px) 100vh, 100vh" src="assets/img-project/trove-landingpage-cropped-1440w.png" alt="Trove Product Landing Page">
+            <img class="project-image" srcset=
+            "assets/img-project/trove-landingpage-cropped-1080w.jpg 1080w,
+            assets/img-project/trove-landingpage-cropped-1440w.jpg 1440w
+            assets/img-project/trove-landingpage-cropped-1440w.jpg 2880w"
+            sizes:
+            "(max-width: 1200px) 1080px,
+            (max-width: 1440px) 1440px, 2880w"
+            src="assets/img-project/trove-landingpage-cropped-2880w.jpg" alt="Trove Product Landing Page">
             </img>
           </div>
         </div>
@@ -172,7 +175,7 @@
               <h3>Asking the Right Questions</h3>
               <p>I started my research with a survey to discover what people were looking for in a cloud storage application, and what frustrations they currently experienced managing personal files, images, notes and bookmarks. </p>
               <div class="button-container">
-                <a href="https://docs.google.com/forms/d/1Bmn64AFi2_xQdhujK1NSg3VVy8gn9VZjNV-0CQbAWzM/edit#responses">
+                <a href="https://docs.google.com/forms/d/1Bmn64AFi2_xQdhujK1NSg3VVy8gn9VZjNV-0CQbAWzM/edit#responses" aria-label="view user survey">
                   <button>view survey</button>
                 </a>
               </div>
@@ -248,7 +251,7 @@
               <div class="demographics-flex-container">
                 <figure class="industry-data">
                   <p class="center-headers">Industries</p>
-                  <img class="industry-data-cluster" src="assets/img-project/industry-data.svg" alt="data cluster showing 24% participants are from a communications, design and marketing background, 20% are students, 20% are in IT and Engineering, 12% are in social and library sciences, 12% are in program coordination, 8% are in healthcare and 4% are full-time parents"></img>
+                  <img class="industry-data-cluster" src="assets/img-project/industry-data.svg" alt="data cluster showing participants from a variety of fields"></img>
                 </figure>
                 <figure class="gender-data">
                   <p class="center-headers">Gender</p>
@@ -269,14 +272,10 @@
               </p>
             </div>
             <figure class="fig-row-competitive">
-              <div class="competitor-group">
-                <img class="competitors" src="assets/img-project/google-drive-logo.svg" alt="Google Drive Logo" </img>
-                <img class="competitors" src="assets/img-project/google-keep-logo.svg" alt="Google Keep Logo" </img>
-              </div>
-              <div class="competitor-group">
-                <img class="competitors" src="assets/img-project/pocket-logo.svg" alt="Pocket Logo" </img>
-                <img class="competitors" src="assets/img-project/pinterest-logo.svg" alt="Pinterest Logo" </img>
-              </div>
+              <img class="competitors" src="assets/img-project/google-drive-logo.svg" alt="Google Drive Logo" </img>
+              <img class="competitors" src="assets/img-project/google-keep-logo.svg" alt="Google Keep Logo" </img>
+              <img class="competitors" src="assets/img-project/pocket-logo.svg" alt="Pocket Logo" </img>
+              <img class="competitors" src="assets/img-project/pinterest-logo.svg" alt="Pinterest Logo" </img>
             </figure>
             <div class="competitive-analysis-content">
               <p class="list-heading"><span>Key insights:</span></p>
@@ -286,7 +285,7 @@
                 <li>Saving links across devices isn’t convenient</li>
               </ul>
               <div class="button-container">
-                <a href="https://docs.google.com/document/d/1jceD6vRJA6T8clbdLdKLkcsr-kC5Vl8TXjZcc5amjuk/edit?usp=sharing">
+                <a href="https://docs.google.com/document/d/1jceD6vRJA6T8clbdLdKLkcsr-kC5Vl8TXjZcc5amjuk/edit?usp=sharing" aria-label="view swot analysis">
                   <button>view swot analysis</button>
                 </a>
               </div>
@@ -359,7 +358,7 @@
               </div>
             </div>
             <div class="button-container">
-              <a href="https://drive.google.com/open?id=1bz8uxpD7y3Lf7UyGVHqsbGwXkmEeHseY">
+              <a href="https://drive.google.com/open?id=1bz8uxpD7y3Lf7UyGVHqsbGwXkmEeHseY" aria-label="view personas">
                 <button>view personas</button>
               </a>
             </div>
@@ -378,30 +377,30 @@
                 <br/>
                 <br/>The high priority user tasks resulted in the <span>MVP</span>.</p>
               <div class="button-container">
-                <a href="https://docs.google.com/spreadsheets/d/15gvdoQRDyPlC4c4NhYPhdsZxgBsEjZs-L0mo3ixvIKE/edit#gid=0">
+                <a href="https://docs.google.com/spreadsheets/d/15gvdoQRDyPlC4c4NhYPhdsZxgBsEjZs-L0mo3ixvIKE/edit#gid=0" aria-label="view user stories">
                   <button>view stories</button>
                 </a>
               </div>
             </div>
             <figure class="fig-row-stories">
               <div class="user-story">
-                <img src="assets/img-project/user-story1.svg" alt="user persona 1"></img>
+                <img src="assets/img-project/user-story1.svg" alt="user persona icon"></img>
                 <figcaption>I want to create an account</figcaption>
               </div>
               <div class="user-story">
-                <img src="assets/img-project/user-story2.svg" alt="user persona 2"></img>
+                <img src="assets/img-project/user-story2.svg" alt="user persona icon"></img>
                 <figcaption>I want to add a new note</figcaption>
               </div>
               <div class="user-story">
-                <img src="assets/img-project/user-story3.svg" alt="user persona 3"></img>
+                <img src="assets/img-project/user-story3.svg" alt="user persona icon"></img>
                 <figcaption> I want to save content from the web</figcaption>
               </div>
               <div class="user-story">
-                <img src="assets/img-project/user-story4.svg" alt="user persona 4"></img>
+                <img src="assets/img-project/user-story4.svg" alt="user persona icon"></img>
                 <figcaption> I want to search for an item</figcaption>
               </div>
               <div class="user-story">
-                <img src="assets/img-project/user-story5.svg" alt="user persona 5"></img>
+                <img src="assets/img-project/user-story5.svg" alt="user persona icon"></img>
                 <figcaption>I want to move items to a new location</figcaption>
               </div>
             </figure>
@@ -415,19 +414,19 @@
                 <br/>After establishing how users would interact with Trove, I needed to organize the structure of the site. I did this by identifying all the destinations in the user flows and structuring them into a logical framework. </p>
               <div class="double-button-flex">
                 <div class="double-button-container">
-                  <a href="https://drive.google.com/open?id=1xtrWikkViRXn2RHeWRSIDUxRopQDviDe">
+                  <a href="https://drive.google.com/open?id=1xtrWikkViRXn2RHeWRSIDUxRopQDviDe" aria-label="view user flows">
                     <button>view user flows</button>
                   </a>
                 </div>
                 <div class="double-button-container">
-                  <a href="https://drive.google.com/open?id=1iE1awgFORGEnK8iIujFUDvfQjqaRw6sd">
+                  <a href="https://drive.google.com/open?id=1iE1awgFORGEnK8iIujFUDvfQjqaRw6sd" aria-label="view site map">
                     <button>view site map</button>
                   </a>
                 </div>
               </div>
             </div>
             <figure class="user-flow-figure">
-              <img class="project-image" src="assets/img-project/user-flow.svg" alt="User flow showing how a user adds content"><img>
+              <img class="project-image" src="assets/img-project/user-flow.svg" alt="User flow chart showing how to add an image, link, folder or note to Trove"></img>
               <figcaption class="centered-caption">User flow showing how to add content to Trove.</figcaption>
             </figure>
           </div>
@@ -491,7 +490,7 @@
             </figure>
           </div>
           <div class="button-container">
-            <a href="https://drive.google.com/open?id=1ugTJhTjkt9zJfHJvZkVIqm_CNKNLBWcR">
+            <a href="https://drive.google.com/open?id=1ugTJhTjkt9zJfHJvZkVIqm_CNKNLBWcR" alt="link to Trove low-fi wireframes">
               <button>view wireframes</button>
             </a>
           </div>
@@ -541,10 +540,9 @@
         <img class="section-header" src="assets/img-project/section-branding.svg" alt="Section header: Branding"></img>
         <div class="moodboard-flex-container">
           <div class="branding-figure">
-            <img class="project-image" srcset="assets/img-project/moodboard-630w.png 630w,
-            assets/img-project/moodboard-1260w.png 1260w,
-            assets/img-project/moodboard-1890w.png 1890w" sizes: "(max-width:630px) 630px,
-            (max-width: 1260px) 1260px, 1890px" src="assets/img-project/moodboard-1890w.png" alt="Moodboard showing a collage of images">
+            <img class="project-image" srcset="assets/img-project/moodboard-630w.jpg 630w,
+            assets/img-project/moodboard-1260w.jpg 1260w" sizes: "(max-width:900px) 630px,
+            (max-width: 1440px) 1260px, 1890px" src="assets/img-project/moodboard-1260w.jpg" alt="Moodboard showing a collage of images">
             </img>
           </div>
           <div class="branding-content">
@@ -565,8 +563,7 @@
           <div class="color-typography-figure">
             <img class="color-palette project-image" srcset="assets/img-project/color-typography.svg 575w,
               assets/img-project/color-typography-700w.svg 700w,
-              assets/img-project/color-typography.svg 900w" sizes: "(max-width:575px) 575px,
-              (max-width: 700px) 700px, 900px" src="assets/img-project/color-typography.svg" alt="Color palette and typography choices">
+              assets/img-project/color-typography.svg 900w" sizes: "(max-width: 700px) 700px, 900px" src="assets/img-project/color-typography.svg" alt="Color palette and typography choices">
             </img>
           </div>
         </div>
@@ -595,7 +592,7 @@
           </figure>
         </div>
         <div class="button-container">
-          <a href="https://drive.google.com/open?id=1tXd7Q2L9r1Vcsqbu6kcddIPRO7soKyj9">
+          <a href="https://drive.google.com/open?id=1tXd7Q2L9r1Vcsqbu6kcddIPRO7soKyj9" aria-label="view style guide">
             <button>view style guide</button>
           </a>
         </div>
@@ -668,12 +665,11 @@
           </div>
           <p class="percentage-population">*Based on 26 participants</p>
           <div class="button-container">
-            <a href="https://docs.google.com/document/d/1omdo9-qCXfEJkhejyL0SWeB3I2frVuPcQBg69_POblM/edit?usp=sharing">
+            <a href="https://docs.google.com/document/d/1omdo9-qCXfEJkhejyL0SWeB3I2frVuPcQBg69_POblM/edit?usp=sharing" aria-label="view a-b testing results">
               <button>view analysis</button>
             </a>
           </div>
         </div>
-
         <div class="hi-fi-testing-content">
           <h4>User Testing</h4>
           <h3>Testing the prototype usability</h3>
@@ -687,14 +683,12 @@
             <li>Adding a tag to a file </li>
           </ul>
           <div class="button-container">
-            <a href="https://docs.google.com/document/d/1jZ_SnHuO0DGDF1Kc-3Ssa4_oY7tgpvxTLEMgSDb5agc/edit?usp=sharing">
+            <a href="https://docs.google.com/document/d/1jZ_SnHuO0DGDF1Kc-3Ssa4_oY7tgpvxTLEMgSDb5agc/edit?usp=sharing" aria-label="view usability testing script">
               <button>view usability script</button>
             </a>
           </div>
         </div>
-
         <div class="hi-fi-testing-changes">
-
           <div class="testing-1-flex-container">
             <div class="testing-1-content">
               <p>Armed with fresh insights from my users, <span>a few things were clear:</span>
@@ -725,7 +719,6 @@
               </div>
             </figure>
           </div>
-
           <div class="testing-2-flex-container">
             <div class="testing-2-content">
               <p><span>2) Viewing tags was less important than I anticipated. </span>This was something that I tested through preference testing, but the results were not statistically significant, so I followed up with my users during testing. On the whole,
@@ -750,7 +743,6 @@
               </div>
             </figure>
           </div>
-
           <div class="testing-3-flex-container">
             <div class="testing-3-content">
               <p><span>3) Clarifying the product’s tagline wasn’t a bad idea. </span>Although most users agreed the hero image was inspiring and reflected the creativity brand, I modified the sub-tagline to include the term “cloud storage tool” to reinforce
@@ -779,11 +771,7 @@
               </div>
             </figure>
           </div>
-
-
         </div>
-
-
       </section>
       <section class="final-prototype">
         <div class="prototype-intro">
@@ -793,86 +781,72 @@
         <div class="gray-background">
           <figure class="prototype-flex-container">
             <img class="project-image" srcset="assets/img-project/prototype-screen1-720w.jpg 720w,
-              assets/img-project/prototype-screen1-1440w.jpg 1440w,
-              assets/img-project/prototype-screen1-2880w.jpg 2880w" sizes: "(max-width: 800px) 720px,
-              (max-width: 1080px) 900px, 1440px" src="assets/img-project/prototype-screen1-2880w.jpg" alt="Trove Product: Sign up screen">
+              assets/img-project/prototype-screen1-1440w.jpg 1440w" sizes: "(max-width: 800px) 720px, 1440px"
+              src="assets/img-project/prototype-screen1-1440w.jpg" alt="Trove Product: Sign up screen">
             </img>
             <img class="project-image" srcset="assets/img-project/prototype-screen2-720w.jpg 720w,
-              assets/img-project/prototype-screen2-1440w.jpg 1440w,
-              assets/img-project/prototype-screen2-2880w.jpg 2880w" sizes: "(max-width: 800px) 720px,
-              (max-width: 2880px) 1080px, 1440px" src="prototype-screen2-1080w.jpg" alt="Trove Product: Password Reset screen">
+              assets/img-project/prototype-screen2-1440w.jpg 1440w" sizes: "(max-width: 800px) 720px, 1440px"
+              src="assets/img-project/prototype-screen2-1440w.jpg" alt="Trove Product: Password Reset screen">
             </img>
             <img class="project-image" srcset="assets/img-project/prototype-screen3-720w.jpg 720w,
-              assets/img-project/prototype-screen3-1440w.jpg 1440w,
-              assets/img-project/prototype-screen3-2880w.jpg 2880w" sizes: "(max-width: 800px) 720px,
-              (max-width: 1440px) 1440px, 2880px" src="assets/img-project/prototype-screen3-2880w.jpg" alt="Trove Product: Blank state dashboard">
+              assets/img-project/prototype-screen3-1440w.jpg 1440w" sizes: "(max-width: 800px) 720px, 1440px"
+              src="assets/img-project/prototype-screen3-1440w.jpg" alt="Trove Product: Blank state dashboard">
             </img>
             <img class="project-image" srcset="assets/img-project/prototype-screen4-720w.jpg 720w,
-              assets/img-project/prototype-screen4-1440w.jpg 1440w,
-              assets/img-project/prototype-screen4-2880w.jpg 2880w" sizes: "(max-width: 800px) 720px,
-              (max-width: 1440px) 1440px, 2880px" src="assets/img-project/prototype-screen4-2880w.jpg" alt="Trove Product: Main dashboard">
+              assets/img-project/prototype-screen4-1440w.jpg 1440w" sizes: "(max-width: 800px) 720px, 1440px"
+              src="assets/img-project/prototype-screen4-1440w.jpg" alt="Trove Product: Main dashboard">
             </img>
             <img class="project-image" srcset="assets/img-project/prototype-screen5-720w.jpg 720w,
-              assets/img-project/prototype-screen5-1440w.jpg 1440w,
-              assets/img-project/prototype-screen5-2880w.jpg 2880w" sizes: "(max-width: 800px) 720px,
-              (max-width: 1440px) 1440px, 2880px" src="assets/img-project/prototype-screen5-2880w.jpg" alt="Trove Product: Upload files">
+              assets/img-project/prototype-screen5-1440w.jpg 1440w" sizes: "(max-width: 800px) 720px, 1440px"
+              src="assets/img-project/prototype-screen5-1440w.jpg" alt="Trove Product: Upload files">
             </img>
             <img class="project-image" srcset="assets/img-project/prototype-screen6-720w.jpg 720w,
-              assets/img-project/prototype-screen6-1440w.jpg 1440w,
-              assets/img-project/prototype-screen6-2880w.jpg 2880w" sizes: "(max-width: 800px) 720px,
-              (max-width: 1440px) 1440px, 2880px" src="assets/img-project/prototype-screen6-2880w.jpg" alt="Trove Product: Add files to a folder">
+              assets/img-project/prototype-screen6-1440w.jpg 1440w" sizes: "(max-width: 800px) 720px, 1440px"
+              src="assets/img-project/prototype-screen6-1440w.jpg" alt="Trove Product: Add files to a folder">
             </img>
             <img class="project-image" srcset="assets/img-project/prototype-screen7-720w.jpg 720w,
-              assets/img-project/prototype-screen7-1440w.jpg 1440w,
-              assets/img-project/prototype-screen7-2880w.jpg 2880w" sizes: "(max-width: 800px) 720px,
-              (max-width: 1440px) 1440px, 2880px" src="assets/img-project/prototype-screen7-2880w.jpg" alt="Trove Product: Move files modal window">
+              assets/img-project/prototype-screen7-1440w.jpg 1440w" sizes: "(max-width: 800px) 720px, 1440px"
+              src="assets/img-project/prototype-screen7-1440w.jpg" alt="Trove Product: Move files modal window">
             </img>
             <img class="project-image" srcset="assets/img-project/prototype-screen8-720w.jpg 720w,
-              assets/img-project/prototype-screen8-1440w.jpg 1440w,
-              assets/img-project/prototype-screen8-2880w.jpg 2880w" sizes: "(max-width: 800px) 720px,
-              (max-width: 1440px) 1440px, 2880px" src="assets/img-project/prototype-screen8-2880w.jpg" alt="Trove Product: View search results">
+              assets/img-project/prototype-screen8-1440w.jpg 1440w" sizes: "(max-width: 800px) 720px, 1440px"
+              src="assets/img-project/prototype-screen8-1440w.jpg" alt="Trove Product: View search results">
             </img>
             <img class="project-image" srcset="assets/img-project/prototype-screen9-720w.jpg 720w,
-              assets/img-project/prototype-screen9-1440w.jpg 1440w,
-              assets/img-project/prototype-screen9-2880w.jpg 2880w" sizes: "(max-width: 800px) 720px,
-              (max-width: 1440px) 1440px, 2880px" src="assets/img-project/prototype-screen9-2880w.jpg" alt="Trove Product: Tag item dropdown menu">
+              assets/img-project/prototype-screen9-1440w.jpg 1440w" sizes: "(max-width: 800px) 720px, 1440px"
+              src="assets/img-project/prototype-screen9-1440w.jpg" alt="Trove Product: Tag item dropdown menu">
             </img>
             <img class="project-image" srcset="assets/img-project/prototype-screen10-720w.jpg 720w,
-              assets/img-project/prototype-screen10-1440w.jpg 1440w,
-              assets/img-project/prototype-screen10-2880w.jpg 2880w" sizes: "(max-width: 800px) 720px,
-              (max-width: 1440px) 1440px, 2880px" src="assets/img-project/prototype-screen10-2880w.jpg" alt="Trove Product: Add a new note">
+              assets/img-project/prototype-screen10-1440w.jpg 1440w" sizes: "(max-width: 800px) 720px, 1440px"
+              src="assets/img-project/prototype-screen10-1440w.jpg" alt="Trove Product: Add a new note">
             </img>
             <img class="project-image" srcset="assets/img-project/prototype-screen11-720w.jpg 720w,
-              assets/img-project/prototype-screen11-1440w.jpg 1440w,
-              assets/img-project/prototype-screen11-2880w.jpg 2880w" sizes: "(max-width: 800px) 720px,
-              (max-width: 1440px) 1440px, 2880px" src="assets/img-project/prototype-screen11-2880w.jpg" alt="Trove Product: Image opened from dashboard">
+              assets/img-project/prototype-screen11-1440w.jpg 1440w" sizes: "(max-width: 800px) 720px, 1440px"
+              src="assets/img-project/prototype-screen11-1440w.jpg" alt="Trove Product: Image opened from dashboard">
             </img>
             <img class="project-image" srcset="assets/img-project/prototype-screen12-720w.jpg 720w,
-              assets/img-project/prototype-screen12-1440w.jpg 1440w,
-              assets/img-project/prototype-screen12-2880w.jpg 2880w" sizes: "(max-width: 800px) 720px,
-              (max-width: 1440px) 1440px, 2880px" src="assets/img-project/prototype-screen12-2880w.jpg" alt="Trove Product: New folder added">
+              assets/img-project/prototype-screen12-1440w.jpg 1440w" sizes: "(max-width: 800px) 720px, 1440px"
+              src="assets/img-project/prototype-screen12-1440w.jpg" alt="Trove Product: New folder added">
             </img>
             <img class="project-image" srcset="assets/img-project/prototype-screen13-720w.jpg 720w,
-              assets/img-project/prototype-screen13-1440w.jpg 1440w,
-              assets/img-project/prototype-screen13-2880w.jpg 2880w" sizes: "(max-width: 800px) 720px,
-              (max-width: 1440px) 1440px, 2880px" src="assets/img-project/prototype-screen13-2880w.jpg" alt="Trove Product: New bookmark modal window">
+              assets/img-project/prototype-screen13-1440w.jpg 1440w" sizes: "(max-width: 800px) 720px, 1440px"
+              src="assets/img-project/prototype-screen13-1440w.jpg" alt="Trove Product: New bookmark modal window">
             </img>
             <img class="project-image" srcset="assets/img-project/prototype-screen14-720w.jpg 720w,
-              assets/img-project/prototype-screen14-1440w.jpg 1440w,
-              assets/img-project/prototype-screen14-2880w.jpg 2880w" sizes: "(max-width: 800px) 720px,
-              (max-width: 1440px) 1440px, 2880px" src="assets/img-project/prototype-screen14-2880w.jpg" alt="Trove Product: Items tagged as personal">
+              assets/img-project/prototype-screen14-1440w.jpg 1440w" sizes: "(max-width: 800px) 720px, 1440px"
+              src="assets/img-project/prototype-screen14-1440w.jpg" alt="Trove Product: Items tagged as personal">
             </img>
           </figure>
         </div>
         <div class="prototype-sub-section">
           <div class="double-button-flex">
             <div class="button-container">
-              <a href="https://www.figma.com/proto/Aa7ce804QgYFxzQT7wpeqw/Trove-Cloud-Storage?node-id=0%3A1&viewport=283%2C68%2C0.036343906074762344&scaling=min-zoom">
+              <a href="https://www.figma.com/proto/Aa7ce804QgYFxzQT7wpeqw/Trove-Cloud-Storage?node-id=0%3A1&viewport=283%2C68%2C0.036343906074762344&scaling=min-zoom" aria-label="view figma prototype">
                 <button>view prototype</button>
               </a>
             </div>
             <div class="button-container">
-              <a href="https://drive.google.com/open?id=1LuT76ZMJi2OYRoDYwteHuIVq03jf0UsN">
+              <a href="https://drive.google.com/open?id=1LuT76ZMJi2OYRoDYwteHuIVq03jf0UsN" aria-label="view all hi-fi mockups">
                 <button>view all screens</button>
               </a>
             </div>
@@ -907,21 +881,21 @@
             <h2>Want to learn more?</h2>
             <p>Feel free to contact me anytime.</p>
             <div class="button-container">
-              <a href="mailto:laurahundersmarck@gmail.com">
+              <a href="mailto:laurahundersmarck@gmail.com" aria-label="email me">
                 <button>Get in Touch</button>
               </a>
             </div>
-            <a href="#top-page">
+            <a href="#top-page" aria-label="Back to top arrow">
               <img class="back-to-top-arrow" src="assets/img/back-to-top-arrow.svg" alt="back to top arrow"></img>
             </a>
           </div>
         </div>
         <div class="footer-icons">
           <ul>
-            <li> <a href="https://linkedin.com/in/laurahundersmarck/"><i class="fab fa-linkedin"></i></a> </li>
-            <li> <a href="https://github.com/lhundersmarck"><i class="fab fa-github-square"></i></a> </li>
-            <li> <a href="mailto:laurahundersmarck@gmail.com"><i class="fas fa-envelope"></i></a> </li>
-            <li> <a href="https://lhundersmarck.wixsite.com/photo"><i class="fas fa-camera"></i></a> </li>
+            <li> <a href="https://linkedin.com/in/laurahundersmarck/" aria-label="connect on linkedin"><i class="fab fa-linkedin"></i></a> </li>
+            <li> <a href="https://github.com/lhundersmarck" aria-label="find me on github"><i class="fab fa-github-square"></i></a> </li>
+            <li> <a href="mailto:laurahundersmarck@gmail.com" aria-label="email me"><i class="fas fa-envelope"></i></a> </li>
+            <li> <a href="https://lhundersmarck.wixsite.com/photo" aria-label="my photography work"><i class="fas fa-camera"></i></a> </li>
           </ul>
           <!-- <i class="far fa-copyright copyright"></i> -->
           <p>Laura Hundersmarck 2019.
