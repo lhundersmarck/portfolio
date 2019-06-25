@@ -476,6 +476,9 @@
         width: 70%;
       }
 
+      .gray-background {
+        padding: 1rem 0 0 0;
+      }
 
       .a-b-testing-content {
         width: 70%;
