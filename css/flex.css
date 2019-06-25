@@ -143,6 +143,27 @@
       padding-top: 2rem;
     }
 
+/* Attribution page starts here */
+    section.attribution {
+      padding-top: 10rem;
+      width: 70%;
+    }
+
+    .attribution-flex {
+      display: flex;
+      display: -webkit-flex;
+      flex-direction: row;
+      -webkit-flex-direction: row;
+      flex-wrap: wrap;
+      -webkit-flex-wrap: wrap;
+      margin-bottom: 12rem;
+    }
+
+    .attr-logo {
+      margin: 0 4rem 4rem 0;
+      width: 12rem;
+    }
+
     /* About page starts here */
 
     .about-hero-content {
@@ -697,6 +718,14 @@
     .back-to-top-arrow  {
       visibility: hidden;
     }
+
+    /* Attribution page starts here */
+        section.attribution {
+          padding-top: 10rem;
+          width: 50%;
+          max-width: 680px;
+          margin: 0 auto;
+        }
 
     /* About content starts here */
 

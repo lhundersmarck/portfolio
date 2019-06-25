@@ -9,6 +9,7 @@ src: url("../assets/fonts/Sand_Dunes.svg") format("svg");}
 }
 
 html {
+  scroll-behavior: smooth;
   font-size: 10px;
 }
 
@@ -390,6 +391,36 @@ footer .footer-icons {
   font-size: 1.5rem;
   line-height: 1.9rem;
   letter-spacing: .07rem;
+}
+
+/* attribution starts here */
+
+section.attribution {
+  padding-top: 6rem;
+}
+
+.attribution-flex {
+  display: flex;
+  display: -webkit-flex;
+  flex-direction: column;
+  -webkit-flex-direction: column;
+  flex-wrap: wrap;
+  -webkit-flex-wrap: wrap;
+  margin-bottom: 12rem;
+}
+
+.attr-logo {
+  padding-top: 2rem;
+  width: 12rem;
+}
+
+.attribution-link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.footer-icons p {
+  padding-bottom: .3rem;
 }
 
 /* About starts here */

@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<link rel="icon"
+      type="image/png"
+      href="lh-icon.png">
+    </link>
+<head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-142690697-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-142690697-1');
+  </script>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Portfolio | Laura Hundersmarck</title>
+  <link href="https://fonts.googleapis.com/css?family=Assistant:400,600,700|Gilda+Display&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/stylereset.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/mobile-menu.css">
+  <link rel="stylesheet" href="css/desktop-menu.css">
+  <link rel="stylesheet" href="css/flex.css">
+  <script src="https://kit.fontawesome.com/d7c1e28c2f.js"></script>
+  <script src="js/mobile-menu.js"></script>
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+
+<body data-aos-easing="ease" data-aos-duration="400" data-aos-delay="0">
+  <div class="site-container">
+    <header class="mobile-menu-container">
+      <nav>
+        <a href="index.html" aria-label="my work"><img class="mobile-logo" src="assets/img/mobile-logo.svg" alt="logo"></img>
+        </a>
+        <div class="mobile-menu" onclick="toggleMobileMenu(this)">
+          <div class="mobile-menu-bar-1"></div>
+          <div class="mobile-menu-bar-2"></div>
+          <div class="mobile-menu-bar-3"></div>
+        </div>
+        <div class="mobile-menu-list-container">
+          <ul class="mobile-menu-list">
+            <a href="index.html" aria-label="my work">
+              <li onclick="toggleMobileMenuItem()">Work</li>
+            </a>
+            <a href="about.html" aria-label="about me">
+              <li onclick="toggleMobileMenuItem()">
+                About
+              </li>
+            </a>
+            <a href="mailto:laurahundersmarck@gmail.com" aria-label="email me">
+              <li onclick="toggleMobileMenuItem()">
+                Contact
+              </li>
+            </a>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <header class="desktop-menu-container">
+      <nav>
+        <a href="index.html" aria-label="my work"><img src="assets/img/desktop-logo-LH.svg" alt="Laura Hundersmarck Logo"></img>
+        </a>
+        <ul>
+          <li><a href="index.html" aria-label="my work">Work</a></li>
+          <li><a href="about.html" aria-label="about page">About</a></li>
+          <li>
+            <div class="nav-button">
+              <a href="mailto:laurahundersmarck@gmail.com" aria-label="email me">
+                <button>Contact</button>
+              </a>
+            </div>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <div class="spacer" id="top-page">
+    </div>
+
+    <body>
+      <div class="container">
+        <!-- hero unit -->
+        <section class="attribution">
+            <h4>Attributions</h4>
+            <h3>A little help from my friends</h3>
+            <p>Some visual content and icons were modified or taken from the following sources with permission:</p>
+            <div class="attribution-flex">
+              <a href="https://www.freepik.com/free-photos-vectors/people" target="_blank" rel="noopener noreferrer" aria-label="navigate to freepik.com"><img class="attr-logo" src="assets/img/freepik.svg" alt="freepik logo"></img></a>
+              <a href="https://www.vecteezy.com/" target="_blank" rel="noopener noreferrer" aria-label="navigate to vecteezy.com"><img class="attr-logo" src="assets/img/vecteezy.svg" alt="vecteezy-logo"></img></a>
+            </div>
+        </section>
+        <footer class="footer">
+          <div class="contact-group">
+            <div class="contact">
+              <h2>Want to learn more?</h2>
+              <p>Feel free to contact me anytime.</p>
+              <div class="button-container">
+                <a href="mailto:laurahundersmarck@gmail.com" aria-label="email me">
+                  <button>Get in Touch</button>
+                </a>
+              </div>
+              <a href="#top-page" aria-label="Back to top arrow">
+                <img class="back-to-top-arrow" src="assets/img/back-to-top-arrow.svg" alt="back to top arrow"></img>
+              </a>
+            </div>
+          </div>
+          <div class="footer-icons">
+            <ul>
+              <li> <a href="https://linkedin.com/in/laurahundersmarck/" aria-label="connect on linkedin" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin"></i></a> </li>
+              <li> <a href="https://github.com/lhundersmarck" aria-label="find me on github" target="_blank" rel="noopener noreferrer"><i class="fab fa-github-square"></i></a> </li>
+              <li> <a href="mailto:laurahundersmarck@gmail.com" aria-label="email me" target="_blank" rel="noopener noreferrer"><i class="fas fa-envelope"></i></a> </li>
+              <li> <a href="https://lhundersmarck.wixsite.com/photo" aria-label="my photography work" target="_blank" rel="noopener noreferrer"><i class="fas fa-camera"></i></a> </li>
+            </ul>
+            <!-- <i class="far fa-copyright copyright"></i> -->
+            <p>Laura Hundersmarck 2019</p>
+            <p>All Rights Reserved</p>
+            <p><a class="attribution-link" href="attribution.html" aria-label="attribution">Attributions</a></p>
+          </div>
+        </footer>
+      </div>
+    </body>
+
+</html>
