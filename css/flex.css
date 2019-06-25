@@ -845,9 +845,9 @@ plus moodboard because image comes before text */
       margin: 3%;
     }
 
-    .demographics {
+    /* .demographics {
       padding: 3rem 0 2rem 0;
-    }
+    } */
 
     .storage-icon-text-1,
     .storage-icon-text-2,
@@ -971,6 +971,10 @@ plus moodboard because image comes before text */
 
     .fig-row-stories {
       width: 40%;
+    }
+
+    p.large-stat {
+      margin-top: 2rem;
     }
 
     .competitors {
@@ -1234,9 +1238,6 @@ plus moodboard because image comes before text */
     margin: auto;
     }
 
-    .storage-products, .storage-reasons {
-      margin: 2%;
-    }
 
     /* Project starts here  */
 
@@ -1280,6 +1281,14 @@ plus moodboard because image comes before text */
       width: 65%;
     }
 
+    .storage-products, .storage-reasons {
+      margin: 0;
+    }
+
+    .storage-reasons {
+      margin-right: 2%;
+    }
+
     .fig-row-stories {
       margin-left: 4rem;
     }
@@ -1299,12 +1308,6 @@ plus moodboard because image comes before text */
     }
 
 
-}
-
-@media screen and (min-width: 1300px) {
-  .storage-bar-graph img {
-    padding: .8rem;
-  }
 }
 
 
