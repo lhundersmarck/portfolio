@@ -423,6 +423,16 @@ section.attribution {
   padding-bottom: .3rem;
 }
 
+.attribution-link {
+  transition: 0.3s linear;
+}
+
+@media (hover: hover) {
+  .attribution-link:hover {
+  color: #91DAD5;
+  }
+}
+
 /* About starts here */
 
 .about-hero {

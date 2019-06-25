@@ -145,7 +145,7 @@
 
 /* Attribution page starts here */
     section.attribution {
-      padding-top: 10rem;
+      padding: 15rem 0 10rem 0;
       width: 70%;
     }
 
@@ -721,7 +721,6 @@
 
     /* Attribution page starts here */
         section.attribution {
-          padding-top: 10rem;
           width: 50%;
           max-width: 680px;
           margin: 0 auto;
