@@ -177,7 +177,6 @@ a .down-arrow {
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
-  transition: background-image 3s linear;
   }
 
 .project-card a {
@@ -207,11 +206,16 @@ a .down-arrow {
   font-weight: bold;
 }
 
-.project1:hover {
-  background-image: linear-gradient(to right bottom, #91DAD5, #91DAD5), url("../assets/img/Project-card1-600w.png");
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
+.overlay {
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  background-color: #91DAD5;
+  transition: opacity .5s linear;
+}
+
+.overlay:hover {
+  opacity: 1;
 }
 
 .project2 {
