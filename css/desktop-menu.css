@@ -13,6 +13,10 @@ nav a {
   font-size: 1.7em;
 }
 
+.desktop-menu-container nav ul li:last-child {
+  padding: 0;
+}
+
 .desktop-menu-container a {
   transition: 0.3s linear;
 }
@@ -21,6 +25,10 @@ nav a {
   .desktop-menu-container a:hover {
   color: #91DAD5;
   }
+}
+
+.desktop-menu-container ul li {
+  padding-top: 21px;
 }
 
 .desktop-menu-container nav img {
@@ -53,17 +61,31 @@ nav a {
 
   .desktop-menu-container nav img {
     float: left;
-    width: 17em;
+    width: 16em;
   }
 }
-
 
 
 @media screen and (min-width: 991px) {
   .desktop-menu-container nav ul li:not(:last-child) {
     margin-right: 2.7em;
   }
+
+  .desktop-menu-container {
+    padding: 1% 5% 0 5%;
+    margin: 0 auto;
+  }
+
+  .desktop-menu-container ul li {
+    padding-bottom: 2rem;
+  }
+
 }
+
+
+/* @media screen and (min-width: 1199px) {
+
+} */
 
 @media screen and (min-width: 1440px) {
   .desktop-menu-container nav {

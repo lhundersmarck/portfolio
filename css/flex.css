@@ -1223,8 +1223,6 @@ plus moodboard because image comes before text */
      }
 
 
-
-
 }
 
 
@@ -1233,6 +1231,11 @@ plus moodboard because image comes before text */
   html {
     font-size: 11px;
   }
+
+  .desktop-menu-container {
+
+  }
+
 
 /* Section & container sizes */
   .site-container {
