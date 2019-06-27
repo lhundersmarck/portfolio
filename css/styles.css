@@ -190,7 +190,6 @@ a .down-arrow {
   margin: 0 5rem 0 5rem;
   padding-top: 40%;
   opacity: 0;
-  line-height: 4rem;
 }
 
 .project1 p:hover {
@@ -493,6 +492,7 @@ figcaption {
   font-size: 1.6rem;
   line-height: 2.4rem;
   letter-spacing: .02rem;
+  padding-top: 1rem;
   padding-bottom: 1rem;
 }
 
@@ -934,6 +934,10 @@ p.percentage-population {
   flex-direction: column;
   -webkit-flex-direction: column;
   margin: 0 auto;
+}
+
+.user-testing-img {
+  box-shadow: 2px 2px 4px 2px rgba(0, 0, 0, .1);
 }
 
 .hi-fi-testing-changes p {

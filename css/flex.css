@@ -477,17 +477,20 @@
         text-align: center;
       }
 
-
       .wireframe-figure {
         width: 100%;
         margin: auto;
         padding: 2rem 0 2rem 0;
       }
 
+      .early-testing-content {
+        padding-bottom: 3rem;
+      }
 
       .early-testing-fig-before,
       .early-testing-fig-after {
         width: 70%;
+        margin: 0 auto;
       }
 
 
@@ -1295,14 +1298,6 @@ plus moodboard because image comes before text */
 
     .summary-list-flex-group {
       margin-bottom: 4rem;
-    }
-
-    .container section:not(:first-child) {
-      margin-bottom: 9rem;
-    }
-
-    .container section section:last-child {
-      margin-bottom: 0;
     }
 
     .industry-data-cluster {
