@@ -270,7 +270,7 @@
 
     .research-sub-section, .information-arch-sub-section,
     .hi-fi-testing-content, .hi-fi-testing-intro,
-    .hi-fi-testing-changes {
+    .hi-fi-testing-changes, .prototype-intro {
       width: 70%;
       margin: 0 auto;
     }
@@ -1111,6 +1111,11 @@ plus moodboard because image comes before text */
    .curved-arrow {
      visibility: visible;
       transform: rotate(-45deg);
+   }
+
+   .early-testing-fig-before,
+   .early-testing-fig-after {
+     margin: 0;
    }
 
    .testing-2-before,
