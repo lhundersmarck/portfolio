@@ -480,6 +480,10 @@ section.attribution {
   border-radius: .3rem;
 }
 
+.about-fig {
+  padding-top: 1rem;
+}
+
 .travel-img {
   display: none;
 }
@@ -492,7 +496,6 @@ figcaption {
   font-size: 1.6rem;
   line-height: 2.4rem;
   letter-spacing: .02rem;
-  padding-top: 1rem;
   padding-bottom: 1rem;
 }
 
@@ -502,6 +505,8 @@ figcaption {
   padding-bottom: 1rem;
 }
 
+
+.about-image
 
 
 /* Project starts here */
