@@ -733,8 +733,12 @@
 
     .about-hero-content {
       width: 50%;
-      padding: 8% 0 3% 6%;
+      padding: 9% 0 3% 6%;
       float: left;
+    }
+
+    .short-bio {
+      width: 80%;
     }
 
     .about-background {
@@ -757,6 +761,7 @@
       background-repeat: no-repeat;
       position: relative;
       height: 70vh;
+      min-height: 800px;
     }
 
   /* project starts here  */
