@@ -733,7 +733,7 @@
 
     .about-hero-content {
       width: 50%;
-      padding: 9% 0 3% 6%;
+      padding: 10% 0 3% 6%;
       float: left;
     }
 
@@ -761,7 +761,7 @@
       background-repeat: no-repeat;
       position: relative;
       height: 70vh;
-      min-height: 800px;
+      min-height: 750px;
     }
 
   /* project starts here  */
