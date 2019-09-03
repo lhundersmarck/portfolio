@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<link rel="icon" type="image/png" href="lh-icon.png">
+</link>
+
+<head>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-142690697-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+
+    gtag('config', 'UA-142690697-1');
+  </script>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Portfolio | Laura Hundersmarck</title>
+  <link href="https://fonts.googleapis.com/css?family=Assistant:400,600,700|Gilda+Display&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/mobile-menu.css">
+  <link rel="stylesheet" href="css/desktop-menu.css">
+  <link rel="stylesheet" href="css/flex.css">
+  <script src="https://kit.fontawesome.com/d7c1e28c2f.js"></script>
+  <script src="js/mobile-menu.js"></script>
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <script src="middleware.js" defer></script>
+</head>
+
+<body data-aos-easing="ease" data-aos-duration="400" data-aos-delay="0">
+  <div class="site-container">
+    <header class="mobile-menu-container">
+      <nav>
+        <a href="index" aria-label="my work"><img class="mobile-logo" src="assets/img/mobile-logo.svg" alt="logo"></img>
+        </a>
+        <div class="mobile-menu" onclick="toggleMobileMenu(this)">
+          <div class="mobile-menu-bar-1"></div>
+          <div class="mobile-menu-bar-2"></div>
+          <div class="mobile-menu-bar-3"></div>
+        </div>
+        <div class="mobile-menu-list-container">
+          <ul class="mobile-menu-list">
+            <a href="index#featured-work" aria-label="my work">
+              <li onclick="toggleMobileMenuItem()">Work</li>
+            </a>
+            <a href="about" aria-label="about me">
+              <li onclick="toggleMobileMenuItem()">
+                About
+              </li>
+            </a>
+            <a href="mailto:laurahundersmarck@gmail.com" aria-label="email me">
+              <li onclick="toggleMobileMenuItem()">
+                Contact
+              </li>
+            </a>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <header class="desktop-menu-container">
+      <nav>
+        <a href="index" aria-label="my work"><img src="assets/img/desktop-logo-LH.svg" alt="Laura Hundersmarck Logo"></img>
+        </a>
+        <ul>
+          <li><a href="index#featured-work" aria-label="my work">Work</a></li>
+          <li><a href="about" aria-label="about page">About</a></li>
+          <li>
+            <div class="nav-button">
+              <a href="mailto:laurahundersmarck@gmail.com" aria-label="email me">
+                <button>Contact</button>
+              </a>
+            </div>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <div class="spacer" id="top-page">
+    </div>
+    <div class="container">
+      <!-- hero unit -->
+      <section data-aos="fade-in" class="project-hero">
+        <img class="product-logo-current project-image" src="assets/img-current/current-logo.svg" alt="Current Product Logo"></img>
+        <h2 class="project-tagline">Current is an end-to-end user experience for podcast enthusiasts. Users can listen to podcasts based on their mood and interests, discover new content, and swap recommendations with friends.</h2>
+        <div class="button-container">
+          <a href="http://bit.ly/current-app-prototype" target="_blank" rel="noopener noreferrer" aria-label="View Figma Prototype">
+            <button>view prototype</button>
+          </a>
+        </div>
+        <img class="product-shot project-image" srcset="assets/img-current/mobile-mainapp@2x.jpeg 1200w,
+        assets/img-current/desktop-mainapp@2x.png 2880w" sizes: "(max-width: 750px) 1200px, 2880px"
+        src="assets/img-current/desktop-mainapp@2x.png" alt="Current Product Shot of Mood Feature">
+        </img>
+      </section>
+      <section data-aos-easing="ease" data-aos-duration="1500" data-aos-delay="0" data-aos="fade-in" class="project-details">
+        <div class="problem-solution">
+          <img class="section-header" src="assets/img-trove/section-summary.svg" alt="Section header: Project Summary"></img>
+        </div>
+        <div data-aos-easing="ease" data-aos-duration="1500" data-aos-delay="0" data-aos="fade-in" class="problem-solution-flex-container">
+          <div class="the-problem-solution-flex-container">
+            <div class="problem-solution">
+              <h3 class="header-summary">The Problem</h3>
+              <p>If you are a fan of podcasts, discovering a new show is a process. I find myself asking: What do I feel like listening to? Where should I look first? What’s in right now? Who can tap for a good recommendation?
+                <br/>
+                <br/>One problem is clear: there’s an ocean of content out there. How can we sift through it to find the shows that we want to listen to? And more specifically, how can we make the discovery process a little more enjoyable?
+              </p>
+            </div>
+            <div class="summary-image">
+              <img class="project-image" srcset="assets/img-current/mobile-podcast-wave@2x.jpg 750w,
+              assets/img-current/desktop-podcastwave@1x.png 1440w, assets/img-current/desktop-podcastwave@2x.png 2880w" sizes: "(max-width: 750px) 750px, (max-width: 900px) 1440px, 2880px" src="assets/img-current/desktop-podcastwave@2x.png" alt="Collection of podcast show tiles. Text reads there is an ocean of content">
+              </img>
+            </div>
+            <div class="problem-solution">
+              <h3 class="header-summary">The Solution</h3>
+              <p>Current makes discovering new content fun!
+                <br/>
+                <br/> Podcast listeners want their <span>explore feeds to be personalized</span> and smarter so they can spend less energy finding and testing podcasts, and more time listening to content they actually find interesting. The app <span>curates high quality shows</span>                based on the user’s current mood. They can also <span>swap recommendations with friends</span> and find out what’s in right now.
+                <br/>
+                <br/>Current gets people finding and sharing podcasts quickly. With increased listenership, opportunities open up for investors, advertisers, and podcast creators.</p>
+            </div>
+            <div class="app-feature-flex">
+              <div class="app-feature">
+                <img class="project-image" srcset="assets/img-current/mobile-personalized-listening@1x.jpeg 750w,
+                    assets/img-current/mobile-personalized-listening@2x.jpeg 1500w" sizes: "(max-width: 900px) 750px, 1500px"
+                    src="assets/img-current/mobile-personalized-listening@2x.jpeg" alt="Personalized listening">
+                </img>
+                <p class="center-headers"> Personalized
+                  <br/>listening
+                </p>
+              </div>
+              <div class="app-feature">
+                <img class="project-image" srcset="assets/img-current/mobile-discover-content@1x.jpeg 750w,
+                    assets/img-current/mobile-discover-content@2x.jpeg 1500w" sizes: "(max-width: 900px) 750px, 1500px"
+                    src="assets/img-current/mobile-discover-content@2x.jpeg" alt="Discover new content in an engaging way">
+                </img>
+                <p class="center-headers"> Discover
+                  <br/>new content
+                </p>
+              </div>
+              <div class="app-feature">
+                <img class="project-image" srcset="assets/img-current/mobile-social-feature@1x.jpeg 750w,
+                    assets/img-current/mobile-social-feature@2x.jpeg 1500w" sizes: "(max-width: 900px) 750px, 1500px"
+                    src="assets/img-current/mobile-social-feature@2x.jpeg" alt="Swap recommendations with your friends">
+                </img>
+                <p class="center-headers"> See what your friends
+                  <br/>are listening to
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <div data-aos-easing="ease" data-aos-duration="1500" data-aos-delay="0" data-aos="fade-in" class="design-process-current">
+          <h4>project summary</h4>
+          <h3>My Design Process</h3>
+          <p>Over five weeks, I collected user and industry data, sketched 70+ screens & UI elements, cycled through three iterations of MVP requirements, built four sets of wireframe, tested multiple color schemes, conducted six usability tests, and built
+            two prototypes before arriving at the MVP.
+            <br/>
+            <br/><span>Interested in my design process?</span>
+            <br/>Take a look at the steps and decisions I made to arrive at the latest prototype iteration.
+          </p>
+          <div class="button-container">
+            <a href="http://bit.ly/current-app-design-file" target="_blank" rel="noopener noreferrer" aria-label="figma design file">
+              <button>view my design file</button>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section data-aos-easing="ease" data-aos-duration="1500" data-aos-delay="0" data-aos="fade-in" class="project-summary">
+        <div class="summary-list-flex-group">
+          <div class="summary-list">
+            <h3 class="header-spec-list center-headers">Roles</h3>
+            <ul>
+              <li>UX Researcher</li>
+              <li>UX Designer</li>
+              <li>Content Strategist</li>
+              <li>Branding Strategist</li>
+              <li>Visual Designer</li>
+              <li>Interaction Designer</li>
+            </ul>
+          </div>
+          <div class="summary-list">
+            <h3 class="header-spec-list center-headers">Deliverables</h3>
+            <ul>
+              <li>User Surveys</li>
+              <li>Competitive Analysis</li>
+              <li>Interviews</li>
+              <li>Personas</li>
+              <li>User Stories & Flows</li>
+              <li>Sketches</li>
+              <li>Wireframes</li>
+              <li>User Testing Results</li>
+              <li>Branding</li>
+              <li>Prototypes</li>
+            </ul>
+          </div>
+          <div class="summary-list">
+            <h3 class="header-spec-list center-headers">Specs</h3>
+            <ul>
+              <li><span>Duration</span></li>
+              <li>5 weeks</li>
+            </ul>
+            <ul>
+              <li><span>Tools</span></li>
+              <li>Figma</li>
+              <li>Adobe Illustrator</li>
+              <li>Google Forms</li>
+              <li>Niice</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+
+      <section data-aos-easing="ease" data-aos-duration="1500" data-aos-delay="0" data-aos="fade-in" class="conclusion">
+        <img class="section-header" src="assets/img-trove/section-conclusion.svg" alt="Section header: Conclusion"></img>
+        <h4>Conclusion</h4>
+        <h3>Lessons Learned</h3>
+        <p>Throughout the process I learned so much about what people expect from their podcasting apps. I received a flood of suggestions during user testing for new features and ways to take the app to the next level. Naturally, I wanted to implement all
+          of them, but I quickly learned how to absorb feedback and prioritize my effort to work within time constraints.
+          <br/>
+          <br/>More generally, I learned that you can create amazing things in five weeks. By embracing experimentation, self-reflection, and consistent feedback, I was able to identify gaps in my workflow, prioritize my decisions, and stay focused on the
+          MVP. I also learned to trust my users, document my process, and repeatedly test my assumptions.
+          <br/>
+          <br/>A full case study is coming soon...
+        </p>
+      </section>
+      <footer data-aos-easing="ease" data-aos-duration="1500" data-aos-delay="0" data-aos="fade-in" class="footer">
+        <div class="contact-group">
+          <div class="contact">
+            <h2>Want to learn more?</h2>
+            <p>Feel free to contact me anytime.</p>
+            <div class="button-container">
+              <a href="mailto:laurahundersmarck@gmail.com" aria-label="email me">
+                <button>Get in Touch</button>
+              </a>
+            </div>
+            <a href="#top-page" aria-label="Back to top arrow">
+              <img class="back-to-top-arrow" src="assets/img/back-to-top-arrow.svg" alt="back to top arrow"></img>
+            </a>
+          </div>
+        </div>
+        <div class="footer-icons">
+          <ul>
+            <li> <a href="https://linkedin.com/in/laurahundersmarck/" aria-label="connect on linkedin" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin"></i></a> </li>
+            <li> <a href="https://www.pinterest.com/laurahundersmarck/" aria-label="check out my pinterest" target="_blank" rel="noopener noreferrer"><i class="fab fa-pinterest-square"></i></a> </li>
+            <li> <a href="https://lhundersmarck.wixsite.com/photo" aria-label="my photography work" target="_blank" rel="noopener noreferrer"><i class="fas fa-camera"></i></a> </li>
+            <li> <a href="https://github.com/lhundersmarck" aria-label="find me on github" target="_blank" rel="noopener noreferrer"><i class="fab fa-github-square"></i></a> </li>
+          </ul>
+          <!-- <i class="far fa-copyright copyright"></i> -->
+          <p>Laura Hundersmarck 2019</p>
+          <p>All Rights Reserved</p>
+          <p><a class="attribution-link" href="attribution" aria-label="attribution page">Attributions</a></p>
+        </div>
+      </footer>
+    </div>
+  </div>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+</body>
+
+</html>

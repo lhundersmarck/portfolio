@@ -30,6 +30,12 @@
     }
 
 
+    .problem-solution, .design-process-current {
+      width: 70%;
+      margin: auto;
+    }
+
+
     .teal-circle {
       visibility: hidden;
     }
@@ -205,6 +211,10 @@
 
     .product-logo {
       padding: 1rem .7rem 3rem 0;
+    }
+
+    .product-logo-current {
+      height: 24rem;
     }
 
     .product-shot {
@@ -591,6 +601,24 @@
 
 
 
+@media screen and (min-width: 750px) {
+  .app-feature-flex {
+    display: flex;
+    display: -webkit-flex;
+    flex-direction: row;
+    -webkit-flex-direction: row;
+    flex-wrap: nowrap;
+    -webkit-flex-wrap: nowrap;
+    margin: 0 auto;
+    width: 100%;
+    padding: 3rem 0 8rem 0;
+  }
+
+  .project-tagline {
+    font-size: 2.2rem;
+    line-height: 3.3rem;
+}
+
 
 @media screen and (min-width: 991px) {
     html {
@@ -805,6 +833,11 @@
       width: 50%;
       margin-left: 2%;
     }
+
+  .app-feature-flex {
+    width: 80%;
+  }
+
 
     .project-summary, .research-sub-section,
     .information-arch-sub-section,
@@ -1301,6 +1334,7 @@ plus moodboard because image comes before text */
       width: 50%;
     }
 
+
     .summary-hero {
       margin-bottom: 3rem;
     }
@@ -1343,6 +1377,11 @@ plus moodboard because image comes before text */
       margin: 0 auto;
     }
 
+    .problem-solution, .design-process-current {
+      width: 50%;
+      margin: auto;
+    }
+
 
 }
 
@@ -1368,6 +1407,7 @@ plus moodboard because image comes before text */
       margin-left: 15%;
       width: 50%;
     }
+
 
     .the-problem-solution,
     .target-audience-content,

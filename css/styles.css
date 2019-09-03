@@ -63,6 +63,12 @@ h5 {
   text-align: center;
 }
 
+.center-headers p, .app-feature p {
+  font-size: 2rem;
+  line-height: 2.8rem;
+}
+
+
 h1 span {
   color: #18A2A2;
   /* teal color */
@@ -171,28 +177,35 @@ a .down-arrow {
 }
 
 
-.project1 {
+.project1, .project2 {
   padding: 0;
   height: 100%;
-  background-image: url("../assets/img/project-card1-600w.png");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
   }
 
+.project1 {
+    background-image: url("../assets/img/project-card1-600w.png");
+  }
+
+.project2 {
+    background-image: url("../assets/img/project-card2-600w.png");
+  }
+
 .project-card a {
-  color: #000;
+  color: #282828;
   text-decoration: none;
   margin: 0 1rem 0 1rem;
 }
 
-.project1 p {
+.project1 p, .project2 p {
   margin: 0 5rem 0 5rem;
   padding-top: 40%;
   opacity: 0;
 }
 
-.project1 p:hover {
+.project1 p:hover, .project2 p:hover {
   opacity: 1;
 }
 
@@ -202,7 +215,7 @@ a .down-arrow {
 }
 
 .project-description {
-  font-size: 2.2rem;
+  font-size: 2rem;
   font-weight: bold;
 }
 
@@ -218,10 +231,10 @@ a .down-arrow {
   opacity: 1;
 }
 
-.project2 {
+/* .project2 {
   text-align: center;
   padding: 12rem 0 12rem 0;
-}
+} */
 
 .design-process {
   background-color: #FCFCFC;
@@ -535,11 +548,18 @@ figcaption {
   padding: 2rem 1.2rem 4rem 0;
 }
 
+.product-logo-current {
+  height: 20rem;
+  padding: 2rem 1.2rem 4rem 0;
+}
+
+
 .project-tagline {
-  font-size: 2.2rem;
-  line-height: 3.5rem;
+  font-size: 2rem;
+  line-height: 3rem;
   width: 90%;
   margin: auto;
+  letter-spacing: 0;
 }
 
 .summary-hero {
@@ -614,7 +634,7 @@ li span {
 }
 
 .gray-background {
-  background-color: #EBEBEB;
+  background-color: #f3f3f3;
   padding: 2rem 0 2rem 0;
   margin-bottom: 1rem;
   color: #282828;
@@ -1020,4 +1040,21 @@ p.percentage-population {
 .double-button-container {
   text-align: center;
   margin-bottom: 1rem;
+}
+
+.project-details {
+  width:100%;
+}
+
+.problem-solution, .design-process-current {
+  width: 90%;
+  margin: auto;
+}
+
+.summary-image {
+  padding: 2rem 0 3rem 0;
+}
+
+.app-feature-flex {
+  padding: 2rem 0 8rem 0;
 }
