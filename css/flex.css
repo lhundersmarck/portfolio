@@ -98,6 +98,10 @@
       margin-bottom: 2rem;
     }
 
+    .step-1-2 > div, .step-3-4 > div {
+      width: 50%;
+    }
+
     .design-steps {
       background-image: url("../assets/img/teal-circle-no-shadow.svg");
       background-size: 30rem;
