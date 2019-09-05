@@ -1,4 +1,4 @@
-nav a {
+ a {
   text-decoration: none;
   color: inherit;
 }
@@ -17,12 +17,12 @@ nav a {
   padding: 0;
 }
 
-.desktop-menu-container a {
+ a {
   transition: 0.3s linear;
 }
 
 @media (hover: hover) {
-  .desktop-menu-container a:hover {
+  a:hover {
   color: #91DAD5;
   }
 }
