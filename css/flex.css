@@ -559,8 +559,9 @@
         -webkit-flex-direction: row;
         flex-wrap: wrap;
         -webkit-flex-wrap: wrap;
-        width: 80%;
+        /* width: 80%; */
        }
+
 
       .rotated-arrow {
          height: 20%;
@@ -1231,6 +1232,10 @@ plus moodboard because image comes before text */
        -webkit-flex-wrap: wrap;
        width: 45%;
        flex-grow: 1;
+     }
+
+     .user-testing-img {
+       height: 100%;
      }
 
      .early-testing-before,
