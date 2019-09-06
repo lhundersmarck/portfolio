@@ -225,6 +225,9 @@ a .down-arrow {
   opacity: 0;
   background-color: #91DAD5;
   transition: opacity .5s linear;
+}
+
+.overlay p {
   color: #282828;
 }
 
