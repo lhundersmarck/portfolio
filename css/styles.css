@@ -225,7 +225,7 @@ a .down-arrow {
   opacity: 0;
   background-color: #91DAD5;
   transition: opacity .5s linear;
-  color: inherit;
+  color: #282828;
 }
 
 .overlay:hover {
