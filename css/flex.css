@@ -1151,7 +1151,7 @@ plus moodboard because image comes before text */
     }
 
     .fig-row-stories {
-      width: 40%;
+      width: 50%;
     }
 
     p.large-stat {
@@ -1521,6 +1521,11 @@ plus moodboard because image comes before text */
       margin: auto;
     }
 
+    .fig-row-stories {
+      width: 40%;
+    }
+
+
 
 }
 
@@ -1562,6 +1567,7 @@ plus moodboard because image comes before text */
       flex-grow: 1;
     }
 
+  
 
 }
 
