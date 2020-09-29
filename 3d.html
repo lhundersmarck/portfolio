@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<link rel="icon" type="image/png" href="lh-icon.png">
+</link>
+
+<head>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-142690697-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+
+    gtag('config', 'UA-142690697-1');
+  </script>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Portfolio | Laura Hundersmarck</title>
+  <link href="https://fonts.googleapis.com/css?family=Assistant:400,600,700|Gilda+Display&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/mobile-menu.css">
+  <link rel="stylesheet" href="css/desktop-menu.css">
+  <link rel="stylesheet" href="css/flex.css">
+  <script src="https://kit.fontawesome.com/d7c1e28c2f.js"></script>
+  <script src="js/mobile-menu.js"></script>
+  <script src="js/utilities.js"></script>
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+
+<body data-aos-easing="ease" data-aos-duration="400" data-aos-delay="0">
+  <div class="site-container">
+    <header class="mobile-menu-container">
+      <nav>
+        <a href="index" aria-label="my work"><img class="mobile-logo" src="assets/img/mobile-logo.svg" alt="logo"></img>
+        </a>
+        <div class="mobile-menu" onclick="toggleMobileMenu(this)">
+          <div class="mobile-menu-bar-1"></div>
+          <div class="mobile-menu-bar-2"></div>
+          <div class="mobile-menu-bar-3"></div>
+        </div>
+        <div class="mobile-menu-list-container">
+          <ul class="mobile-menu-list">
+            <a href="index#featured-work" aria-label="my work">
+              <li onclick="toggleMobileMenuItem()">Work</li>
+            </a>
+            <a href="about" aria-label="about me">
+              <li onclick="toggleMobileMenuItem()">
+                About
+              </li>
+            </a>
+            <a href="mailto:laurahundersmarck@gmail.com" aria-label="email me">
+              <li onclick="toggleMobileMenuItem()">
+                Contact
+              </li>
+            </a>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <header class="desktop-menu-container">
+      <nav>
+        <a href="index" aria-label="my work"><img src="assets/img/desktop-logo-LH.svg" alt="Laura Hundersmarck Logo"></img>
+        </a>
+        <ul>
+          <li><a href="index#featured-work" aria-label="my work">Work</a></li>
+          <li><a href="about" aria-label="about page">About</a></li>
+          <li>
+            <div class="nav-button">
+              <a href="mailto:laurahundersmarck@gmail.com" aria-label="email me">
+                <button>Contact</button>
+              </a>
+            </div>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <div class="spacer" id="top-page">
+    </div>
+    <div class="container">
+      <!-- hero unit -->
+      <section data-aos-easing="ease" data-aos-duration="1500" data-aos-delay="0" data-aos="fade-in" class="project-intro" style="margin-top: 8rem">
+        <img class="section-header" src="assets/img-trove/section-summary.svg" alt="Section header: Project Summary"></img>
+        <p class="summary-hero">A selection of past work from the School of Simulation and Visualization at the Glasgow School of Art.
+          <br/>
+          <br/>The School of Simulation and Visualization (SimVis) has an extensive track record of innovation in visualization and interaction, specializing in 3D modeling, animation, 3D sound, and human-computer interaction.</p>
+      </section>
+      <section data-aos-easing="ease" data-aos-duration="1500" data-aos-delay="0" data-aos="fade-in" class="project-intro vis-grid" style="margin-top: 8rem">
+        <div class="vis-2-img-container">
+          <a href="#">
+        <figure>
+            <img class="about-image" srcset="assets/img/hynish-575w.jpg 575w,
+                assets/img/hynish-800w.jpg 800w,
+                assets/img/hynish-1100w.jpg 1100w" sizes: "(max-width: 575px) 450px,
+                (max-width: 800px) 800px, 1100px" src="assets/img/hynish-1100w.jpg" alt="3D model of Hynish Harbor">
+            </img>
+          <figcaption class="about-fig vis-caption">
+            <p><span class="project-name">Trove</span><br/><span class="project-description"> Responsive SaaS Web Application</span><br/> Roles: UX research & design, content strategy, visual design</p>
+          </figcaption>
+        </figure>
+        </a>
+        <a href="#">
+        <figure>
+              <img class="about-image" srcset="assets/img/hynish-575w.jpg 575w,
+                  assets/img/hynish-800w.jpg 800w,
+                  assets/img/hynish-1100w.jpg 1100w" sizes: "(max-width: 575px) 450px,
+                  (max-width: 800px) 800px, 1100px" src="assets/img/hynish-1100w.jpg" alt="3D model of Hynish Harbor">
+              </img>
+            <figcaption class="about-fig vis-caption">
+              <p><span class="project-name">Trove</span><br/><span class="project-description"> Responsive SaaS Web Application</span><br/> Roles: UX research & design, content strategy, visual design</p>
+            </figcaption>
+          </figure>
+          </a>
+          </div>
+          <div class="vis-2-img-container">
+            <a href="#">
+          <figure>
+              <img class="about-image" srcset="assets/img/hynish-575w.jpg 575w,
+                  assets/img/hynish-800w.jpg 800w,
+                  assets/img/hynish-1100w.jpg 1100w" sizes: "(max-width: 575px) 450px,
+                  (max-width: 800px) 800px, 1100px" src="assets/img/hynish-1100w.jpg" alt="3D model of Hynish Harbor">
+              </img>
+            <figcaption class="about-fig vis-caption">
+              <p><span class="project-name">Trove</span><br/><span class="project-description"> Responsive SaaS Web Application</span><br/> Roles: UX research & design, content strategy, visual design</p>
+            </figcaption>
+          </figure>
+          </a>
+        <a href="#">
+        <figure>
+            <img class="about-image" srcset="assets/img/hynish-575w.jpg 575w,
+                assets/img/hynish-800w.jpg 800w,
+                assets/img/hynish-1100w.jpg 1100w" sizes: "(max-width: 575px) 450px,
+                (max-width: 800px) 800px, 1100px" src="assets/img/hynish-1100w.jpg" alt="3D model of Hynish Harbor">
+            </img>
+          <figcaption class="about-fig vis-caption">
+            <p><span class="project-name">Trove</span><br/><span class="project-description"> Responsive SaaS Web Application</span><br/> Roles: UX research & design, content strategy, visual design</p>
+          </figcaption>
+        </figure>
+        </a>
+        </div>
+        <div class="vis-2-img-container">
+        <a href="#">
+        <figure>
+            <img class="about-image" srcset="assets/img/hynish-575w.jpg 575w,
+                assets/img/hynish-800w.jpg 800w,
+                assets/img/hynish-1100w.jpg 1100w" sizes: "(max-width: 575px) 450px,
+                (max-width: 800px) 800px, 1100px" src="assets/img/hynish-1100w.jpg" alt="3D model of Hynish Harbor">
+            </img>
+          <figcaption class="about-fig vis-caption">
+            <p><span class="project-name">Trove</span><br/><span class="project-description"> Responsive SaaS Web Application</span><br/> Roles: UX research & design, content strategy, visual design</p>
+          </figcaption>
+          <div class="overlay">
+            <p><span class="project-name">Trove</span><br/><span class="project-description"> Responsive SaaS Web Application</span></br> Roles: UX research & design, content strategy, visual design</p>
+          </div>
+        </figure>
+        </a>
+        <a href="#">
+        <figure>
+            <img class="about-image" srcset="assets/img/hynish-575w.jpg 575w,
+                assets/img/hynish-800w.jpg 800w,
+                assets/img/hynish-1100w.jpg 1100w" sizes: "(max-width: 575px) 450px,
+                (max-width: 800px) 800px, 1100px" src="assets/img/hynish-1100w.jpg" alt="3D model of Hynish Harbor">
+            </img>
+          <figcaption class="about-fig vis-caption">
+            <p><span class="project-name">Trove</span><br/><span class="project-description"> Responsive SaaS Web Application</span><br/> Roles: UX research & design, content strategy, visual design</p>
+          </figcaption>
+        </figure>
+        </a>
+        </div>
+      </section>
+      <footer data-aos-easing="ease" data-aos-duration="1500" data-aos-delay="0" data-aos="fade-in" class="footer">
+        <div class="contact-group">
+          <div class="contact">
+            <h2>Want to learn more?</h2>
+            <p>Feel free to contact me anytime.</p>
+            <div class="button-container">
+              <a href="mailto:laurahundersmarck@gmail.com" aria-label="email me">
+                <button>Get in Touch</button>
+              </a>
+            </div>
+            <a href="#top-page" aria-label="Back to top arrow">
+              <img class="back-to-top-arrow" src="assets/img/back-to-top-arrow.svg" alt="back to top arrow"></img>
+            </a>
+          </div>
+        </div>
+        <div class="footer-icons">
+          <ul>
+            <li> <a href="https://linkedin.com/in/laurahundersmarck/" aria-label="connect on linkedin" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin"></i></a> </li>
+            <li> <a href="https://www.behance.net/lhundersmarck" aria-label="find me on Behance" target="_blank" rel="noopener noreferrer"><i class="fab fa-behance-square"></i></a> </li>
+            <li> <a href="https://www.pinterest.com/laurahundersmarck/" aria-label="check out my pinterest" target="_blank" rel="noopener noreferrer"><i class="fab fa-pinterest-square"></i></a> </li>
+            <li> <a href="https://lhundersmarck.wixsite.com/photo" aria-label="my photography work" target="_blank" rel="noopener noreferrer"><i class="fas fa-camera"></i></a> </li>
+          </ul>
+          <!-- <i class="far fa-copyright copyright"></i> -->
+          <p class="copyright">Laura Hundersmarck 2019</p>
+          <p>All Rights Reserved</p>
+          <p><a class="attribution-link" href="attribution" aria-label="attribution page">Attributions</a></p>
+        </div>
+      </footer>
+    </div>
+  </div>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+</body>
+
+</html>
