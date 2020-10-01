@@ -1,3 +1,7 @@
+.a {
+  cursor: pointer;
+}
+
 .mobile-logo {
   width: 4em;
   transition: 0.2s ease-in-out;

@@ -352,7 +352,7 @@ blockquote p {
 }
 
 button {
-  border-radius: .7rem;
+  border-radius: .09rem;
   background-color: #91DAD5;
   /* box-shadow: 2px 2px 4px 2px rgba(0, 0, 0, .1); */
   border: 0;
@@ -360,12 +360,12 @@ button {
   padding: 1.6rem 0 1.6rem 0;
   margin-bottom: .5rem;
   text-align: center;
-  font-size: 1.6rem;
+  font-size: 1.4rem;
   font-weight: 600;
-  letter-spacing: .12rem;
+  letter-spacing: .1rem;
   text-transform: uppercase;
   width: 80%;
-  transition: 0.3s linear;
+  transition: 0.1s linear;
 }
 
 .button-container {

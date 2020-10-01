@@ -123,7 +123,6 @@
       margin-top: 3rem;
     }
 
-
     .quotation-mark-left, .quotation-mark-right {
       width: 2.4rem;
     }
@@ -141,7 +140,7 @@
 
     button {
       padding: 1.2rem 2rem 1.2rem 2rem;
-      font-size: 1.5rem;
+      font-size: 1.4rem;
       width: fit-content;
       width: -moz-fit-content;
     }
@@ -577,6 +576,27 @@
         width: 100%;
       }
 
+      .vis-caption {
+        display: none;
+      }
+
+      .vis-2-img-container {
+        display: flex;
+      }
+
+      .vis-2-img-container figure {
+        float: left;
+        margin-bottom: 1rem;
+      }
+
+      .vis-2-img-container figure img {
+        padding: 0;
+      }
+
+      .vis-2-img-container figure {
+        margin-right: 1rem;
+      }
+
       .prototype-sub-section {
         width: 50%;
         margin: 0 auto;
@@ -891,7 +911,7 @@
     }
 
     .about-hero-image {
-      background-image: linear-gradient(rgba(255, 255, 255, 0.65), rgba(255, 255, 255, 0.65)), url("../assets/img/headshot-2000w.jpg");
+      background-image: linear-gradient(rgba(255, 255, 255, 0.65), rgba(255, 255, 255, 0.65)), url("../assets/img/headshot-2.jpg");
       background-size: cover;
       background-position: center;
       background-repeat: no-repeat;
@@ -1567,7 +1587,7 @@ plus moodboard because image comes before text */
       flex-grow: 1;
     }
 
-  
+
 
 }
 

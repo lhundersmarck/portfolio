@@ -1,5 +1,7 @@
  nav a {
   text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: .15rem;
   color: inherit;
 }
 
@@ -10,7 +12,7 @@
 
 .desktop-menu-container nav ul li {
   display: inline-block;
-  font-size: 1.7em;
+  font-size: 1.5em;
 }
 
 .desktop-menu-container nav ul li:last-child {
@@ -18,12 +20,14 @@
 }
 
 a {
-  transition: 0.3s linear;
+  transition: 0.2s linear;
+  color: #18A2A2;
+  text-decoration: none;
 }
 
 @media (hover: hover) {
   a:hover {
-  color: #91DAD5;
+  color: #18A2A2;
   }
 }
 
@@ -39,10 +43,9 @@ a {
 .desktop-menu-container nav ul li button {
   width: 100%;
   padding: 0.4em 0.9em 0.5em 0.9em;
-  text-transform: none;
-  font-size: 1em;
+  text-transform: uppercase;
   font-weight: normal;
-  letter-spacing: 0.02rem;
+  letter-spacing: 0.15rem;
 }
 
 .desktop-menu-container nav ul {
